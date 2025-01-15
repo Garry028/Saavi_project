@@ -3,7 +3,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { content } from "@/lib/content";
-import { Building2, Mail, MapPin, Phone } from "lucide-react";
+import { Building2, Mail, Phone } from "lucide-react";
 
 export default function Contact() {
   return (

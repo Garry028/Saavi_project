@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { Search } from "lucide-react";
+
 import HotelCarousel from "@/components/HotelCarousel";
-import { ArrowRight, Star } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { content } from "@/lib/content";
 import { images } from "../../public/assets/export";

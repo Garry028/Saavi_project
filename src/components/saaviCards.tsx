@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from "react";
+
 import Card1 from "../../public/assets/hands.png";
 import Frame from "../../public/assets/guestBackground.png";
 import Card2 from "../../public/assets/building.png";
 import Card3 from "../../public/assets/suite.png";
+import { useEffect, useState } from "react";
 
 const SaaviCards = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);

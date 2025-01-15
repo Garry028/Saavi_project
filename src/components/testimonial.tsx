@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+
 import Profile1 from '../../public/assets/profile1.png';
 import Marquee from 'react-fast-marquee';
 import Background_image from '../../public/assets/guestBackground.png';
+import { useState } from 'react';
 
 const Guest = () => {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -44,17 +45,17 @@ const Guest = () => {
         },
     ];
 
-    const handlePrev = () => {
-        setActiveIndex((prevIndex) =>
-            prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
-        );
-    };
+    // const handlePrev = () => {
+    //     setActiveIndex((prevIndex) =>
+    //         prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
+    //     );
+    // };
 
-    const handleNext = () => {
-        setActiveIndex((prevIndex) =>
-            prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
-        );
-    };
+    // const handleNext = () => {
+    //     setActiveIndex((prevIndex) =>
+    //         prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
+    //     );
+    // };
 
     const getVisibleCards = () => {
         const visibleCards = [];

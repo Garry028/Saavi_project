@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import Card1 from "../../public/assets/whyChooseSaaviCard1.png";
 import Card2 from "../../public/assets/whyChooseSaaviCard2.png";
 import Card3 from "../../public/assets/whyChooseSaaviCard3.png";

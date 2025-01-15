@@ -1,4 +1,4 @@
-import { Building2, Facebook, Instagram, Linkedin, Twitter } from 'lucide-react';
+import {  Facebook, Instagram, Linkedin, Twitter } from 'lucide-react';
 import logo from '../../public/assets/saavi_logo.png';
 import { Link } from 'react-router-dom';
 

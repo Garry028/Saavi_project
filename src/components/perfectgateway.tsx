@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Nature from '../../public/assets/natureImage.png';
 import TastyFood from '../../public/assets/tastyFood.png';
 import LuxuaryRoom from '../../public/assets/luxuaryRoom.png';
