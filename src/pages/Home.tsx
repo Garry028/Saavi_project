@@ -9,7 +9,8 @@ import { useEffect, useState } from "react";
 import { useInView } from 'react-intersection-observer'; // Import Intersection Observer hook
 import WhyChooseSaavi from "@/components/whychoosesaavi";
 import PerfectGateway from "@/components/perfectgateway";
-import ExperienceUnforgettable from "@/components/experienceUnforgettable";
+// import ExperienceUnforgettable from "@/components/experienceUnforgettable";
+import Experience from "../components/experienceUnforgettable";
 import Testimonial from "@/components/testimonial";
 import SaaviCards from "@/components/saaviCards";
 
@@ -243,7 +244,7 @@ export default function Home() {
         <PerfectGateway />
 
         <div >
-          <ExperienceUnforgettable />
+          <Experience />
         </div>
         {/* <Guest /> */}
       </div>

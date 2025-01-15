@@ -1,7 +1,7 @@
-import React from 'react';
+
 import image from '../../public/assets/adventureImage.png';
 
-const ExperienceUnforgettable: React.FC = () => {
+export default function ExperienceUnforgettable (){
   return (
     <div className="w-full text-center font-serif text-red-700 mt-10">
       <div className="py-8 relative">
@@ -26,4 +26,4 @@ const ExperienceUnforgettable: React.FC = () => {
   );
 };
 
-export default ExperienceUnforgettable;
+
