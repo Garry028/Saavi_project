@@ -5,7 +5,7 @@ import Background_image from '../../public/assets/guestBackground.png';
 import { useState } from 'react';
 
 const Guest = () => {
-    const [activeIndex, setActiveIndex] = useState(0);
+    const [activeIndex] = useState(0);
 
     const testimonials = [
         {
