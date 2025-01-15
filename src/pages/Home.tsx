@@ -10,7 +10,7 @@ import { useInView } from 'react-intersection-observer'; // Import Intersection 
 import WhyChooseSaavi from "@/components/whychoosesaavi";
 import PerfectGateway from "@/components/perfectgateway";
 // import ExperienceUnforgettable from "@/components/experienceUnforgettable";
-import Experience from "../components/experienceUnforgettable";
+import Experience from "../components/experience";
 import Testimonial from "@/components/testimonial";
 import SaaviCards from "@/components/saaviCards";
 
