@@ -143,7 +143,7 @@ export const content = {
     {
       title: "Guest Access",
       description: "Enjoy seamless guest access with modern facilities and top-notch hospitality.",
-      image: images.Image_13 // Replace with the relevant image from your assets
+      image: images.Image_7 // Replace with the relevant image from your assets
     },
     {
       title: "Adventure",
