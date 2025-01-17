@@ -14,6 +14,8 @@ import { useEffect, useRef } from "react";
 
 
 
+
+
 export default function HotelCarousel() {
   const carouselRef = useRef<HTMLDivElement>(null);
 
@@ -39,6 +41,7 @@ export default function HotelCarousel() {
         loop: true,
       }}
       className=" max-w-8xl h-full mx-auto"
+      
     >
       <CarouselContent>
         {content.hotels.map((hotel) => (

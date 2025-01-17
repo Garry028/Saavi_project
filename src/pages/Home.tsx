@@ -9,7 +9,8 @@ import { useEffect, useState } from "react";
 import { useInView } from 'react-intersection-observer'; // Import Intersection Observer hook
 import WhyChooseSaavi from "@/components/whychoosesaavi";
 import PerfectGateway from "@/components/perfectgateway";
-import background_Image from "../../public/assets/backgroundImage2.png";
+import background_Image2 from "../../public/assets/backgroundImage2.png";
+import background_Image1 from "../../public/assets/backgroundImage1.png";
 import Experience from "../components/experience";
 import Testimonial from "@/components/testimonial";
 import SaaviCards from "@/components/saaviCards";
@@ -17,7 +18,7 @@ import SaaviCards from "@/components/saaviCards";
 
 function Facilities({ }) {
   return (
-    <section className="py-20">
+    <section className="py-20" style={{ backgroundImage: `url(${background_Image2})` }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-center font-serif text-red-700 mb-12">
           Our Facilities
@@ -212,7 +213,7 @@ export default function Home() {
 
 
       {/* Featured Hotels */}
-      <section className="py-20 bg-gray-50 w-full">
+      <section className="py-20 bg-gray-50 w-full "style={{ backgroundImage: `url(${background_Image1})` }}>
         <div className="w-full px-0">
           <h2 className="text-3xl font-serif text-red-700 font-bold text-center mb-12 animate-slide-in-top">
             Experience Saavi Hospitality
@@ -227,17 +228,18 @@ export default function Home() {
       <WhyChooseSaavi />
 
       {/* Our Facilities */}
+      
+
+
+      <div style={{ backgroundImage:`url(${background_Image2})`}}>
       <Facilities />
-
-
-      <div >
         {/* <OurStory /> */}
         {/* Our Story Section */}
         <section
           ref={storyRef}
           className={`py-20 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ${storyInView ? "opacity-100" : "opacity-0"
             } transform ${storyInView ? "translate-y-0" : "translate-y-10"}`}
-          style={{ backgroundImage:`url(${background_Image})`}}
+          
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 rounded-lg py-10 relative">
             <div className="grid md:grid-cols-2 gap-8">
