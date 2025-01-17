@@ -16,7 +16,7 @@ import Testimonial from "@/components/testimonial";
 import SaaviCards from "@/components/saaviCards";
 import homeImage1 from "../../public/assets/homeImage1.png";
 import homeImage2 from "../../public/assets/homeImage2.png";
-import homeImage3 from "../../public/assets/homeImage3.png";
+import homeImage3 from "../../public/assets/HomeImage3.png";
 // import SearchFrom from "@/components/searchform";
 
 
