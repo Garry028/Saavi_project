@@ -14,99 +14,66 @@ import background_Image1 from "../../public/assets/backgroundImage1.png";
 import Experience from "../components/experience";
 import Testimonial from "@/components/testimonial";
 import SaaviCards from "@/components/saaviCards";
+import homeImage1 from "../../public/assets/homeImage1.png";
+import homeImage2 from "../../public/assets/homeImage2.png";
+import homeImage3 from "../../public/assets/homeImage3.png";
+// import SearchFrom from "@/components/searchform";
 
 
 function Facilities({ }) {
   return (
-    <section className="py-20" style={{ backgroundImage: `url(${background_Image2})` }}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-center font-serif text-red-700 mb-12">
-          Our Facilities
-        </h2>
-
-        {/* Flexbox layout for the rows */}
-        <div className="flex flex-col items-center gap-8">
-
-          {/* First Row - 3 Flip Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
-            {content.facilities.slice(0, 3).map((facility, index) => (
-              <div
-                key={index}
-                className="group h-96 w-96 [perspective:1000px]"
-              >
-                <div className="relative h-full w-full rounded-lg shadow-md transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-                  {/* Front Face */}
-                  <div className="absolute inset-0 h-full w-full rounded-lg [backface-visibility:hidden]">
-                    <img
-                      src={facility.image}
-                      alt={facility.title}
-                      className="object-cover h-full w-full rounded-lg"
-                    />
-                    <p className="absolute bottom-4 left-4 text-xl text-white bg-red-700 px-2 py-1 rounded-md">
-                      {facility.title}
-                    </p>
-                  </div>
-                  {/* Back Face */}
-                  <div className="absolute inset-0 h-full w-full rounded-lg bg-black/80 px-8 text-center text-white [transform:rotateY(180deg)] [backface-visibility:hidden]">
-                    <div className="flex min-h-full flex-col items-center justify-center">
-                      <h3 className="text-xl font-bold mb-4">{facility.title}</h3>
-                      <p className="text-sm mb-4">{facility.description}</p>
-                      <button className="bg-red-700 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full">
-                        Learn More
-                      </button>
-                    </div>
-                  </div>
+    <section className="py-20">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 className="text-3xl font-bold text-center font-serif text-red-700 mb-12">
+        Our Facilities
+      </h2>
+  
+      {/* Responsive Grid for Flip Cards */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  
+        {/* Render all facilities */}
+        {content.facilities.map((facility, index) => (
+          <div
+            key={index}
+            className="group h-96 w-full [perspective:1000px] mx-auto"
+          >
+            <div className="relative h-full w-full rounded-lg shadow-md transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+              {/* Front Face */}
+              <div className="absolute inset-0 h-full w-full rounded-lg [backface-visibility:hidden]">
+                <img
+                  src={facility.image}
+                  alt={facility.title}
+                  className="object-cover h-full w-full rounded-lg"
+                />
+                <p className="absolute bottom-4 left-4 text-xl text-white bg-red-700 px-2 py-1 rounded-md">
+                  {facility.title}
+                </p>
+              </div>
+              {/* Back Face */}
+              <div className="absolute inset-0 h-full w-full rounded-lg bg-black/80 px-8 text-center text-white [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                <div className="flex min-h-full flex-col items-center justify-center">
+                  <h3 className="text-xl font-bold mb-4">{facility.title}</h3>
+                  <p className="text-sm mb-4">{facility.description}</p>
+                  <button className="bg-red-700 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full">
+                    Learn More
+                  </button>
                 </div>
               </div>
-            ))}
+            </div>
           </div>
-
-          {/* Second Row - 2 Flip Cards */}
-
-          {/* Second Row - 2 Flip Cards */}
-          <div className="flex justify-center gap-20 w-full">
-            {content.facilities.slice(3).map((facility, index) => (
-              <div
-                key={index}
-                className="group h-96 w-96 [perspective:1000px]"
-              >
-                <div className="relative h-full w-full rounded-lg shadow-md transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-                  {/* Front Face */}
-                  <div className="absolute inset-0 h-full w-full rounded-lg [backface-visibility:hidden]">
-                    <img
-                      src={facility.image}
-                      alt={facility.title}
-                      className="object-cover h-full w-full rounded-lg"
-                    />
-                    <p className="absolute bottom-4 left-4 text-xl text-white bg-red-700 px-2 py-1 rounded-md">
-                      {facility.title}
-                    </p>
-                  </div>
-                  {/* Back Face */}
-                  <div className="absolute inset-0 h-full w-full rounded-lg bg-black/80 px-8 text-center text-white [transform:rotateY(180deg)] [backface-visibility:hidden]">
-                    <div className="flex min-h-full flex-col items-center justify-center">
-                      <h3 className="text-xl font-bold mb-4">{facility.title}</h3>
-                      <p className="text-sm mb-4">{facility.description}</p>
-                      <button className="bg-red-700 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full">
-                        Learn More
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+        ))}
       </div>
-    </section>
+    </div>
+  </section>
+  
 
   );
 }
 
 
 export default function Home() {
-  const [currentImage, setCurrentImage] = useState(images.Image_1);
-  const imageArray = [images.Image_1, images.Image_2, images.Image_6, images.Image_4];
+  const [currentImage, setCurrentImage] = useState(homeImage1);
+  const imageArray = [homeImage1, homeImage2, homeImage3];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -135,59 +102,40 @@ export default function Home() {
             alt="Luxury Hotel"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/40" />
+          {/* <div className="absolute inset-0 bg-black/40" /> */}
         </div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold font-serif mb-6 animate-fade-up animate-delay-200">
-            Welcome to {content.company.name}
-          </h1>
-          <p className="text-xl sm:text-lg md:text-2xl mb-8 animate-fade-up animate-delay-300 ">
-            {content.company.description}
-          </p>
-          <div className="flex flex-col sm:flex-row justify-between items-center space-y-6 sm:space-x-4 sm:space-y-0 bg-opacity-0 p-8 rounded-lg">
-            {/* Where to go */}
+       
+        <div className="relative max-w-7xl mx-auto px-4 lg:px-8 text-center text-white ">
+        <div className="mt-80 hidden sm:flex sm:flex-row justify-between items-center space-y-6 sm:space-x-4 sm:space-y-0 bg-opacity-0 p-8 rounded-lg">
+        {/* Where to go */}
             <div className="flex flex-col w-full sm:w-64">
-              <label
-                htmlFor="destination"
-                className="text-sm font-semibold text-white mb-2"
-              >
-                Where to go
-              </label>
+
               <input
                 type="text"
                 id="destination"
                 placeholder="Enter destination"
-                className="p-3 border rounded-md text-gray-700 shadow-sm focus:ring-2 focus:ring-primary focus:outline-none bg-white bg-opacity-50 placeholder-gray-700"
+                className="p-3 border rounded-md text-gray-700 shadow-sm focus:ring-2 focus:ring-primary focus:outline-none bg-white placeholder-gray-700"
               />
             </div>
 
             {/* Arrival Date */}
             <div className="flex flex-col w-full sm:w-64">
-              <label
-                htmlFor="arrival-date"
-                className="text-sm font-semibold text-white mb-2"
-              >
-                Select Arrival Date
-              </label>
               <input
-                type="date"
+                type="text"
                 id="arrival-date"
-                className="p-3 border rounded-md text-gray-700 shadow-sm focus:ring-2 focus:ring-primary focus:outline-none bg-white bg-opacity-50"
+                placeholder="Checking in"
+                className="p-3 border rounded-md text-gray-700 shadow-sm focus:ring-2 focus:ring-primary focus:outline-none bg-white placeholder-gray-700"
               />
             </div>
 
             {/* Departure Date */}
             <div className="flex flex-col w-full sm:w-64">
-              <label
-                htmlFor="departure-date"
-                className="text-sm font-semibold text-white mb-2"
-              >
-                Select Departure Date
-              </label>
+            
               <input
-                type="date"
+                type="text"
                 id="departure-date"
-                className="p-3 border rounded-md text-gray-700 shadow-sm focus:ring-2 focus:ring-primary focus:outline-none bg-white bg-opacity-50"
+                placeholder="Checking out"
+                className="p-3 border rounded-md text-gray-700 shadow-sm focus:ring-2 focus:ring-primary focus:outline-none bg-white placeholder-gray-700"
               />
             </div>
 
@@ -198,14 +146,15 @@ export default function Home() {
               </button>
             </div>
           </div>
-
           <Link to="/booking">
             <Button size="lg" className="animate-fade-up animate-delay-400 transform hover:scale-105 mt-4 sm:mt-0">
               Book Your Stay Now
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </Link>
+         
         </div>
+        
       </section>
 
 
@@ -229,10 +178,10 @@ export default function Home() {
 
       {/* Our Facilities */}
       
+      <Facilities />
 
 
       <div style={{ backgroundImage:`url(${background_Image2})`}}>
-      <Facilities />
         {/* <OurStory /> */}
         {/* Our Story Section */}
         <section

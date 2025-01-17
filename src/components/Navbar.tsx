@@ -18,20 +18,22 @@ export default function Navbar() {
 
   return (
     <header className="z-50 bg-white w-full backdrop-blur-sm shadow-sm">
-     <div className="bg-black text-white p-2 text-sm px-8">
-  <div className="flex items-center justify-between">
+    <div className="bg-black text-white p-2 text-sm px-4 sm:px-8">
+  <div className="flex flex-wrap items-center justify-between gap-y-4 sm:gap-y-0">
     {/* Contact Info */}
-    <p className="flex items-center gap-3">
-      <FaPhoneAlt className="text-base" /> 7290006412, 7290006494
+    <p className="flex flex-wrap items-center gap-3 text-xs sm:text-sm">
+      <FaPhoneAlt className="text-base" />
+      <span>7290006412, 7290006494</span>
       <span className="ml-4 flex items-center gap-2">
-        <FaEnvelope className="text-base" /> sales@saavihotels.com
+        <FaEnvelope className="text-base" />
+        <span>sales@saavihotels.com</span>
       </span>
     </p>
 
     {/* Social Media Icons */}
-    <div className="flex items-center gap-8 ml-[-20px] mr-20">
+    <div className="flex items-center gap-4 sm:gap-8">
       <a
-        href="https://www.facebook.com"
+        href="https://www.facebook.com/profile.php?id=61565142656404"
         target="_blank"
         rel="noopener noreferrer"
         className="hover:text-primary transition-colors text-white"
@@ -39,15 +41,7 @@ export default function Navbar() {
         <i className="fab fa-facebook-f text-base"></i>
       </a>
       <a
-        href="https://www.twitter.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="hover:text-primary transition-colors text-white"
-      >
-        <i className="fab fa-twitter text-base"></i>
-      </a>
-      <a
-        href="https://www.instagram.com"
+        href="https://www.instagram.com/saavihotels?igsh=and4OXdkMTJoNWcx"
         target="_blank"
         rel="noopener noreferrer"
         className="hover:text-primary transition-colors text-white"
@@ -55,24 +49,33 @@ export default function Navbar() {
         <i className="fab fa-instagram text-base"></i>
       </a>
       <a
-        href="https://www.linkedin.com"
+        href="https://www.linkedin.com/company/96062794/admin/dashboard/"
         target="_blank"
         rel="noopener noreferrer"
         className="hover:text-primary transition-colors text-white"
       >
         <i className="fab fa-linkedin-in text-base"></i>
       </a>
+      <a
+        href="https://www.youtube.com/@SaaviHotelsAndResorts"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-primary transition-colors text-white"
+      >
+        <i className="fab fa-youtube text-base"></i>
+      </a>
     </div>
   </div>
 </div>
+
 
 
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-6" aria-label="Global">
         <div className="flex lg:flex-1">
           <Link to="/" className="-m-1.5 p-1.5 flex items-center gap-2">
             <div className="flex flex-col items-center">
-              <img src={logo} alt="Saavi logo" className="w-20 h-20 object-cover rounded-md" />
-              <span className="text-sm font-semibold text-black mt-2">A Comfortable stay</span>
+              <img src={logo} alt="Saavi logo" className="w-39 h-25 object-cover rounded-md" />
+              <span className="text-xs font-semibold text-black ">A Comfortable stay</span>
             </div>
           </Link>
         </div>

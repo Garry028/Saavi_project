@@ -1,5 +1,7 @@
 
-import Nature from '../../public/assets/natureImage.png';
+import Nature from '../../public/assets/nature.png';
+import Chill from '../../public/assets/chill.png';
+import Peace from '../../public/assets/peace.png';
 import TastyFood from '../../public/assets/tastyFood.png';
 import LuxuaryRoom from '../../public/assets/luxuaryRoom.png';
 import Marquee from "react-fast-marquee";
@@ -57,7 +59,7 @@ function PerfectGateway() {
         {/* Row 2 */}
         <div className="flex gap-4 mt-8 animate-scroll-left">
           <div className="flex-none w-72 bg-white rounded-xl shadow-lg relative">
-            <img src={Nature} alt="Nature" className="w-full h-48 object-cover rounded-t-xl" />
+            <img src={Chill} alt="Nature" className="w-full h-48 object-cover rounded-t-xl" />
             <div className="absolute bottom-0 left-0 right-0 bg-red-700 text-white py-2 text-center text-xl font-bold uppercase">
               Chill
             </div>
@@ -86,9 +88,9 @@ function PerfectGateway() {
           </div>
 
           <div className="flex-none w-72 bg-white rounded-xl shadow-lg relative">
-            <img src={Nature} alt="Nature" className="w-full h-48 object-cover rounded-t-xl" />
+            <img src={Peace} alt="Nature" className="w-full h-48 object-cover rounded-t-xl" />
             <div className="absolute bottom-0 left-0 right-0 bg-red-700 text-white py-2 text-center text-xl font-bold uppercase">
-              Piece
+            Peace
             </div>
           </div>
         </div>

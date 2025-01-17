@@ -1,4 +1,9 @@
 import { images } from "../../public/assets/export";
+import foodImage from "../../public/assets/food.png";
+// import roomImage from "../../public/assets/roomImage.png";
+import bonfireImage from "../../public/assets/bonfire.png";
+// import guestAccessImage from "../../public/assets/guestAccess.png";
+import adventureImage from "../../public/assets/advanterus.png";
 
 
 
@@ -123,17 +128,17 @@ export const content = {
     {
       title: "Food",
       description: "Indulge in a variety of cuisines prepared with love and care for a memorable dining experience.",
-      image: images.Image_10 // Replace with the relevant image from your assets
+      image: foodImage // Replace with the relevant image from your assets
     },
     {
       title: "Rooms",
       description: "Relax in our comfortable, well-furnished rooms designed to offer you a homely ambiance.",
-      image: images.Image_11 // Replace with the relevant image from your assets
+      image: images.Image_14 // Replace with the relevant image from your assets
     },
     {
       title: "Bonfire",
       description: "We serve all food and drinks, ensuring freshness, cleanliness, and a delightful taste experience.",
-      image: images.Image_12 // Replace with the relevant image from your assets
+      image: bonfireImage // Replace with the relevant image from your assets
     },
     {
       title: "Guest Access",
@@ -143,7 +148,7 @@ export const content = {
     {
       title: "Adventure",
       description: "Experience thrilling adventures, including trekking, camping, and more.",
-      image: images.Image_14 // Replace with the relevant image from your assets
+      image: adventureImage // Replace with the relevant image from your assets
     }
   ],
   navigation: [

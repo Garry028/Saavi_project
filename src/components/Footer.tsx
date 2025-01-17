@@ -1,4 +1,4 @@
-import {  Facebook, Instagram, Linkedin, Twitter } from 'lucide-react';
+import {  Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
 import logo from '../../public/assets/saavi_logo.png';
 import { Link } from 'react-router-dom';
 
@@ -52,22 +52,50 @@ export default function Footer() {
 
           {/* Follow Us Section */}
           <div className="text-center">
-            <h3 className="text-white font-semibold mb-4">Follow Us</h3>
-            <div className="flex justify-center space-x-4">
-              <a href="#" className="hover:text-white transition-colors">
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a href="#" className="hover:text-white transition-colors">
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a href="#" className="hover:text-white transition-colors">
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a href="#" className="hover:text-white transition-colors">
-                <Linkedin className="h-5 w-5" />
-              </a>
-            </div>
-          </div>
+  <h3 className="text-white font-semibold mb-4">Follow Us</h3>
+  <div className="flex justify-center space-x-4">
+    {/* Facebook */}
+    <a 
+      href="https://www.facebook.com/profile.php?id=61565142656404" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      className="hover:text-white transition-colors"
+    >
+      <Facebook className="h-5 w-5" />
+    </a>
+    
+    {/* Instagram */}
+    <a 
+      href="https://www.instagram.com/saavihotels?igsh=and4OXdkMTJoNWcx" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      className="hover:text-white transition-colors"
+    >
+      <Instagram className="h-5 w-5" />
+    </a>
+    
+    {/* LinkedIn */}
+    <a 
+      href="https://www.linkedin.com/company/96062794/admin/dashboard/" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      className="hover:text-white transition-colors"
+    >
+      <Linkedin className="h-5 w-5" />
+    </a>
+    
+    {/* YouTube */}
+    <a 
+      href="https://www.youtube.com/@SaaviHotelsAndResorts" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      className="hover:text-white transition-colors"
+    >
+      <Youtube className="h-5 w-5" />
+    </a>
+  </div>
+</div>
+
         </div>
 
         {/* Footer Bottom */}
