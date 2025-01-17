@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 import { useInView } from 'react-intersection-observer'; // Import Intersection Observer hook
 import WhyChooseSaavi from "@/components/whychoosesaavi";
 import PerfectGateway from "@/components/perfectgateway";
-
+import background_Image from "../../public/assets/backgroundImage2.png";
 import Experience from "../components/experience";
 import Testimonial from "@/components/testimonial";
 import SaaviCards from "@/components/saaviCards";
@@ -98,7 +98,6 @@ function Facilities({ }) {
         </div>
       </div>
     </section>
-
 
   );
 }
@@ -238,7 +237,7 @@ export default function Home() {
           ref={storyRef}
           className={`py-20 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ${storyInView ? "opacity-100" : "opacity-0"
             } transform ${storyInView ? "translate-y-0" : "translate-y-10"}`}
-          style={{ backgroundImage: "url('../../public/assets/backgroundImage2.png')" }}
+          style={{ backgroundImage:`url(${background_Image})`}}
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 rounded-lg py-10 relative">
             <div className="grid md:grid-cols-2 gap-8">
