@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 import { useInView } from 'react-intersection-observer'; // Import Intersection Observer hook
 import WhyChooseSaavi from "@/components/whychoosesaavi";
 import PerfectGateway from "@/components/perfectgateway";
-// import ExperienceUnforgettable from "@/components/experienceUnforgettable";
+
 import Experience from "../components/experience";
 import Testimonial from "@/components/testimonial";
 import SaaviCards from "@/components/saaviCards";
@@ -18,86 +18,86 @@ import SaaviCards from "@/components/saaviCards";
 function Facilities({ }) {
   return (
     <section className="py-20">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h2 className="text-3xl font-bold text-center font-serif text-red-700 mb-12">
-      Our Facilities
-    </h2>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl font-bold text-center font-serif text-red-700 mb-12">
+          Our Facilities
+        </h2>
 
-    {/* Flexbox layout for the rows */}
-    <div className="flex flex-col items-center gap-8">
+        {/* Flexbox layout for the rows */}
+        <div className="flex flex-col items-center gap-8">
 
-      {/* First Row - 3 Flip Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
-        {content.facilities.slice(0, 3).map((facility, index) => (
-          <div
-            key={index}
-            className="group h-96 w-96 [perspective:1000px]"
-          >
-            <div className="relative h-full w-full rounded-lg shadow-md transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-              {/* Front Face */}
-              <div className="absolute inset-0 h-full w-full rounded-lg [backface-visibility:hidden]">
-                <img
-                  src={facility.image}
-                  alt={facility.title}
-                  className="object-cover h-full w-full rounded-lg"
-                />
-                <p className="absolute bottom-4 left-4 text-xl text-white bg-red-700 px-2 py-1 rounded-md">
-                  {facility.title}
-                </p>
-              </div>
-              {/* Back Face */}
-              <div className="absolute inset-0 h-full w-full rounded-lg bg-black/80 px-8 text-center text-white [transform:rotateY(180deg)] [backface-visibility:hidden]">
-                <div className="flex min-h-full flex-col items-center justify-center">
-                  <h3 className="text-xl font-bold mb-4">{facility.title}</h3>
-                  <p className="text-sm mb-4">{facility.description}</p>
-                  <button className="bg-red-700 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full">
-                    Learn More
-                  </button>
+          {/* First Row - 3 Flip Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
+            {content.facilities.slice(0, 3).map((facility, index) => (
+              <div
+                key={index}
+                className="group h-96 w-96 [perspective:1000px]"
+              >
+                <div className="relative h-full w-full rounded-lg shadow-md transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                  {/* Front Face */}
+                  <div className="absolute inset-0 h-full w-full rounded-lg [backface-visibility:hidden]">
+                    <img
+                      src={facility.image}
+                      alt={facility.title}
+                      className="object-cover h-full w-full rounded-lg"
+                    />
+                    <p className="absolute bottom-4 left-4 text-xl text-white bg-red-700 px-2 py-1 rounded-md">
+                      {facility.title}
+                    </p>
+                  </div>
+                  {/* Back Face */}
+                  <div className="absolute inset-0 h-full w-full rounded-lg bg-black/80 px-8 text-center text-white [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                    <div className="flex min-h-full flex-col items-center justify-center">
+                      <h3 className="text-xl font-bold mb-4">{facility.title}</h3>
+                      <p className="text-sm mb-4">{facility.description}</p>
+                      <button className="bg-red-700 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full">
+                        Learn More
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
+            ))}
           </div>
-        ))}
-      </div>
 
-      {/* Second Row - 2 Flip Cards */}
+          {/* Second Row - 2 Flip Cards */}
 
-      {/* Second Row - 2 Flip Cards */}
-      <div className="flex justify-center gap-20 w-full">
-        {content.facilities.slice(3).map((facility, index) => (
-          <div
-            key={index}
-            className="group h-96 w-96 [perspective:1000px]"
-          >
-            <div className="relative h-full w-full rounded-lg shadow-md transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-              {/* Front Face */}
-              <div className="absolute inset-0 h-full w-full rounded-lg [backface-visibility:hidden]">
-                <img
-                  src={facility.image}
-                  alt={facility.title}
-                  className="object-cover h-full w-full rounded-lg"
-                />
-                <p className="absolute bottom-4 left-4 text-xl text-white bg-red-700 px-2 py-1 rounded-md">
-                  {facility.title}
-                </p>
-              </div>
-              {/* Back Face */}
-              <div className="absolute inset-0 h-full w-full rounded-lg bg-black/80 px-8 text-center text-white [transform:rotateY(180deg)] [backface-visibility:hidden]">
-                <div className="flex min-h-full flex-col items-center justify-center">
-                  <h3 className="text-xl font-bold mb-4">{facility.title}</h3>
-                  <p className="text-sm mb-4">{facility.description}</p>
-                  <button className="bg-red-700 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full">
-                    Learn More
-                  </button>
+          {/* Second Row - 2 Flip Cards */}
+          <div className="flex justify-center gap-20 w-full">
+            {content.facilities.slice(3).map((facility, index) => (
+              <div
+                key={index}
+                className="group h-96 w-96 [perspective:1000px]"
+              >
+                <div className="relative h-full w-full rounded-lg shadow-md transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                  {/* Front Face */}
+                  <div className="absolute inset-0 h-full w-full rounded-lg [backface-visibility:hidden]">
+                    <img
+                      src={facility.image}
+                      alt={facility.title}
+                      className="object-cover h-full w-full rounded-lg"
+                    />
+                    <p className="absolute bottom-4 left-4 text-xl text-white bg-red-700 px-2 py-1 rounded-md">
+                      {facility.title}
+                    </p>
+                  </div>
+                  {/* Back Face */}
+                  <div className="absolute inset-0 h-full w-full rounded-lg bg-black/80 px-8 text-center text-white [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                    <div className="flex min-h-full flex-col items-center justify-center">
+                      <h3 className="text-xl font-bold mb-4">{facility.title}</h3>
+                      <p className="text-sm mb-4">{facility.description}</p>
+                      <button className="bg-red-700 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full">
+                        Learn More
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
+            ))}
           </div>
-        ))}
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
 
   );
@@ -235,50 +235,49 @@ export default function Home() {
         {/* <OurStory /> */}
         {/* Our Story Section */}
         <section
-  ref={storyRef}
-  className={`py-20 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ${
-    storyInView ? "opacity-100" : "opacity-0"
-  } transform ${storyInView ? "translate-y-0" : "translate-y-10"}`}
-  style={{ backgroundImage: "url('../../public/assets/backgroundImage2.png')" }}
->
-<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 rounded-lg py-10 relative">
-  <div className="grid md:grid-cols-2 gap-8">
-    <div className="flex flex-col justify-center text-left">
-      <h2 className="text-3xl font-serif font-bold mb-4 animate-slide-in-left">
-        Our Story
-      </h2>
-      <h3 className="text-2xl font-serif font-semibold text-red-700 mb-6 animate-slide-in-left animate-delay-200">
-        A Legacy of Luxury
-      </h3>
-      <p className="text-sm text-gray-600 mb-4 font-light animate-slide-in-left animate-delay-400">
-        <span className="font-bold text-red-700">SAAVI HOTELS</span>, a name synonymous with luxury and comfort, has been redefining the hospitality industry since [Year]. With a rich legacy and a commitment to excellence, we have established ourselves as a leading hotel chain in India.
-      </p>
-      <p className="text-sm text-gray-600 mb-4 font-light animate-slide-in-left animate-delay-500">
-        Our journey began with a vision to create world-class accommodations that cater to the diverse needs of our guests. Over the years, we have expanded our footprint across various locations, each hotel a testament to our dedication to quality and innovation.
-      </p>
-      <p className="text-sm text-gray-600 animate-slide-in-left animate-delay-600">
-        We pride ourselves on offering exceptional hospitality, from the moment you step into our lobby to the time you check out. Our experienced staff is committed to providing personalized service and ensuring your stay is truly memorable.
-      </p>
-    </div>
-    <div className="flex items-center justify-center animate-scale-up animate-delay-700">
-      <img
-        src={images.Image_3}
-        alt="Our Story"
-        className="w-9/12 h-9/12 object-cover rounded-lg shadow-lg"
-      />
-    </div>
-  </div>
-  {/* Learn More Button */}
-  <div className="absolute">
-    <button className="flex items-center bg-red-700 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition duration-200">
-      Learn More
-      <ArrowRight className="ml-2 h-4 w-4" />
-    </button>
-  </div>
-</div>
+          ref={storyRef}
+          className={`py-20 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ${storyInView ? "opacity-100" : "opacity-0"
+            } transform ${storyInView ? "translate-y-0" : "translate-y-10"}`}
+          style={{ backgroundImage: "url('../../public/assets/backgroundImage2.png')" }}
+        >
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 rounded-lg py-10 relative">
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="flex flex-col justify-center text-left">
+                <h2 className="text-3xl font-serif font-bold mb-4 animate-slide-in-left">
+                  Our Story
+                </h2>
+                <h3 className="text-2xl font-serif font-semibold text-red-700 mb-6 animate-slide-in-left animate-delay-200">
+                  A Legacy of Luxury
+                </h3>
+                <p className="text-sm text-gray-600 mb-4 font-light animate-slide-in-left animate-delay-400">
+                  <span className="font-bold text-red-700">SAAVI HOTELS</span>, a name synonymous with luxury and comfort, has been redefining the hospitality industry since [Year]. With a rich legacy and a commitment to excellence, we have established ourselves as a leading hotel chain in India.
+                </p>
+                <p className="text-sm text-gray-600 mb-4 font-light animate-slide-in-left animate-delay-500">
+                  Our journey began with a vision to create world-class accommodations that cater to the diverse needs of our guests. Over the years, we have expanded our footprint across various locations, each hotel a testament to our dedication to quality and innovation.
+                </p>
+                <p className="text-sm text-gray-600 animate-slide-in-left animate-delay-600">
+                  We pride ourselves on offering exceptional hospitality, from the moment you step into our lobby to the time you check out. Our experienced staff is committed to providing personalized service and ensuring your stay is truly memorable.
+                </p>
+              </div>
+              <div className="flex items-center justify-center animate-scale-up animate-delay-700">
+                <img
+                  src={images.Image_3}
+                  alt="Our Story"
+                  className="w-9/12 h-9/12 object-cover rounded-lg shadow-lg"
+                />
+              </div>
+            </div>
+            {/* Learn More Button */}
+            <div className="absolute">
+              <button className="flex items-center bg-red-700 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition duration-200">
+                Learn More
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </button>
+            </div>
+          </div>
 
 
-</section>
+        </section>
 
 
         <PerfectGateway />
