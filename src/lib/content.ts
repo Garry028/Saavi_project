@@ -82,7 +82,7 @@ export const content = {
       id: 9,
       name: "Sandlewood Saavi Hotel",
       location: "Goa, India",
-      image: images.Image_9,
+      image: images.Image_4,
       description: "An exquisite beachside property offering the best of Goan hospitality.",
       amenities: ["Beachfront", "Poolside Bar", "Live Entertainment", "Seafood Specialties"]
     }

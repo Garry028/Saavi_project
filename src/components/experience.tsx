@@ -11,7 +11,7 @@ export default function ExperienceUnforgettable (){
         <img 
           src={image} 
           alt="Adventure" 
-          className="w-full h-[60vh] object-cover"
+          className="w-full h-[45vh] object-cover"
         />
         <div className="absolute top-[60%] transform -translate-y-1/2 w-full text-center">
           <h2 className="text-4xl font-extrabold text-white drop-shadow-lg tracking-wider">ADVENTURES</h2>

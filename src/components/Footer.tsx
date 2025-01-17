@@ -6,24 +6,23 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 justify-items-center">
           {/* About Us Section */}
-          <div>
-            <Link to="/" className="flex items-center gap-2">
-              {/* <Building2 className="h-8 w-8 text-white" /> */}
-              <img src={logo} alt="Saavi Hotels Logo" className="h-10 w-10" /> {/* Add the logo */}
+          <div className="max-w-xs text-center">
+            <Link to="/" className="flex items-center justify-center gap-2">
+              <img src={logo} alt="Saavi Hotels Logo" className="h-10 w-10" />
               <span className="text-xl font-semibold text-white">Saavi Hotels</span>
             </Link>
             <p className="mt-4 text-sm">
               Saavi Hotels is a chain of boutique hotels and a subsidiary of Saavi Events and 
               Entertainment Pvt. Ltd headquartered at Gurgaon. Incorporated by the founder 
-              himself, Mr. Deepak Dangi, the company is a part of the PV Group, one of India’s 
+              himself, Mr. Deepak Dangi, the company is a part of the PV Group, one of India's 
               growing business conglomerates.
             </p>
           </div>
 
           {/* Important Links Section */}
-          <div>
+          <div className="text-center">
             <h3 className="text-white font-semibold mb-4">Important Links</h3>
             <ul className="space-y-2">
               <li>
@@ -42,7 +41,7 @@ export default function Footer() {
           </div>
 
           {/* Headquarter Section */}
-          <div>
+          <div className="text-center">
             <h3 className="text-white font-semibold mb-4">Headquarter</h3>
             <ul className="space-y-2 text-sm">
               <li>The Saavi Hotel</li>
@@ -52,9 +51,9 @@ export default function Footer() {
           </div>
 
           {/* Follow Us Section */}
-          <div>
+          <div className="text-center">
             <h3 className="text-white font-semibold mb-4">Follow Us</h3>
-            <div className="flex space-x-4">
+            <div className="flex justify-center space-x-4">
               <a href="#" className="hover:text-white transition-colors">
                 <Facebook className="h-5 w-5" />
               </a>

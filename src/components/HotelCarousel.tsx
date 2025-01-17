@@ -11,6 +11,9 @@ import { Link } from "react-router-dom";
 import { content } from "@/lib/content";
 import { useEffect, useRef } from "react";
 
+
+
+
 export default function HotelCarousel() {
   const carouselRef = useRef<HTMLDivElement>(null);
 
@@ -35,44 +38,46 @@ export default function HotelCarousel() {
         align: "start",
         loop: true,
       }}
-      className="w-full max-w-7xl mx-auto"
+      className=" max-w-8xl h-full mx-auto"
     >
       <CarouselContent>
         {content.hotels.map((hotel) => (
           <CarouselItem
-            key={hotel.id}
-            className="sm:basis-1/2 md:basis-1/3 lg:basis-1/4"
-          >
-            <div className="p-1">
-              <Card className="overflow-hidden group h-96"> {/* Fixed height here */}
-                <CardContent className="p-0">
-                  <div className="relative overflow-hidden"> {/* Add overflow-hidden here */}
-                    <img
-                      src={hotel.image}
-                      alt={hotel.name}
-                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110 transform origin-center" // Ensure the transform starts from the center
-                    />
-                    <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                      <Link to="/booking">
-                        <Button variant="secondary" className="text-lg">
-                          Book Now
-                        </Button>
-                      </Link>
-                    </div>
+          key={hotel.id}
+          className="sm:basis-1/2 h-full md:basis-1/3 lg:basis-1/4"
+        >
+          <div className="p-1">
+            <Card className="overflow-hidden group h-150">
+              <CardContent className="p-0">
+                <div className="relative overflow-hidden">
+                  <img
+                    src={hotel.image}
+                    alt={hotel.name}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110 transform origin-center"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold mb-2">{hotel.name}</h3>
+                  <p className="text-muted-foreground mb-2">{hotel.location}</p>
+                  <p className="text-sm mb-4">{hotel.description}</p>
+                  <div className="flex justify-end">
+                    <Link to="/booking">
+                      <Button className="text-lg bg-red-700 hover:bg-red-800">
+                        Book Now
+                      </Button>
+                    </Link>
                   </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-semibold mb-2">{hotel.name}</h3>
-                    <p className="text-muted-foreground mb-2">{hotel.location}</p>
-                    <p className="text-sm">{hotel.description}</p>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-          </CarouselItem>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious className="carousel-previous" />
-      <CarouselNext className="carousel-next" />
+      <div className="flex justify-center gap-4 mt-10">
+        <CarouselPrevious className="carousel-previous relative bg-red-700 !static" />
+        <CarouselNext className="carousel-next relative bg-red-700 !static" />
+      </div>
     </Carousel>
   );
 }

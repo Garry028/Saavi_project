@@ -10,20 +10,62 @@ import { content } from '@/lib/content';
 import logo from "../../public/assets/saavi_logo.png";
 import { FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 import { useState } from 'react';
+import "@fortawesome/fontawesome-free/css/all.min.css";
+
 
 export default function Navbar() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <header className="z-50 bg-white w-full backdrop-blur-sm shadow-sm">
-      <div className="bg-black text-white p-2 text-sm px-8">
-        <p className="flex items-center gap-3">
-          <FaPhoneAlt className="text-base" /> 7290006412, 7290006494
-          <span className="ml-4 flex items-center gap-2">
-            <FaEnvelope className="text-base" /> sales@saavihotels.com
-          </span>
-        </p>
-      </div>
+     <div className="bg-black text-white p-2 text-sm px-8">
+  <div className="flex items-center justify-between">
+    {/* Contact Info */}
+    <p className="flex items-center gap-3">
+      <FaPhoneAlt className="text-base" /> 7290006412, 7290006494
+      <span className="ml-4 flex items-center gap-2">
+        <FaEnvelope className="text-base" /> sales@saavihotels.com
+      </span>
+    </p>
+
+    {/* Social Media Icons */}
+    <div className="flex items-center gap-8 ml-[-20px] mr-20">
+      <a
+        href="https://www.facebook.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-primary transition-colors text-white"
+      >
+        <i className="fab fa-facebook-f text-base"></i>
+      </a>
+      <a
+        href="https://www.twitter.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-primary transition-colors text-white"
+      >
+        <i className="fab fa-twitter text-base"></i>
+      </a>
+      <a
+        href="https://www.instagram.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-primary transition-colors text-white"
+      >
+        <i className="fab fa-instagram text-base"></i>
+      </a>
+      <a
+        href="https://www.linkedin.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-primary transition-colors text-white"
+      >
+        <i className="fab fa-linkedin-in text-base"></i>
+      </a>
+    </div>
+  </div>
+</div>
+
 
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-6" aria-label="Global">
         <div className="flex lg:flex-1">
@@ -46,11 +88,12 @@ export default function Navbar() {
           </Link>
 
           {/* Our Hotels Dropdown */}
+          {/* Our Hotels Dropdown */}
           <DropdownMenu>
             <DropdownMenuTrigger className="flex items-center gap-1 border-0 text-sm bg-white font-semibold text-black outline-none focus:outline-none hover:border-0">
               Our Hotels <ChevronDown className="h-4 w-4" />
             </DropdownMenuTrigger>
-            <DropdownMenuContent className="absolute right-0 mt-2 w-[800px] grid grid-cols-2 gap-4 p-4 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5">
+            <DropdownMenuContent className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-[800px] grid grid-cols-2 gap-4 p-4 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5">
               {content.hotels.map((hotel) => (
                 <DropdownMenuItem key={hotel.id} className="p-0 focus:bg-transparent">
                   <Link
@@ -71,6 +114,7 @@ export default function Navbar() {
               ))}
             </DropdownMenuContent>
           </DropdownMenu>
+
 
           {/* About Us Dropdown */}
           <DropdownMenu>

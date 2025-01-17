@@ -6,8 +6,7 @@ import Marquee from "react-fast-marquee";
 
 function PerfectGateway() {
   return (
-
-    <div className="w-11/12 mx-auto text-center mt-8">
+    <div className="w-11/12 mx-auto text-center " style={{ backgroundImage: "url('../../public/assets/backgroundImage2.png')" }}>
       <header className="text-left mb-8">
         <h1 className="text-3xl font-bold mb-4 animate-slide-in-left font-serif">Your Perfect Getaway</h1>
         <p className="text-xl text-red-700 font-serif">Experience the Best of Nature and Luxury</p>

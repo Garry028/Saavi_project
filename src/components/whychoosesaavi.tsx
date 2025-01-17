@@ -40,7 +40,7 @@ function WhyChooseSaavi() {
 
       {/* Features Section */}
       <div className="relative pb-12 z-10">
-        <div className="flex flex-wrap justify-center gap-6 sm:gap-4 px-5">
+        <div className="flex flex-wrap justify-center gap-12 sm:gap-16 px-5">
           {features.map((feature, index) => (
             <div
               key={index}

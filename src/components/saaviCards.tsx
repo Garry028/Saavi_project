@@ -39,10 +39,10 @@ const SaaviCards = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center mt-8 px-4 sm:px-6 lg:px-8">
+    <div className="flex flex-col items-center w-full mt-8 ">
       {/* Cards Container */}
       <div
-        className={`flex flex-wrap gap-6 justify-center ${
+        className={`flex flex-wrap gap-20 justify-center ${
           windowWidth < 768 ? "flex-col" : "flex-row"
         }`}
       >

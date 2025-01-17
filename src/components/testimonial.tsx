@@ -66,7 +66,7 @@ const Guest = () => {
     };
 
     return (
-        <div className="w-11/12 mx-auto text-center mt-8">
+        <div className="w-auto mx-auto text-center mt-8">
             {/* Header */}
             <header className="mb-8">
                 <h1 className="text-3xl text-red-700 font-bold font-serif">What Our Guests Say</h1>
@@ -133,7 +133,7 @@ const Guest = () => {
 
             {/* Subscription Section */}
             <div
-                className="relative mt-6 w-full h-60 sm:h-72 md:h-80 lg:h-60¸ border border-gray-300 bg-center bg-cover rounded-lg overflow-hidden"
+                className="relative mt-6 w-full h-20 sm:h-72 md:h-80 lg:h-60 bg-center bg-cover "
                 style={{ backgroundImage: `url(${Background_image})` }}
             >
                 {/* Overlay */}
