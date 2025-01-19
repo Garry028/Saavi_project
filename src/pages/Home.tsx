@@ -139,6 +139,16 @@ export default function Home() {
               />
             </div>
 
+            <div className="flex flex-col w-full sm:w-64 lg:w-32">
+            
+              <input
+                type="text"
+                id="guest"
+                placeholder="No. of guests"
+                className="p-3 border rounded-md text-gray-700 shadow-sm focus:ring-2 focus:ring-primary focus:outline-none bg-white placeholder-gray-700"
+              />
+            </div>
+
             {/* Search Button */}
             <div className="flexflex-col sm:items-end w-full sm:w-auto mt-10 sm:mt-0">
               <button className="text-white transition-colors w-full sm:w-auto">
