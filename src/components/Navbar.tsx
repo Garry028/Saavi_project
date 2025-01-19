@@ -126,8 +126,8 @@ export default function Navbar() {
             </DropdownMenuTrigger>
             <DropdownMenuContent className="w-[250px] p-2">
               {[
-                { name: 'Vision & Mission', href: '/about#vision-mission' },
                 { name: 'Our Company', href: '/about#company' },
+                { name: 'Vision & Mission', href: '/about#vision-mission' },
                 { name: 'Core Values', href: '/about#values' },
                 { name: 'Our Team', href: '/about#team' },
                 { name: 'Why Saavi?', href: '/about#why-saavi' },
@@ -151,6 +151,8 @@ export default function Navbar() {
             Contact Us
           </Link>
 
+          
+
           <Link
             to="/gallery"
             className="text-sm font-semibold text-gray-900 py-2 hover:text-primary transition-colors"
@@ -172,9 +174,9 @@ export default function Navbar() {
             <DropdownMenuContent className="w-[250px] p-2">
               {[
                 { name: 'Contact us', href: '/contact' },
-                { name: 'Join us', href: '' },
-                { name: 'Loyalty Program ', href: '' },
-                { name: 'Banquet & Events', href: '' },
+                { name: 'Careers', href: '/careers' },
+                // { name: 'Loyalty Program ', href: '' },
+                { name: 'Banquet & Events', href: '/banqAndEvents' },
               ].map((item) => (
                 <DropdownMenuItem key={item.name} className="p-0 focus:bg-transparent">
                   <Link

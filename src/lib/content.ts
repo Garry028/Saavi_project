@@ -4,7 +4,13 @@ import foodImage from "../../public/assets/food.png";
 import bonfireImage from "../../public/assets/bonfire.png";
 // import guestAccessImage from "../../public/assets/guestAccess.png";
 import adventureImage from "../../public/assets/advanterus.png";
-
+// import BanqAndEvents from "@/pages/banqAndEvents";
+import bnq1 from "../../public/assets/bnq1.jpeg";
+import bnq2 from "../../public/assets/bnq2.jpeg";
+import bnq3 from "../../public/assets/bnq3.jpeg";
+import bnq4 from "../../public/assets/bnq4.jpeg";
+import bnq5 from "../../public/assets/bnq5.jpeg";
+import bnq6 from "../../public/assets/bnq6.jpeg";
 
 
 export const content = {
@@ -12,10 +18,10 @@ export const content = {
     name: "Saavi",
     description: "Experience luxury and comfort at our world-class hotels and resorts.",
     contact: {
-      address: "123 Luxury Avenue",
-      city: "New York, NY 10001",
-      phone: "+1 (555) 123-4567",
-      email: "info@luxstay.com"
+      address: "The Saavi Hotel 1482, Huda Colony, Sector 46",
+      city: "Gurugram, Haryana 122003",
+      phone: "7290006412, 7290006494",
+      email: "sales@saavihotels.com"
     }
   },
   hotels: [
@@ -161,5 +167,75 @@ export const content = {
     { name: 'Promotions', href: '/promotions' },
     { name: 'Career', href: '/career' },
     { name: 'Contact Us', href: '/contact' }
-  ]
+  ],
+  banqAndEvents: {
+
+    description1: "Our Banquet hall has a video conferencing facility at Saavi hotels, Gurgram. It has a lavish decor and provides a traditional touch with an opulent environment that is ideal for hosting any form of event.",
+    description2: "Host events like receptions, parties, or even business meetings in this elegant hall that comes well-equipped with a projector , A/C, Wi-Fi, and audiovisual system.",
+    description3: "Book your stay at one of the best Gurugram hotel near Golf course road during your grand event at our state of the art event venue.",
+    images: [
+      {
+        url: bnq1,
+        title: "Luxury Suite"
+      },
+      {
+        url: bnq2,
+        title: "Swimming Pool"
+      },
+      {
+        url: bnq3,
+        title: "Hotel Exterior"
+      },
+      {
+        url: bnq4,
+        title: "Restaurant"
+      },
+      {
+        url: bnq5,
+        title: "Spa"
+      },
+      {
+        url: bnq6,
+        title: "Hotel Room"
+      },
+    ]
+  },
+  team: [
+    {
+      name: 'Deepak Dangi',
+      role: 'Founder & CEO',
+      description: 'Mr. Deepak Dangi completed his education in IT (B.Sc IT) and Post Graduation in Management (MBA). With 12 years of industry experience, he founded Saavi Events and Entertainment in 2019, which now operates over five hotels in India.',
+      imageSrc: 'https://via.placeholder.com/150',
+    },
+    {
+      name: 'Vijay B. Aggarwal',
+      role: 'Managing Director',
+      description: 'Dr. Vijay B. Aggarwal is a pioneer in computer science education in India, with a Ph.D. from the University of Illinois and over 40 years of experience. He has been leading IT education programs and managing large teams.',
+      imageSrc: 'https://via.placeholder.com/150',
+    },
+    {
+      name: 'Manasvi Dutta',
+      role: 'Co-Founder',
+      description: 'With 10 years of experience in event management and a strong academic background, Manasvi Dutta is a proven leader with expertise in art, decor, and comprehensive training for high standards in service delivery.',
+      imageSrc: 'https://via.placeholder.com/150',
+    },
+    {
+      name: 'Deepak Redhu',
+      role: 'Account Head',
+      description: 'With a decade of experience in finance, Mr. Redhu ensures cash flow management and oversees fundraising plans. He has previously worked with IndusInd Bank and L&T Finance.',
+      imageSrc: 'https://via.placeholder.com/150',
+    },
+    {
+      name: 'Saurav Singh',
+      role: 'Sales Head',
+      description: 'A hotel management graduate with 20+ years of experience, Saurav Singh specializes in budgeting, marketing, and leadership, driving revenue growth for Saavi Hotels.',
+      imageSrc: 'https://via.placeholder.com/150',
+    },
+    {
+      name: 'Shipra Singh',
+      role: 'Operations Manager',
+      description: 'With over 10 years of experience, Shipra Singh ensures top-tier hospitality and operational excellence, grooming talent and delivering outstanding results for Saavi Hotels.',
+      imageSrc: 'https://via.placeholder.com/150',
+    },
+  ],
 };

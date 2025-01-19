@@ -9,8 +9,9 @@ import Booking from '@/pages/Booking';
 import Events from '@/pages/Events';
 import Gallery from '@/pages/Gallery';
 import Promotions from '@/pages/Promotions';
-import Career from '@/pages/Career';
+import Career from '@/pages/careers'
 import Contact from '@/pages/Contact';
+import BanqAndEvents from '@/pages/banqAndEvents';
 
 function App() {
   return (
@@ -27,8 +28,9 @@ function App() {
             <Route path="/events" element={<Events />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/promotions" element={<Promotions />} />
-            <Route path="/career" element={<Career />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/banqAndEvents" element={<BanqAndEvents />} />
+            <Route path="/careers" element={<Career />} />
           </Routes>
         </main>
         <Footer />
