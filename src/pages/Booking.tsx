@@ -5,7 +5,7 @@ import { content } from "@/lib/content";
 
 export default function Booking() {
   return (
-    <div className="pt-24">
+    <div className="pt-24 mb-10">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-bold text-center mb-8">Book Your Stay</h1>
         
