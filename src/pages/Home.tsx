@@ -17,6 +17,12 @@ import SaaviCards from "@/components/saaviCards";
 import homeImage1 from "../../public/assets/homeImage1.png";
 import homeImage2 from "../../public/assets/homeImage2.png";
 import homeImage3 from "../../public/assets/HomeImage3.png";
+
+import "react-datepicker/dist/react-datepicker.css";
+
+
+import HomeForm from "@/components/homeForm";
+
 // import SearchFrom from "@/components/searchform";
 
 
@@ -75,6 +81,7 @@ export default function Home() {
   const [currentImage, setCurrentImage] = useState(homeImage1);
   const imageArray = [homeImage1, homeImage2, homeImage3];
 
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((prevImage) => {
@@ -95,80 +102,32 @@ export default function Home() {
   return (
     <div className="">
       {/* Hero Section */}
-      <section className="relative h-[90vh] flex items-center">
+      <section className="relative h-[90vh] flex items-center justify-center">
         <div className="absolute inset-0">
           <img
             src={currentImage}
             alt="Luxury Hotel"
             className="w-full h-full object-cover"
           />
-          {/* <div className="absolute inset-0 bg-black/40" /> */}
         </div>
-       
-        <div className="relative max-w-7xl mx-auto px-4 lg:px-8 text-center text-white ">
-        <div className="mt-80 hidden sm:flex sm:flex-row justify-between items-center space-y-6 sm:space-x-4 sm:space-y-0 bg-opacity-0 p-8 rounded-lg">
-        {/* Where to go */}
-            <div className="flex flex-col w-full sm:w-64">
 
-              <input
-                type="text"
-                id="destination"
-                placeholder="Enter destination"
-                className="p-3 border rounded-md text-gray-700 shadow-sm focus:ring-2 focus:ring-primary focus:outline-none bg-white placeholder-gray-700"
-              />
-            </div>
+        <div className="relative z-10 w-full mt-10 max-w-7xl mx-auto px-4 lg:px-8 flex flex-col items-center">
+        <div className="hidden md:block">
+        <HomeForm />
+      </div>
 
-            {/* Arrival Date */}
-            <div className="flex flex-col w-full sm:w-64">
-              <input
-                type="text"
-                id="arrival-date"
-                placeholder="Checking in"
-                className="p-3 border rounded-md text-gray-700 shadow-sm focus:ring-2 focus:ring-primary focus:outline-none bg-white placeholder-gray-700"
-              />
-            </div>
-
-            {/* Departure Date */}
-            <div className="flex flex-col w-full sm:w-64">
-            
-              <input
-                type="text"
-                id="departure-date"
-                placeholder="Checking out"
-                className="p-3 border rounded-md text-gray-700 shadow-sm focus:ring-2 focus:ring-primary focus:outline-none bg-white placeholder-gray-700"
-              />
-            </div>
-
-            <div className="flex flex-col w-full sm:w-64 lg:w-32">
-            
-              <input
-                type="text"
-                id="guest"
-                placeholder="No. of guests"
-                className="p-3 border rounded-md text-gray-700 shadow-sm focus:ring-2 focus:ring-primary focus:outline-none bg-white placeholder-gray-700"
-              />
-            </div>
-
-            {/* Search Button */}
-            <div className="flexflex-col sm:items-end w-full sm:w-auto mt-10 sm:mt-0">
-              <button className="text-white transition-colors w-full sm:w-auto">
-                Search
-              </button>
-            </div>
-          </div>
-          <Link to="/booking">
-            <Button size="lg" className="animate-fade-up animate-delay-400 transform hover:scale-105 mt-4 sm:mt-0">
+          <Link to="/booking" className="mt-6">
+            <Button size="lg" className="animate-fade-up animate-delay-400 transform hover:scale-105">
               Book Your Stay Now
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </Link>
-         
         </div>
-        
       </section>
 
 
-
+      {/* Hide HomeForm on mobile screens */}
+     
 
 
       {/* Featured Hotels */}

@@ -1,54 +1,118 @@
-export default function Gallery() {
-  const images = [
-    {
-      url: "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=800",
-      title: "Luxury Suite"
-    },
-    {
-      url: "https://images.unsplash.com/photo-1582719508461-905c673771fd?q=80&w=800",
-      title: "Swimming Pool"
-    },
-    {
-      url: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=800",
-      title: "Hotel Exterior"
-    },
-    {
-      url: "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?q=80&w=800",
-      title: "Restaurant"
-    },
-    {
-      url: "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?q=80&w=800",
-      title: "Spa"
-    },
-    {
-      url: "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?q=80&w=800",
-      title: "Hotel Room"
-    }
+import { useState, useEffect } from "react";
+import GalleryItem from "../components/galleryItem";
+
+const Gallery = () => {
+  const [selectedFolder, setSelectedFolder] = useState<string | null>(null);
+
+  const components = [
+    { id: 0, text: "ALL", folder: "ALL", imageCount: 0 }, // "ALL" component
+    { id: 1, text: "Saavi Hotel Sector 43", folder: "Saavi Hotel Sector 43_output", imageCount: 24 },
+    { id: 2, text: "Saavi Hotel Sector 45", folder: "Saavi Hotel Sector 45_output", imageCount: 33 },
+    { id: 3, text: "Saavi Hotel Sector 46", folder: "Saavi Hotel Sector 46_output", imageCount: 34 },
+    { id: 4, text: "Basai Road Sector 10", folder: "BASAI ROAD SECTOR 10_output", imageCount: 6 },
+    { id: 5, text: "Saavi Hotel Jibhi", folder: "Saavi Hotel - Jibhi_output", imageCount: 50 },
   ];
 
+  // Set default folder to "ALL" when the component mounts
+  useEffect(() => {
+    if (!selectedFolder) {
+      setSelectedFolder("ALL");
+    }
+  }, [selectedFolder]);
+
+  const handleComponentClick = (folder: string) => {
+    setSelectedFolder(folder);
+  };
+
+  const getImageCount = (folder: string | null) => {
+    if (!folder) return 0;
+    const component = components.find((item) => item.folder === folder);
+    return component ? component.imageCount : 0;
+  };
+
+  const renderAllImages = () => {
+    return components.map((component) => {
+      if (component.folder !== "ALL") {
+        return Array.from({ length: getImageCount(component.folder) }).map((_, index) => (
+          <div
+            key={`${component.folder}-image-${index}`}
+            style={{
+              overflow: "hidden", // Ensures zoom effect doesn't overflow the container
+              borderRadius: "5px",
+            }}
+          >
+            <img
+              src={`../../public/hotels/${component.folder}/image${index + 1}.jpeg`}
+              alt={`Image ${index + 1}`}
+              style={{
+                width: "300px",
+                height: "300px",
+                objectFit: "cover",
+                transition: "transform 0.3s ease", // Smooth transition
+              }}
+              onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.1)")} // Zoom in
+              onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")} // Reset zoom
+            />
+          </div>
+        ));
+      }
+      return null;
+    });
+  };
+
   return (
-    <div className="pt-24 mb-10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl font-bold text-center mb-16">Our Gallery</h1>
-        
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {images.map((image, index) => (
-            <div
-              key={index}
-              className="group relative overflow-hidden rounded-lg shadow-md aspect-[4/3]"
-            >
-              <img
-                src={image.url}
-                alt={image.title}
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                <p className="text-white p-4 font-semibold">{image.title}</p>
+    <div style={{ textAlign: "center", padding: "20px" }}>
+      <h1 className="text-4xl font-bold text-red-700 text-center mb-16">OUR GALLERY</h1>
+      <div
+        style={{
+          display: "flex",
+          gap: "15px",
+          flexWrap: "wrap",
+          justifyContent: "center",
+          marginBottom: "30px",
+        }}
+      >
+        {components.map((component) => (
+          <GalleryItem
+            key={component.id}
+            text={component.text}
+            onClick={() => handleComponentClick(component.folder)}
+            isSelected={selectedFolder === component.folder}
+          />
+        ))}
+      </div>
+
+      {/* Render all images if "ALL" is selected */}
+      <div>
+        <div style={{ display: "flex", flexWrap: "wrap", gap: "10px", justifyContent: "center" }}>
+          {selectedFolder === "ALL" ? renderAllImages() : (
+            Array.from({ length: getImageCount(selectedFolder) }).map((_, index) => (
+              <div
+                key={index}
+                style={{
+                  overflow: "hidden", // Ensures zoom effect doesn't overflow the container
+                  borderRadius: "5px",
+                }}
+              >
+                <img
+                  src={`../../public/hotels/${selectedFolder}/image${index + 1}.jpeg`}
+                  alt={`Image ${index + 1}`}
+                  style={{
+                    width: "300px",
+                    height: "300px",
+                    objectFit: "cover",
+                    transition: "transform 0.3s ease", // Smooth transition
+                  }}
+                  onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.1)")} // Zoom in
+                  onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")} // Reset zoom
+                />
               </div>
-            </div>
-          ))}
+            ))
+          )}
         </div>
       </div>
     </div>
   );
-}
+};
+
+export default Gallery;

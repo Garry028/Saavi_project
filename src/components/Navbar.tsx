@@ -18,7 +18,7 @@ export default function Navbar() {
 
   return (
     <header className="z-50 bg-white w-full backdrop-blur-sm shadow-sm">
-    <div className="bg-black text-white p-2 text-sm px-4 sm:px-8">
+    <div className="bg-red-900 text-white p-2 text-sm px-4 sm:px-8">
   <div className="flex flex-wrap items-center justify-between gap-y-4 sm:gap-y-0">
     {/* Contact Info */}
     <p className="flex flex-wrap items-center gap-3 text-xs sm:text-sm">
@@ -81,11 +81,11 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden lg:flex items-center justify-between gap-6">
+        <div className="hidden lg:flex items-center justify-between gap-4">
           {/* Home Button */}
           <Link
             to="/"
-            className="text-sm font-semibold text-gray-900 py-2 hover:text-primary transition-colors"
+            className="text-sm font-semibold text-gray-900 py-2 pr-4 hover:text-primary transition-colors"
           >
             Home
           </Link>
@@ -145,26 +145,24 @@ export default function Navbar() {
           </DropdownMenu>
 
           <Link
-            to="/contact"
-            className="text-sm font-semibold text-gray-900 py-2 hover:text-primary transition-colors"
-          >
-            Contact Us
-          </Link>
-
-          
-
-          <Link
             to="/gallery"
-            className="text-sm font-semibold text-gray-900 py-2 hover:text-primary transition-colors"
+            className="text-sm font-semibold text-gray-900 py-2 pl-4 pr-6 hover:text-primary transition-colors"
           >
             Gallery
           </Link>
 
           <Link
             to="/promotions"
-            className="text-sm font-semibold text-gray-900 py-2 hover:text-primary transition-colors"
+            className="text-sm font-semibold text-gray-900 py-2 pl-4 pr-6 hover:text-primary transition-colors"
           >
             Promotions
+          </Link>
+
+          <Link
+            to="/contact"
+            className="text-sm font-semibold text-gray-900 py-2 pl-4 pr-6 hover:text-primary transition-colors"
+          >
+            Contact Us
           </Link>
 
           <DropdownMenu>
@@ -173,7 +171,7 @@ export default function Navbar() {
             </DropdownMenuTrigger>
             <DropdownMenuContent className="w-[250px] p-2">
               {[
-                { name: 'Contact us', href: '/contact' },
+                // { name: 'Contact us', href: '/contact' },
                 { name: 'Careers', href: '/careers' },
                 // { name: 'Loyalty Program ', href: '' },
                 { name: 'Banquet & Events', href: '/banqAndEvents' },
@@ -213,34 +211,6 @@ export default function Navbar() {
               Home
             </Link>
 
-            <Link
-              to="/about"
-              className="text-sm font-semibold text-gray-900 py-2 hover:text-primary transition-colors"
-            >
-              About Us
-            </Link>
-
-            <Link
-              to="/contact"
-              className="text-sm font-semibold text-gray-900 py-2 hover:text-primary transition-colors"
-            >
-              Contact Us
-            </Link>
-
-            <Link
-              to="/gallery"
-              className="text-sm font-semibold text-gray-900 py-2 hover:text-primary transition-colors"
-            >
-              Gallery
-            </Link>
-
-            <Link
-              to="/promotions"
-              className="text-sm font-semibold text-gray-900 py-2 hover:text-primary transition-colors"
-            >
-              Promotions
-            </Link>
-
             <DropdownMenu>
               <DropdownMenuTrigger className="flex items-center gap-1 border-0 text-sm bg-white font-semibold text-black outline-none focus:outline-none hover:border-0">
                 Our Hotels <ChevronDown className="h-4 w-4" />
@@ -261,14 +231,62 @@ export default function Navbar() {
 
             <DropdownMenu>
               <DropdownMenuTrigger className="flex items-center gap-1 border-0 text-sm bg-white font-semibold text-black outline-none focus:outline-none hover:border-0">
+                About Us <ChevronDown className="h-4 w-4" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="w-full p-2">
+                {[
+                  { name: 'Our Company', href: '/about#company' },
+                  { name: 'Vision & Mission', href: '/about#vision-mission' },
+                  { name: 'Core Values', href: '/about#values' },
+                  { name: 'Our Team', href: '/about#team' },
+                  { name: 'Why Saavi?', href: '/about#why-saavi' },
+                ].map((item) => (
+                  <DropdownMenuItem key={item.name} className="p-0 focus:bg-transparent">
+                    <Link
+                      to={item.href}
+                      className="w-full p-2 hover:text-primary transition-colors"
+                    >
+                      {item.name}
+                    </Link>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
+
+           
+
+            <Link
+              to="/gallery"
+              className="text-sm font-semibold text-gray-900 py-2 hover:text-primary transition-colors"
+            >
+              Gallery
+            </Link>
+
+            <Link
+              to="/promotions"
+              className="text-sm font-semibold text-gray-900 py-2 hover:text-primary transition-colors"
+            >
+              Promotions
+            </Link>
+            
+            <Link
+              to="/contact"
+              className="text-sm font-semibold text-gray-900 py-2 hover:text-primary transition-colors"
+            >
+              Contact Us
+            </Link>
+            
+
+            <DropdownMenu>
+              <DropdownMenuTrigger className="flex items-center gap-1 border-0 text-sm bg-white font-semibold text-black outline-none focus:outline-none hover:border-0">
                 <Menu className="h-6 w-6" />
               </DropdownMenuTrigger>
               <DropdownMenuContent className="w-[250px] p-2">
                 {[
-                  { name: 'Contact us', href: '/contact' },
-                  { name: 'Join us', href: '' },
-                  { name: 'Loyalty Program ', href: '' },
-                  { name: 'Banquet & Events', href: '' },
+                  // { name: 'Contact us', href: '/contact' },
+                  { name: 'Careers', href: '/careers' },
+                  // { name: 'Loyalty Program ', href: '' },
+                  { name: 'Banquet & Events', href: '/banqAndEvents' },
                 ].map((item) => (
                   <DropdownMenuItem key={item.name} className="p-0 focus:bg-transparent">
                     <Link
