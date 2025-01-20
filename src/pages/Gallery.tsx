@@ -95,7 +95,7 @@ const Gallery = () => {
                 }}
               >
                 <img
-                  src={`../../public/hotels/${selectedFolder}/image${index + 1}.jpeg`}
+                  src={`../../hotels/${selectedFolder}/image${index + 1}.jpeg`}
                   alt={`Image ${index + 1}`}
                   style={{
                     width: "300px",
