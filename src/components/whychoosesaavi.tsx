@@ -3,8 +3,13 @@ import Card1 from "../../public/assets/whyChooseSaaviCard1.png";
 import Card2 from "../../public/assets/whyChooseSaaviCard2.png";
 import Card3 from "../../public/assets/whyChooseSaaviCard3.png";
 import background_Image from "../../public/assets/whyChooseSaaviBackground.png";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
 function WhyChooseSaavi() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, amount: 0.2 });
+
   const features = [
     {
       title: "Personalized Service",
@@ -26,44 +31,106 @@ function WhyChooseSaavi() {
     },
   ];
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.3,
+      },
+    },
+  };
+
+  const cardVariants = {
+    hidden: { 
+      opacity: 0, 
+      y: 50,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "spring",
+        bounce: 0.4,
+        duration: 0.8,
+      },
+    },
+    hover: {
+      y: -12,
+      scale: 1.03,
+      transition: {
+        type: "spring",
+        bounce: 0.4,
+      },
+    },
+  };
+
   return (
-    <div className="relative text-center text-black mt-6">
+    <div className="relative text-center text-black mt-6" ref={ref}>
       {/* Header Section */}
-      <header>
+      <motion.header
+        initial={{ opacity: 0, y: -20 }}
+        animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}
+        transition={{ duration: 0.6 }}
+      >
         <h1 className="text-3xl sm:text-4xl font-serif font-bold mb-2">
           Why Choose Saavi?
         </h1>
-        <p className="text-base sm:text-lg font-serif text-red-700">
+        <p className="text-base sm:text-lg mb-20 font-serif text-red-700">
           Luxurious accommodations, world-class service, and prime locations.
         </p>
-      </header>
+      </motion.header>
 
       {/* Features Section */}
       <div className="relative pb-12 z-10">
-        <div className="flex flex-wrap justify-center gap-12 sm:gap-16 px-5">
+        <motion.div 
+          className="flex flex-wrap justify-center gap-12 sm:gap-16 px-5"
+          variants={containerVariants}
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+        >
           {features.map((feature, index) => (
-            <div
+            <motion.div
               key={index}
-              className="bg-white border-2 border-gray-200 rounded-lg shadow-[0px_-10px_0px_rgba(157,13,13,1)] w-full sm:w-1/3 lg:w-1/4 p-5 text-center transition-transform duration-300 transform hover:-translate-y-2 hover:shadow-lg mt-4"
+              className="bg-white border-2 border-gray-200 rounded-lg shadow-[0px_-10px_0px_rgba(157,13,13,1)] w-full sm:w-1/3 lg:w-1/4 p-5 text-center"
+              variants={cardVariants}
+              whileHover="hover"
+              whileTap={{ scale: 0.98 }}
             >
-              <img
+              <motion.img
                 src={feature.imgSrc}
                 alt={feature.title}
                 className="w-full rounded-lg mb-4"
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.2 }}
               />
               <h2 className="text-red-700 text-lg font-semibold mb-2">
                 {feature.title}
               </h2>
               <p className="text-gray-600 text-sm">{feature.description}</p>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
 
         {/* Background Image */}
-        <div
+        <motion.div
           className="absolute bottom-0 left-0 w-full h-48 bg-center bg-cover -z-10"
           style={{ backgroundImage: `url(${background_Image})` }}
-        ></div>
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { 
+            opacity: [0, 0.3, 1],
+            y: [20, 0],
+          } : { opacity: 0, y: 20 }}
+          transition={{ 
+            duration: 1.2,
+            times: [0, 0.5, 1],
+            ease: "easeOut",
+          }}
+          whileInView={{
+            backgroundPosition: ["50% 50%", "50% 40%"],
+          }}
+          viewport={{ once: true }}
+        />
       </div>
     </div>
   );

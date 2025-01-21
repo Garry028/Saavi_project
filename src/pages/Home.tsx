@@ -1,9 +1,8 @@
-
 import HotelCarousel from "@/components/HotelCarousel";
 import { ArrowRight } from "lucide-react";
 import { content } from "@/lib/content";
 import { images } from "../../public/assets/export";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { useInView } from 'react-intersection-observer'; // Import Intersection Observer hook
 import WhyChooseSaavi from "@/components/whychoosesaavi";
 import PerfectGateway from "@/components/perfectgateway";
@@ -18,237 +17,593 @@ import homeImage3 from "../../public/assets/HomeImage3.png";
 
 import "react-datepicker/dist/react-datepicker.css";
 
-
 import HomeForm from "@/components/homeForm";
 
 // import SearchFrom from "@/components/searchform";
 
+import { motion, AnimatePresence, useScroll, useTransform, cubicBezier } from "framer-motion";
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 function Facilities({ }) {
+  const targetRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: targetRef,
+    offset: ["start start", "end end"]
+  });
+
+  const x = useTransform(
+    scrollYProgress,
+    [0, 1],
+    ["0%", `-${(content.facilities.length - 3) * 33.33}%`]
+  );
+
+  // Transform values for scroll-based animations
+  const rotate = useTransform(scrollYProgress, [0, 1], [0, 360]);
+  const scale = useTransform(scrollYProgress, [0, 0.5, 1], [1, 1.2, 1]);
+  const y = useTransform(scrollYProgress, [0, 1], [0, -100]);
+
   return (
-    <section className="py-20">
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 className="text-3xl font-bold text-center font-serif text-red-700 mb-12">
-        Our Facilities
-      </h2>
-  
-      {/* Responsive Grid for Flip Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-  
-        {/* Render all facilities */}
-        {content.facilities.map((facility, index) => (
-          <div
-            key={index}
-            className="group h-96 w-full [perspective:1000px] mx-auto"
+    <motion.section 
+      ref={targetRef}
+      className="relative h-[300vh]"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+    >
+      <div className="sticky top-0 h-screen overflow-hidden bg-gradient-to-b from-white via-red-50/30 to-white">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-[0.05] pointer-events-none">
+          <div className="absolute inset-0" style={{ 
+            backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23991b1b\' fill-opacity=\'0.4\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
+            backgroundSize: '40px 40px'
+          }} />
+        </div>
+
+        {/* Decorative Elements */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          {/* Large floating circles */}
+          <motion.div
+            className="absolute top-20 left-[10%] w-32 h-32 rounded-full bg-gradient-to-br from-red-200/40 to-red-100/40 backdrop-blur-sm"
+            animate={{
+              y: [0, -20, 0],
+              scale: [1, 1.1, 1],
+            }}
+            style={{ rotate }}
+            transition={{
+              duration: 4,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }}
+          />
+          <motion.div
+            className="absolute top-40 right-[15%] w-24 h-24 rounded-full bg-gradient-to-tr from-red-300/30 to-red-200/30 backdrop-blur-sm"
+            animate={{
+              y: [0, 20, 0],
+              scale: [1, 1.2, 1],
+            }}
+            transition={{
+              duration: 3,
+              repeat: Infinity,
+              ease: "easeInOut",
+              delay: 1
+            }}
+          />
+
+          {/* Scroll-responsive elements */}
+          <motion.div 
+            className="absolute top-1/4 left-[5%] w-40 h-40"
+            style={{ y, rotate }}
           >
-            <div className="relative h-full w-full rounded-lg shadow-md transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-              {/* Front Face */}
-              <div className="absolute inset-0 h-full w-full rounded-lg [backface-visibility:hidden]">
+            <div className="w-full h-full border-3 border-red-300/40 rounded-full shadow-lg" />
+            <div className="absolute inset-4 border-3 border-red-400/30 rounded-full shadow-lg" />
+          </motion.div>
+
+          <motion.div
+            className="absolute top-1/3 right-[8%] w-48 h-48"
+            style={{ scale }}
+          >
+            <div className="relative w-full h-full">
+              {[...Array(3)].map((_, i) => (
+                <motion.div
+                  key={i}
+                  className="absolute inset-0 border-3 border-red-300/30 rounded-lg shadow-lg backdrop-blur-sm"
+                  animate={{
+                    rotate: [0, 90],
+                    scale: [1, 1.2, 1],
+                  }}
+                  transition={{
+                    duration: 8,
+                    repeat: Infinity,
+                    delay: i * 0.5,
+                    ease: "linear"
+                  }}
+                />
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Floating dots */}
+          {[...Array(25)].map((_, i) => (
+            <motion.div
+              key={i}
+              className="absolute w-2 h-2 bg-gradient-to-r from-red-400/40 to-red-300/40 rounded-full shadow-lg"
+              style={{
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+              }}
+              animate={{
+                y: [0, -30, 0],
+                opacity: [0.3, 0.6, 0.3],
+              }}
+              transition={{
+                duration: 3 + Math.random() * 2,
+                repeat: Infinity,
+                delay: Math.random() * 2,
+              }}
+            />
+          ))}
+        </div>
+
+        <motion.h2 
+          className="relative text-3xl font-bold text-center font-serif text-red-700 pt-12 mb-8"
+          initial={{ opacity: 0, y: -40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+        >
+          Our Facilities
+        </motion.h2>
+
+        <motion.div 
+          className="flex gap-16 px-[10vw]"
+          style={{ x }}
+        >
+          {content.facilities.map((facility, index) => (
+            <motion.div
+              key={index}
+              className="w-[35vw] flex-shrink-0 group"
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ 
+                delay: index * 0.1,
+                duration: 0.5,
+                ease: "easeOut"
+              }}
+            >
+              <div className="relative h-[65vh] rounded-xl shadow-xl overflow-hidden">
                 <img
                   src={facility.image}
                   alt={facility.title}
-                  className="object-cover h-full w-full rounded-lg"
+                  className="w-full h-full object-cover"
                 />
-                <p className="absolute bottom-4 left-4 text-xl text-white bg-red-700 px-2 py-1 rounded-md">
-                  {facility.title}
-                </p>
-              </div>
-              {/* Back Face */}
-              <div className="absolute inset-0 h-full w-full rounded-lg bg-black/80 px-8 text-center text-white [transform:rotateY(180deg)] [backface-visibility:hidden]">
-                <div className="flex min-h-full flex-col items-center justify-center">
-                  <h3 className="text-xl font-bold mb-4">{facility.title}</h3>
-                  <p className="text-sm mb-4">{facility.description}</p>
-                  <button className="bg-red-700 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full">
-                    Learn More
-                  </button>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                  <h3 className="text-2xl font-bold mb-2">{facility.title}</h3>
+                  <p className="text-sm transform transition-all duration-300 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0">
+                    {facility.description}
+                  </p>
                 </div>
               </div>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  </section>
-  
+            </motion.div>
+          ))}
+        </motion.div>
 
+        <motion.div 
+          className="absolute bottom-8 left-[15vw] right-[15vw] h-1 bg-red-700 rounded-full"
+          style={{ scaleX: scrollYProgress }}
+        />
+      </div>
+    </motion.section>
   );
 }
 
+function OurStory() {
+  const storyRef = useRef<HTMLElement>(null);
+  const { ref: inViewRef } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+
+  // Merge refs
+  useEffect(() => {
+    if (storyRef.current) {
+      inViewRef(storyRef.current);
+    }
+  }, [inViewRef]);
+
+  const { scrollYProgress } = useScroll({
+    target: storyRef,
+    offset: ["start end", "end start"]
+  });
+
+  // Parallax effect for background
+  const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
+  const contentY = useTransform(scrollYProgress, [0, 1], ["0%", "-10%"]);
+
+  return (
+    <motion.section
+      ref={storyRef}
+      className="py-32 relative overflow-hidden bg-white"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+    >
+      {/* Background Elements Layer */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        {/* Blurred background */}
+        <motion.div 
+          className="absolute inset-0 opacity-10"
+          style={{ y: backgroundY }}
+        >
+          <motion.div
+            className="absolute inset-0"
+            initial={{ scale: 1.1 }}
+            animate={{ scale: 1 }}
+            transition={{ duration: 1.5 }}
+            style={{
+              backgroundImage: `url(${images.Image_3})`,
+              backgroundPosition: "center",
+              backgroundSize: "cover",
+              filter: "blur(10px)"
+            }}
+          />
+        </motion.div>
+
+        {/* Floating circles */}
+        {[...Array(5)].map((_, i) => (
+          <motion.div
+            key={i}
+            className="absolute w-64 h-64 border border-red-200/20 rounded-full -z-10"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+            }}
+            animate={{
+              scale: [1, 1.2, 1],
+              rotate: [0, 360],
+              opacity: [0.1, 0.2, 0.1],
+            }}
+            transition={{
+              duration: 10 + Math.random() * 10,
+              repeat: Infinity,
+              ease: "linear",
+            }}
+          />
+        ))}
+      </div>
+
+      {/* Content Layer */}
+      <motion.div 
+        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10"
+        style={{ y: contentY }}
+      >
+        <div className="grid md:grid-cols-2 gap-16 items-center">
+          <div className="flex flex-col justify-center text-left">
+            {/* <motion.div
+              initial={{ width: 0 }}
+              whileInView={{ width: "40%" }}
+              transition={{ duration: 1, ease: "easeOut" }}
+              className="h-1 bg-red-700 mb-8"
+            /> */}
+            
+            <motion.h2 
+              className="text-4xl font-serif font-bold mb-4"
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              Our Story
+            </motion.h2>
+            
+            {/* Rest of the content */}
+            <motion.h3 className="text-2xl font-serif font-semibold text-red-700 mb-8">
+              A Legacy of Luxury
+            </motion.h3>
+
+            {/* Update text content with establishment year in the first paragraph */}
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              variants={{
+                visible: {
+                  transition: { staggerChildren: 0.2 }
+                }
+              }}
+            >
+              {[
+                { text: "<span class='font-bold text-red-700'>SAAVI HOTELS</span>, established in 2019, has been redefining the hospitality industry with luxury and comfort." },
+                { text: "Our journey began with a vision to create world-class accommodations that cater to the diverse needs of our guests." },
+                { text: "We pride ourselves on offering exceptional hospitality, from the moment you step into our lobby to the time you check out." }
+              ].map((paragraph, index) => (
+                <motion.p
+                  key={index}
+                  variants={{
+                    hidden: { opacity: 0, y: 20 },
+                    visible: { opacity: 1, y: 0 }
+                  }}
+                  className="text-base text-gray-600 mb-6 leading-relaxed"
+                  dangerouslySetInnerHTML={{ __html: paragraph.text }}
+                />
+              ))}
+            </motion.div>
+
+            {/* Enhanced button */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ delay: 0.8 }}
+            >
+              <motion.button 
+                className="flex items-center bg-red-700 text-white px-6 py-3 rounded-lg group relative overflow-hidden"
+                whileHover="hover"
+              >
+                <motion.span
+                  className="relative z-10 flex items-center"
+                  variants={{
+                    hover: {
+                      x: [0, 5]
+                    }
+                  }}
+                >
+                  Learn More
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </motion.span>
+                <motion.div
+                  className="absolute inset-0 bg-red-800"
+                  variants={{
+                    hover: {
+                      x: ["100%", "0%"]
+                    }
+                  }}
+                  transition={{ duration: 0.3 }}
+                />
+              </motion.button>
+            </motion.div>
+          </div>
+
+          {/* Enhanced image section */}
+          <div className="relative">
+            <motion.div
+              className="relative"
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+            >
+              {/* Background decorative elements */}
+              <div className="absolute -inset-8 -z-10">
+                <motion.div
+                  className="absolute -right-12 -top-12 w-64 h-64 border-2 border-red-300/40"
+                  animate={{ rotate: 360 }}
+                  transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
+                />
+                <motion.div
+                  className="absolute -left-8 -bottom-8 w-48 h-48 border-2 border-red-400/30 rounded-full"
+                  animate={{ 
+                    scale: [1, 1.1, 1],
+                    rotate: [0, -360]
+                  }}
+                  transition={{ 
+                    duration: 20, 
+                    repeat: Infinity,
+                    ease: "linear"
+                  }}
+                />
+              </div>
+
+              {/* Main image with diagonal accents */}
+              <div className="relative p-4">
+                <motion.div
+                  className="relative rounded-lg overflow-hidden shadow-2xl"
+                  whileHover={{ scale: 1.02 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <img
+                    src={images.Image_3}
+                    alt="Our Story"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent" />
+                </motion.div>
+
+                {/* Enhanced corner accents */}
+                <div className="absolute -top-2 -right-2 w-16 h-16 border-t-4 border-r-4 border-red-700/30" />
+                <div className="absolute -bottom-2 -left-2 w-16 h-16 border-b-4 border-l-4 border-red-700/30" />
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </motion.div>
+    </motion.section>
+  );
+}
 
 export default function Home() {
   const [currentImage, setCurrentImage] = useState(homeImage1);
+  const [previousImage, setPreviousImage] = useState(homeImage1);
   const imageArray = [homeImage1, homeImage2, homeImage3];
-
 
   useEffect(() => {
     const interval = setInterval(() => {
+      setPreviousImage(currentImage);
       setCurrentImage((prevImage) => {
         const currentIndex = imageArray.indexOf(prevImage);
         const nextIndex = (currentIndex + 1) % imageArray.length;
         return imageArray[nextIndex];
       });
-    }, 3000);
+    }, 5000); // Slightly longer duration for more comfortable viewing
 
     return () => clearInterval(interval);
-  }, []);
+  }, [currentImage]);
 
-  const { ref: storyRef, inView: storyInView } = useInView({
-    triggerOnce: true,
-    threshold: 0.2,
-  });
+  // Smooth animation variants
+  const imageVariants = {
+    enter: {
+      opacity: 0,
+      scale: 1.05,
+    },
+    center: {
+      zIndex: 1,
+      opacity: 1,
+      scale: 1,
+    },
+    exit: {
+      zIndex: 0,
+      opacity: 0,
+      scale: 1.02,
+    },
+  };
 
   return (
-    <div className="">
-      {/* Hero Section */}
-      <section className="relative h-[90vh] flex items-center justify-center">
-        <div className="absolute inset-0">
-          <img
-            src={currentImage}
-            alt="Luxury Hotel"
-            className="w-full h-full object-cover"
-          />
-        </div>
-
-        <div className="relative z-10 w-full mt-10 max-w-7xl mx-auto px-4 lg:px-8 flex flex-col items-center">
-        <div className="hidden md:block">
-        <HomeForm />
-      </div>
-
-          {/* <Link to="/booking" className="mt-6">
-            <Button size="lg" className="animate-fade-up animate-delay-400 transform hover:scale-105">
-              Book Your Stay Now
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
-          </Link> */}
-        </div>
-      </section>
-
-
-      {/* Hide HomeForm on mobile screens */}
-     
-
-
-      {/* Featured Hotels */}
-      <section className="py-20 bg-gray-50 w-full "style={{ backgroundImage: `url(${background_Image1})` }}>
-        <div className="w-full px-0">
-          <h2 className="text-3xl font-serif text-red-700 font-bold text-center mb-12 animate-slide-in-top">
-            Experience Saavi Hospitality
-          </h2>
-          <div className="w-full">
-            <HotelCarousel />
-          </div>
-        </div>
-      </section>
-
-
-      <WhyChooseSaavi />
-
-      {/* Our Facilities */}
-      
-      <Facilities />
-
-
-      <div style={{ backgroundImage:`url(${background_Image2})`}}>
-        {/* <OurStory /> */}
-        {/* Our Story Section */}
-        <section
-          ref={storyRef}
-          className={`py-20 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ${storyInView ? "opacity-100" : "opacity-0"
-            } transform ${storyInView ? "translate-y-0" : "translate-y-10"}`}
-          
+    <ParallaxProvider>
+      <div className="">
+        {/* Hero Section */}
+        <motion.section 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.2, ease: "easeOut" }}
+          className="relative h-[90vh] flex items-center justify-center overflow-hidden"
         >
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 rounded-lg py-10 relative">
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="flex flex-col justify-center text-left">
-                <h2 className="text-3xl font-serif font-bold mb-4 animate-slide-in-left">
-                  Our Story
-                </h2>
-                <h3 className="text-2xl font-serif font-semibold text-red-700 mb-6 animate-slide-in-left animate-delay-200">
-                  A Legacy of Luxury
-                </h3>
-                <p className="text-sm text-gray-600 mb-4 font-light animate-slide-in-left animate-delay-400">
-                  <span className="font-bold text-red-700">SAAVI HOTELS</span>, a name synonymous with luxury and comfort, has been redefining the hospitality industry since [Year]. With a rich legacy and a commitment to excellence, we have established ourselves as a leading hotel chain in India.
-                </p>
-                <p className="text-sm text-gray-600 mb-4 font-light animate-slide-in-left animate-delay-500">
-                  Our journey began with a vision to create world-class accommodations that cater to the diverse needs of our guests. Over the years, we have expanded our footprint across various locations, each hotel a testament to our dedication to quality and innovation.
-                </p>
-                <p className="text-sm text-gray-600 animate-slide-in-left animate-delay-600">
-                  We pride ourselves on offering exceptional hospitality, from the moment you step into our lobby to the time you check out. Our experienced staff is committed to providing personalized service and ensuring your stay is truly memorable.
-                </p>
-              </div>
-              <div className="flex items-center justify-center animate-scale-up animate-delay-700">
-                <img
-                  src={images.Image_3}
-                  alt="Our Story"
-                  className="w-9/12 h-9/12 object-cover rounded-lg shadow-lg"
-                />
-              </div>
-            </div>
-            {/* Learn More Button */}
-            <div className="absolute">
-              <button className="flex items-center bg-red-700 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition duration-200">
-                Learn More
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </button>
+          <AnimatePresence mode="sync">
+            <motion.div 
+              key={currentImage}
+              variants={imageVariants}
+              initial="enter"
+              animate="center"
+              exit="exit"
+              transition={{
+                opacity: { duration: 1.2, ease: "easeInOut" },
+                scale: { duration: 1.5, ease: "easeOut" },
+              }}
+              className="absolute inset-0"
+            >
+              {/* Previous image for smooth crossfade */}
+              <motion.img
+                src={previousImage}
+                alt="Luxury Hotel Background"
+                className="absolute inset-0 w-full h-full object-cover"
+                initial={{ opacity: 1 }}
+                animate={{ opacity: 0 }}
+                transition={{ duration: 1.2, ease: "easeInOut" }}
+              />
+              
+              {/* Current image */}
+              <img
+                src={currentImage}
+                alt="Luxury Hotel"
+                className="w-full h-full object-cover"
+              />
+
+              {/* Subtle gradient overlay */}
+              <motion.div 
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1 }}
+                className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/30"
+              />
+            </motion.div>
+          </AnimatePresence>
+
+          {/* Content */}
+          <div className="relative z-10 w-full mt-10 max-w-7xl mx-auto px-4 lg:px-8 flex flex-col items-center">
+            <motion.div 
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ 
+                delay: 0.3, 
+                duration: 0.8, 
+                ease: "easeOut" 
+              }}
+              className="hidden md:block"
+            >
+              <HomeForm />
+            </motion.div>
+          </div>
+        </motion.section>
+
+        {/* Hide HomeForm on mobile screens */}
+       
+
+        {/* Featured Hotels */}
+        <motion.section 
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="py-20 bg-gray-50 w-full"
+          style={{ backgroundImage: `url(${background_Image1})` }}
+        >
+          <div className="w-full px-0">
+            <h2 className="text-3xl font-serif text-red-700 font-bold text-center mb-12 animate-slide-in-top">
+              Experience Saavi Hospitality
+            </h2>
+            <div className="w-full">
+              <HotelCarousel />
             </div>
           </div>
+        </motion.section>
 
+        <WhyChooseSaavi />
 
-        </section>
+        {/* Our Facilities */}
+        <Facilities />
 
+        <div>
+          {/* <OurStory /> */}
+          {/* Our Story Section */}
+          <OurStory />
 
-        <PerfectGateway />
+          <PerfectGateway />
 
-        <div >
-          <Experience />
+          <div >
+            <Experience />
+          </div>
+          {/* <Guest /> */}
         </div>
-        {/* <Guest /> */}
-      </div>
-      <Testimonial />
-      <SaaviCards />
-      {/* Upcoming Projects */}
-      {/* <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-12 animate-slide-in-bottom">
-            Upcoming Projects
-          </h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            {content.upcomingProjects.map((project) => (
-              <div key={project.id} className="group relative overflow-hidden rounded-lg">
-                <img
-                  src={project.image}
-                  alt={project.name}
-                  className="w-full aspect-[4/3] object-cover transition-transform duration-300 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="text-white text-center p-4">
-                    <h3 className="text-2xl font-bold mb-2">{project.name}</h3>
-                    <p>Coming Soon - {project.openingDate}</p>
+        <Testimonial />
+        <SaaviCards />
+        {/* Upcoming Projects */}
+        {/* <section className="py-20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl font-bold text-center mb-12 animate-slide-in-bottom">
+              Upcoming Projects
+            </h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              {content.upcomingProjects.map((project) => (
+                <div key={project.id} className="group relative overflow-hidden rounded-lg">
+                  <img
+                    src={project.image}
+                    alt={project.name}
+                    className="w-full aspect-[4/3] object-cover transition-transform duration-300 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div className="text-white text-center p-4">
+                      <h3 className="text-2xl font-bold mb-2">{project.name}</h3>
+                      <p>Coming Soon - {project.openingDate}</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
-      </section> */}
+        </section> */}
 
-      {/* Features */}
-      {/* <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-8 text-center">
-            {content.features.map((feature, index) => (
-              <div
-                key={index}
-                className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
-              >
-                <Star className="h-12 w-12 mx-auto mb-4 text-primary" />
-                <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-                <p className="text-gray-600">{feature.description}</p>
-              </div>
-            ))}
+        {/* Features */}
+        {/* <section className="py-20 bg-gray-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid md:grid-cols-3 gap-8 text-center">
+              {content.features.map((feature, index) => (
+                <div
+                  key={index}
+                  className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+                >
+                  <Star className="h-12 w-12 mx-auto mb-4 text-primary" />
+                  <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
+                  <p className="text-gray-600">{feature.description}</p>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-      </section> */}
-    </div>
+        </section> */}
+      </div>
+    </ParallaxProvider>
   );
 }
