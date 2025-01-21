@@ -19,10 +19,10 @@ export default function Promotions() {
               image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=800"
             },
             {
-              title: "Spa Package",
-              description: "Complimentary spa treatment with 5-night stay",
+              title: "20% Discounts",
+              description: "Hurry, this exclusive offer is valid for a limited time! Book now and indulge in a getaway like no other",
               validUntil: "October 31, 2024",
-              image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=800"
+              image: "https://media.istockphoto.com/id/940891760/vector/discount-20-background-with-brush-strokes.jpg?s=612x612&w=0&k=20&c=9u0ar0h2zbCB9KM1OCPCZC96GRHjm1ME3bS-fn7Y43U="
             }
           ].map((promo, index) => (
             <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">

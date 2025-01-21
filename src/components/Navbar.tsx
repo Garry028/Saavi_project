@@ -23,10 +23,10 @@ export default function Navbar() {
     {/* Contact Info */}
     <p className="flex flex-wrap items-center gap-3 text-xs sm:text-sm">
       <FaPhoneAlt className="text-base" />
-      <span>7290006412, 7290006494</span>
+      <span>9999575044, 7290006773</span>
       <span className="ml-4 flex items-center gap-2">
         <FaEnvelope className="text-base" />
-        <span>sales@saavihotels.com</span>
+        <span>sales@saavigroups.com</span>
       </span>
     </p>
 

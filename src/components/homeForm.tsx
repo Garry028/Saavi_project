@@ -17,7 +17,7 @@ const BookingForm = () => {
           <input
             type="text"
             id="destination"
-            placeholder="Enter destination"
+            placeholder="Enter City"
             className="p-2 text-sm border rounded-md text-gray-700 shadow-sm focus:ring-2 focus:ring-primary focus:outline-none bg-white placeholder-gray-700"
           />
         </div>
@@ -71,7 +71,7 @@ const BookingForm = () => {
           <DatePicker
             selected={checkOutDate}
             onChange={(date: Date | null) => date && setCheckOutDate(date)}
-            placeholderText="Checking Out"
+            placeholderText="Check Out"
             className="p-2 text-sm border rounded-md text-gray-700 shadow-sm focus:ring-2 focus:ring-primary focus:outline-none bg-white placeholder-gray-700 w-full"
             dateFormat="dd/MM/yyyy"
           />
@@ -86,7 +86,7 @@ const BookingForm = () => {
             type="submit"
             className="text-white bg-red-700 hover:bg-red-600 transition-colors w-full text-sm rounded-md p-2"
           >
-            Submit
+            Book Now
           </button>
         </div>
       </div>

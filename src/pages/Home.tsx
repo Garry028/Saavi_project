@@ -1,8 +1,6 @@
-import { Button } from "@/components/ui/button";
 
 import HotelCarousel from "@/components/HotelCarousel";
 import { ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom";
 import { content } from "@/lib/content";
 import { images } from "../../public/assets/export";
 import { useEffect, useState } from "react";
@@ -116,12 +114,12 @@ export default function Home() {
         <HomeForm />
       </div>
 
-          <Link to="/booking" className="mt-6">
+          {/* <Link to="/booking" className="mt-6">
             <Button size="lg" className="animate-fade-up animate-delay-400 transform hover:scale-105">
               Book Your Stay Now
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
-          </Link>
+          </Link> */}
         </div>
       </section>
 
