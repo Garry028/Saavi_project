@@ -116,12 +116,12 @@ export default function Home() {
         <HomeForm />
       </div>
 
-          <Link to="/booking" className="mt-6">
+          {/* <Link to="/booking" className="mt-6">
             <Button size="lg" className="animate-fade-up animate-delay-400 transform hover:scale-105">
               Book Your Stay Now
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
-          </Link>
+          </Link> */}
         </div>
       </section>
 

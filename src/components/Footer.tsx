@@ -1,4 +1,4 @@
-import {  Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
+import { Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
 import logo from '../../public/assets/saavi_logo.png';
 import { Link } from 'react-router-dom';
 
@@ -14,9 +14,9 @@ export default function Footer() {
               <span className="text-xl font-semibold text-white">Saavi Hotels</span>
             </Link>
             <p className="mt-4 text-sm">
-              Saavi Hotels is a chain of boutique hotels and a subsidiary of Saavi Events and 
-              Entertainment Pvt. Ltd headquartered at Gurgaon. Incorporated by the founder 
-              himself, Mr. Deepak Dangi, the company is a part of the PV Group, one of India's 
+              Saavi Hotels is a chain of boutique hotels and a subsidiary of Saavi Events and
+              Entertainment Pvt. Ltd headquartered at Gurgaon. Incorporated by the founder
+              himself, Mr. Deepak Dangi, the company is a part of the PV Group, one of India's
               growing business conglomerates.
             </p>
           </div>
@@ -45,56 +45,57 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-4">Headquarter</h3>
             <ul className="space-y-2 text-sm">
               <li>The Saavi Hotel</li>
-              <li>1482, Huda Colony, Sector 46</li>
+              <li>545,Sector 43,Golf course Road,
+                </li>
               <li>Gurugram, Haryana 122003</li>
             </ul>
           </div>
 
           {/* Follow Us Section */}
           <div className="text-center">
-  <h3 className="text-white font-semibold mb-4">Follow Us</h3>
-  <div className="flex justify-center space-x-4">
-    {/* Facebook */}
-    <a 
-      href="https://www.facebook.com/profile.php?id=61565142656404" 
-      target="_blank" 
-      rel="noopener noreferrer" 
-      className="hover:text-white transition-colors"
-    >
-      <Facebook className="h-5 w-5" />
-    </a>
-    
-    {/* Instagram */}
-    <a 
-      href="https://www.instagram.com/saavihotels?igsh=and4OXdkMTJoNWcx" 
-      target="_blank" 
-      rel="noopener noreferrer" 
-      className="hover:text-white transition-colors"
-    >
-      <Instagram className="h-5 w-5" />
-    </a>
-    
-    {/* LinkedIn */}
-    <a 
-      href="https://www.linkedin.com/company/96062794/admin/dashboard/" 
-      target="_blank" 
-      rel="noopener noreferrer" 
-      className="hover:text-white transition-colors"
-    >
-      <Linkedin className="h-5 w-5" />
-    </a>
-    
-    {/* YouTube */}
-    <a 
-      href="https://www.youtube.com/@SaaviHotelsAndResorts" 
-      target="_blank" 
-      rel="noopener noreferrer" 
-      className="hover:text-white transition-colors"
-    >
-      <Youtube className="h-5 w-5" />
-    </a>
-  </div>
-</div>
+            <h3 className="text-white font-semibold mb-4">Follow Us</h3>
+            <div className="flex justify-center space-x-4">
+              {/* Facebook */}
+              <a
+                href="https://www.facebook.com/profile.php?id=61565142656404"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white transition-colors"
+              >
+                <Facebook className="h-5 w-5" />
+              </a>
+
+              {/* Instagram */}
+              <a
+                href="https://www.instagram.com/saavihotels?igsh=and4OXdkMTJoNWcx"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white transition-colors"
+              >
+                <Instagram className="h-5 w-5" />
+              </a>
+
+              {/* LinkedIn */}
+              <a
+                href="https://www.linkedin.com/company/96062794/admin/dashboard/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white transition-colors"
+              >
+                <Linkedin className="h-5 w-5" />
+              </a>
+
+              {/* YouTube */}
+              <a
+                href="https://www.youtube.com/@SaaviHotelsAndResorts"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white transition-colors"
+              >
+                <Youtube className="h-5 w-5" />
+              </a>
+            </div>
+          </div>
 
         </div>
 

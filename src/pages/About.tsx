@@ -57,14 +57,13 @@ const AboutUs: React.FC = () => {
 
   return (
     <div className="min-h-screen">
-      <section className="relative flex items-center">
+      {/* <section className="relative flex items-center">
         <div className="absolute inset-0">
           <img
             src={background_Image1}
             alt="Luxury Hotel"
             className="w-full h-full object-cover"
             style={{
-              // backgroundImage: `url(${background_Image1})`,
               backgroundPosition: 'center',
               backgroundSize: 'cover',
               opacity: 1,
@@ -77,7 +76,6 @@ const AboutUs: React.FC = () => {
 
         <div className="relative max-w-7xl mx-auto px-4 lg:px-8 text-center text-white ">
           <div className="mt-20 hidden sm:flex sm:flex-row justify-between items-center space-y-6 sm:space-x-4 sm:space-y-0 bg-opacity-0 p-8 rounded-lg">
-            {/* Where to go */}
             <div className="flex flex-col w-full sm:w-64">
 
               <input
@@ -88,7 +86,6 @@ const AboutUs: React.FC = () => {
               />
             </div>
 
-            {/* Arrival Date */}
             <div className="flex flex-col w-full sm:w-64">
               <input
                 type="text"
@@ -98,13 +95,12 @@ const AboutUs: React.FC = () => {
               />
             </div>
 
-            {/* Departure Date */}
             <div className="flex flex-col w-full sm:w-64">
 
               <input
                 type="text"
                 id="departure-date"
-                placeholder="Checking out"
+                placeholder="Check out"
                 className="p-3 border rounded-md text-gray-700 shadow-sm focus:ring-2 focus:ring-primary focus:outline-none bg-white placeholder-gray-700"
               />
             </div>
@@ -119,7 +115,6 @@ const AboutUs: React.FC = () => {
               />
             </div>
 
-            {/* Search Button */}
             <div className="flexflex-col sm:items-end w-full sm:w-auto mt-10 sm:mt-0">
               <button className="text-white transition-colors w-full sm:w-auto">
                 Search
@@ -135,7 +130,7 @@ const AboutUs: React.FC = () => {
 
         </div>
 
-      </section>
+      </section> */}
       <div className=" mx-auto px-4 py-8">
         <div className="content p-6">{renderContent()}</div>
       </div>

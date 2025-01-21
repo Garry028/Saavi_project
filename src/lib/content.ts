@@ -1,9 +1,9 @@
 import { images } from "../../public/assets/export";
-import foodImage from "../../public/assets/food.png";
+import foodImage from "../../public/assets/food.jpeg";
 // import roomImage from "../../public/assets/roomImage.png";
 import bonfireImage from "../../public/assets/bonfire.png";
 // import guestAccessImage from "../../public/assets/guestAccess.png";
-import adventureImage from "../../public/assets/advanterus.png";
+import adventureImage from "../../public/assets/advanterus.jpeg";
 // import BanqAndEvents from "@/pages/banqAndEvents";
 import bnq1 from "../../public/assets/bnq1.jpeg";
 import bnq2 from "../../public/assets/bnq2.jpeg";
@@ -18,85 +18,70 @@ export const content = {
     name: "Saavi",
     description: "Experience luxury and comfort at our world-class hotels and resorts.",
     contact: {
-      address: "The Saavi Hotel 1482, Huda Colony, Sector 46",
+      address: "545,Sector 43,Golf course Road,",
       city: "Gurugram, Haryana 122003",
-      phone: "7290006412, 7290006494",
-      email: "sales@saavihotels.com"
+      phone: "9999575044, 7290006773",
+      email: "sales@saavigroups.com"
     }
   },
   hotels: [
     {
       id: 1,
-      name: "Hassan Valley Retreat Shimla",
-      location: "Shimla, India",
+      name: "Saavi Hotel Golf course",
+      location: "Gurugram, Haryana, India",
       image: images.Image_1,
       description: "Experience the tranquility of Shimla's lush valleys and unmatched hospitality.",
-      amenities: ["Scenic Views", "Spa", "Indoor Dining", "Luxury Suites"]
+      amenities: ["Scenic Views", "Bonfire", "Indoor Dining", "Luxury Suites"]
     },
     {
       id: 2,
-      name: "Oester Pearl Saavi Hotel",
+      name: "Saavi Hotel Sector 46",
       location: "Gurugram, Haryana, India",
       image: images.Image_2,
       description: "A contemporary hotel offering luxury in the heart of Gurugram.",
-      amenities: ["Canal Views", "Bike Rentals", "Art Gallery", "Luxury Spa"]
+      amenities: ["Canal Views", "Bike Rentals", "Art Gallery", "Bonfire"]
     },
     {
       id: 3,
-      name: "Saavi Hotel Golf Club",
-      location: "Bangalore, India",
+      name: "Saavi Hotel Sector 45",
+      location: "Gurugram, Haryana, India",
       image: images.Image_3,
       description: "A golfer's paradise with premium facilities and lush green landscapes.",
       amenities: ["Golf Course", "Fine Dining", "Luxury Suites", "Infinity Pool"]
     },
     {
       id: 4,
-      name: "Saavi Hotel Huda City Center",
-      location: "Gurgaon, India",
+      name: "Saavi Hotel Sector 10",
+      location: "Gurugram, Haryana, India",
       image: images.Image_4,
       description: "Conveniently located near Huda City Center, ideal for business and leisure stays.",
-      amenities: ["Conference Rooms", "Fitness Center", "24/7 Room Service", "Spa"]
+      amenities: ["Conference Rooms", "Fitness Center", "24/7 Room Service", "Bonfire"]
     },
     {
       id: 5,
-      name: "Saavi Hotel Jibhi",
-      location: "Jibhi, Himachal Pradesh, India",
+      name: "Hassan Valley By Saavi",
+      location: "Shimla, Himachal Pradesh, India",
       image: images.Image_5,
       description: "Reconnect with nature at our eco-friendly retreat in the Himalayas.",
       amenities: ["Eco-Cottages", "Trekking Assistance", "Bonfire Nights", "Organic Meals"]
     },
     {
       id: 6,
-      name: "Saavi Hotel Medicity",
-      location: "Gurgaon, India",
+      name: "Saavi Hotel and Resorts",
+      location: "Rishikesh,Uttrakhand, India",
       image: images.Image_6,
       description: "Located in the heart of Gurgaon's medical hub, ideal for wellness stays.",
-      amenities: ["Wellness Center", "Luxury Rooms", "Multi-Cuisine Dining", "Spa Services"]
+      amenities: ["Wellness Center", "Luxury Rooms", "Multi-Cuisine Dining", "Bonfire"]
     },
     {
       id: 7,
-      name: "Saavi Hotel Sector 10",
-      location: "Chandigarh, India",
+      name: "Saavi Hotel Jibhi",
+      location: "Manali,Himachal Pradesh, India",
       image: images.Image_7,
       description: "A contemporary hotel offering luxury in the heart of Chandigarh.",
-      amenities: ["Banquet Halls", "Spa & Salon", "Outdoor Pool", "Kids' Play Area"]
-    },
-    {
-      id: 8,
-      name: "Saavi Hotel Sector 46",
-      location: "Chandigarh, India",
-      image: images.Image_8,
-      description: "A luxurious haven located in Sector 46, Chandigarh.",
-      amenities: ["Boutique Rooms", "Fine Dining", "Fitness Center", "24/7 Concierge"]
-    },
-    {
-      id: 9,
-      name: "Sandlewood Saavi Hotel",
-      location: "Goa, India",
-      image: images.Image_4,
-      description: "An exquisite beachside property offering the best of Goan hospitality.",
-      amenities: ["Beachfront", "Poolside Bar", "Live Entertainment", "Seafood Specialties"]
+      amenities: ["Banquet Halls", "Bonfire", "Outdoor Pool", "Kids' Play Area"]
     }
+    
   ],
   upcomingProjects: [
     {
@@ -152,7 +137,7 @@ export const content = {
       image: images.Image_7 // Replace with the relevant image from your assets
     },
     {
-      title: "Adventure",
+      title: "Relax",
       description: "Experience thrilling adventures, including trekking, camping, and more.",
       image: adventureImage // Replace with the relevant image from your assets
     }

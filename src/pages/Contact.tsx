@@ -21,8 +21,9 @@ export default function Contact() {
                 <Building2 className="w-6 h-6 text-primary mt-1" />
                 <div>
                   <h3 className="font-semibold">Address</h3>
-                  <p className="text-gray-600">The Saavi Hotel
-1482, Huda Colony, Sector 46
+                  <p className="text-gray-600">545,Sector 43,Golf course Road,
+
+
 </p>
                   <p className="text-gray-600">Gurugram, Haryana 122003</p>
                 </div>
@@ -32,7 +33,7 @@ export default function Contact() {
                 <Phone className="w-6 h-6 text-primary mt-1" />
                 <div>
                   <h3 className="font-semibold">Phone</h3>
-                  <p className="text-gray-600">7290006412, 7290006494</p>
+                  <p className="text-gray-600">9999575044, 7290006773</p>
                 </div>
               </div>
               

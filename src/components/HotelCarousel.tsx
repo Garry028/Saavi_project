@@ -28,7 +28,7 @@ export default function HotelCarousel() {
           (nextButton as HTMLElement).click();
         }
       }
-    }, 2000); // Change slide every 2 seconds
+    }, 4000); // Change slide every 2 seconds
 
     return () => clearInterval(interval); // Clear interval on unmount
   }, []);
