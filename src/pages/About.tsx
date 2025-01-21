@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import {  useLocation } from "react-router-dom";
 import SaaviInfo from "@/components/aboutus/saaviInfo";
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
-import background_Image1 from "../../public/assets/bnq5.jpeg";
 import ValuesAndMissionPage from "@/components/aboutus/valuesandmission";
 import CoreValues from "@/components/aboutus/corevalues";
 import WhyChooseSaavi from "@/components/aboutus/whysaavi";

@@ -1,8 +1,6 @@
-import { Button } from "@/components/ui/button";
 
 import HotelCarousel from "@/components/HotelCarousel";
 import { ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom";
 import { content } from "@/lib/content";
 import { images } from "../../public/assets/export";
 import { useEffect, useState } from "react";
