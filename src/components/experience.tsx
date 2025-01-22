@@ -5,7 +5,7 @@ export default function ExperienceUnforgettable (){
   return (
     <div className="w-full text-center font-serif text-red-700 mt-10">
       <div className="py-8 relative">
-        <h1 className="text-2xl font-bold tracking-wide">Experience Unforgettable</h1>
+        <h1 className="text-2xl font-bold tracking-wide"> Unforgettable Experience</h1>
       </div>
       <div className="relative flex justify-center items-center">
         <img 

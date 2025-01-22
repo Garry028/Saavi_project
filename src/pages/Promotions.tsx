@@ -1,3 +1,8 @@
+import Chill from '../../public/assets/chill.png';
+import bonfireImage from "../../public/assets/bonfire.png";
+
+
+
 export default function Promotions() {
   return (
     <div className="pt-24 mb-10">
@@ -8,20 +13,20 @@ export default function Promotions() {
           {[
             {
               title: "Summer Escape",
-              description: "Enjoy 20% off on all suite bookings this summer",
-              validUntil: "September 30, 2024",
-              image: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=800"
+              description: "Experience the ultimate getaway at Saavi Hotels, where cozy accommodations, serene surroundings, and refreshing amenities come together to help you beat the summer heat. Unwind in style, enjoy delicious cuisine, and create cherished memories in a tranquil setting.",
+              validUntil: "Feburary 14, 2025",
+              image: Chill
             },
             {
               title: "Weekend Getaway",
-              description: "Book 2 nights, get the 3rd night free",
-              validUntil: "December 31, 2024",
-              image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=800"
+              description: "Escape the hustle and bustle with Saavi Hotels, the perfect destination for a relaxing weekend. Enjoy cozy stays, scenic views, and memorable experiences that rejuvenate your mind and soul.",
+              validUntil: "Feburary 14, 2025",
+              image: bonfireImage
             },
             {
-              title: "20% Discounts",
-              description: "Hurry, this exclusive offer is valid for a limited time! Book now and indulge in a getaway like no other",
-              validUntil: "October 31, 2024",
+              title: "Special Offer",
+              description: "Take advantage of exclusive discounts and packages at Saavi Hotels, offering exceptional value for a luxurious stay. Don’t miss the chance to experience comfort, relaxation, and memorable moments at an unbeatable price.",
+              validUntil: "Feburary 14, 2025",
               image: "https://media.istockphoto.com/id/940891760/vector/discount-20-background-with-brush-strokes.jpg?s=612x612&w=0&k=20&c=9u0ar0h2zbCB9KM1OCPCZC96GRHjm1ME3bS-fn7Y43U="
             }
           ].map((promo, index) => (

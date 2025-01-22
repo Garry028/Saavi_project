@@ -30,31 +30,31 @@ export const content = {
       name: "Saavi Hotel Golf course",
       location: "Gurugram, Haryana, India",
       image: images.Image_1,
-      description: "Experience the tranquility of Shimla's lush valleys and unmatched hospitality.",
+      description: "Combines luxury accommodations with a serene, well-maintained golf experience.",
       amenities: ["Scenic Views", "Bonfire", "Indoor Dining", "Luxury Suites"]
     },
     {
       id: 2,
       name: "Saavi Hotel Sector 46",
       location: "Gurugram, Haryana, India",
-      image: images.Image_2,
-      description: "A contemporary hotel offering luxury in the heart of Gurugram.",
+      image: images.F46,
+      description: " Offers comfortable accommodations with modern amenities in a convenient and vibrant location.",
       amenities: ["Canal Views", "Bike Rentals", "Art Gallery", "Bonfire"]
     },
     {
       id: 3,
       name: "Saavi Hotel Sector 45",
       location: "Gurugram, Haryana, India",
-      image: images.Image_3,
-      description: "A golfer's paradise with premium facilities and lush green landscapes.",
+      image: images.F45,
+      description: "Provides cozy accommodations with modern facilities, ensuring a convenient and pleasant stay.",
       amenities: ["Golf Course", "Fine Dining", "Luxury Suites", "Infinity Pool"]
     },
     {
       id: 4,
       name: "Saavi Hotel Sector 10",
       location: "Gurugram, Haryana, India",
-      image: images.Image_4,
-      description: "Conveniently located near Huda City Center, ideal for business and leisure stays.",
+      image: images.F10,
+      description: "Offers comfortable and well-equipped accommodations for a relaxing and convenient stay.",
       amenities: ["Conference Rooms", "Fitness Center", "24/7 Room Service", "Bonfire"]
     },
     {
@@ -62,7 +62,7 @@ export const content = {
       name: "Hassan Valley By Saavi",
       location: "Shimla, Himachal Pradesh, India",
       image: images.Image_5,
-      description: "Reconnect with nature at our eco-friendly retreat in the Himalayas.",
+      description: "A serene getaway nestled amidst picturesque landscapes, offering modern amenities and a tranquil escape in the heart of nature.",
       amenities: ["Eco-Cottages", "Trekking Assistance", "Bonfire Nights", "Organic Meals"]
     },
     {
@@ -70,15 +70,15 @@ export const content = {
       name: "Saavi Hotel and Resorts",
       location: "Rishikesh,Uttrakhand, India",
       image: images.Image_6,
-      description: "Located in the heart of Gurgaon's medical hub, ideal for wellness stays.",
+      description: " Offers a serene retreat with modern amenities, surrounded by the tranquil beauty of the Himalayan foothills and the Ganges River.",
       amenities: ["Wellness Center", "Luxury Rooms", "Multi-Cuisine Dining", "Bonfire"]
     },
     {
       id: 7,
       name: "Saavi Hotel Jibhi",
       location: "Manali,Himachal Pradesh, India",
-      image: images.Image_7,
-      description: "A contemporary hotel offering luxury in the heart of Chandigarh.",
+      image: images.Fjb,
+      description: "A charming retreat offering cozy accommodations, modern amenities, and stunning views of the lush Himalayan landscape.",
       amenities: ["Banquet Halls", "Bonfire", "Outdoor Pool", "Kids' Play Area"]
     }
     
@@ -128,17 +128,17 @@ export const content = {
     },
     {
       title: "Bonfire",
-      description: "We serve all food and drinks, ensuring freshness, cleanliness, and a delightful taste experience.",
+      description: "Gather around a warm bonfire under the open sky, creating unforgettable moments with loved ones.",
       image: bonfireImage // Replace with the relevant image from your assets
     },
     {
       title: "Guest Access",
-      description: "Enjoy seamless guest access with modern facilities and top-notch hospitality.",
+      description: "Enjoy seamless access to all facilities, ensuring a memorable and hassle-free stay.",
       image: images.Image_7 // Replace with the relevant image from your assets
     },
     {
       title: "Relax",
-      description: "Experience thrilling adventures, including trekking, camping, and more.",
+      description: "Escape the hustle and find your peace in a serene and rejuvenating ambiance.",
       image: adventureImage // Replace with the relevant image from your assets
     }
   ],

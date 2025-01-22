@@ -24,6 +24,12 @@ import Hotel6 from "./saavi_hotel_medicity.jpg";
 import Hotel7 from "./saavi_hotel_sector_10.jpeg";
 import Hotel8 from "./saavi_hotel_sector_46.jpg";
 import Hotel9 from "./sandlewood_saavi_hotel.jpg";
+import F46 from  "./f46.jpeg";
+import F45 from  "./f45.jpeg";
+import F10 from  "./f10.jpeg";
+import Fjb from  "./fjb.jpeg";
+import F43 from  "./f43.jpeg";
+
 
 // Add more imports as needed
 
@@ -45,6 +51,11 @@ const images = {
     Image_15,
     Image_16,
     Image_17,
+    F46,
+    F45,
+    F10,
+    F43,
+    Fjb,
 };
 
 const hotels = {
@@ -57,6 +68,7 @@ const hotels = {
     Hotel7,
     Hotel8,
     Hotel9,
+    
 };
 
 export { images, hotels };

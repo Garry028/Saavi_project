@@ -1,4 +1,3 @@
-
 import HotelCarousel from "@/components/HotelCarousel";
 import { ArrowRight } from "lucide-react";
 import { content } from "@/lib/content";
