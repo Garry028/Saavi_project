@@ -6,7 +6,7 @@ import { useEffect, useState, useRef } from "react";
 import { useInView } from 'react-intersection-observer'; // Import Intersection Observer hook
 import WhyChooseSaavi from "@/components/whychoosesaavi";
 import PerfectGateway from "@/components/perfectgateway";
-import background_Image2 from "../../public/assets/backgroundImage2.png";
+// import background_Image2 from "../../public/assets/backgroundImage2.png";
 import background_Image1 from "../../public/assets/backgroundImage1.png";
 import Experience from "../components/experience";
 import Testimonial from "@/components/testimonial";
@@ -21,7 +21,7 @@ import HomeForm from "@/components/homeForm";
 
 // import SearchFrom from "@/components/searchform";
 
-import { motion, AnimatePresence, useScroll, useTransform, cubicBezier } from "framer-motion";
+import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";
 import { ParallaxProvider } from 'react-scroll-parallax';
 
 function Facilities({ }) {

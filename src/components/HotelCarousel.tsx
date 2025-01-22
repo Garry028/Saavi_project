@@ -9,25 +9,25 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { content } from "@/lib/content";
-import { useEffect, useRef } from "react";
+import {  useRef } from "react";
 import { motion } from "framer-motion";
 
 export default function HotelCarousel() {
   const carouselRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (carouselRef.current) {
-        // Simulate a click on the "next" button to auto-scroll
-        const nextButton = carouselRef.current.querySelector(".carousel-next");
-        if (nextButton) {
-          (nextButton as HTMLElement).click();
-        }
-      }
-    }, 2000); // Change slide every 2 seconds
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     if (carouselRef.current) {
+  //       // Simulate a click on the "next" button to auto-scroll
+  //       const nextButton = carouselRef.current.querySelector(".carousel-next");
+  //       if (nextButton) {
+  //         (nextButton as HTMLElement).click();
+  //       }
+  //     }
+  //   }, 2000); // Change slide every 2 seconds
 
-    return () => clearInterval(interval); // Clear interval on unmount
-  }, []);
+  //   return () => clearInterval(interval); // Clear interval on unmount
+  // }, []);
 
   return (
     <Carousel

@@ -120,29 +120,33 @@ export default function Navbar() {
 
 
           {/* About Us Dropdown */}
-          <DropdownMenu>
-            <DropdownMenuTrigger className="flex items-center gap-1 border-0 text-sm bg-white font-semibold text-black outline-none focus:outline-none hover:border-0">
-              About Us <ChevronDown className="h-4 w-4" />
-            </DropdownMenuTrigger>
-            <DropdownMenuContent className="w-[250px] p-2">
-              {[
-                { name: 'Our Company', href: '/about#company' },
-                { name: 'Vision & Mission', href: '/about#vision-mission' },
-                { name: 'Core Values', href: '/about#values' },
-                { name: 'Our Team', href: '/about#team' },
-                { name: 'Why Saavi?', href: '/about#why-saavi' },
-              ].map((item) => (
-                <DropdownMenuItem key={item.name} className="p-0 focus:bg-transparent">
-                  <Link
-                    to={item.href}
-                    className="w-full p-2 hover:text-primary transition-colors"
-                  >
-                    {item.name}
-                  </Link>
-                </DropdownMenuItem>
-              ))}
-            </DropdownMenuContent>
-          </DropdownMenu>
+        {/* About Us Dropdown */}
+<DropdownMenu>
+  <DropdownMenuTrigger className="flex items-center gap-1 border-0 text-sm bg-white font-semibold text-black outline-none focus:outline-none hover:border-0">
+    About Us <ChevronDown className="h-4 w-4" />
+  </DropdownMenuTrigger>
+  <DropdownMenuContent className="w-[250px] p-2 bg-white text-black rounded-md shadow-md">
+    {[
+      { name: 'Our Company', href: '/about#company' },
+      { name: 'Vision & Mission', href: '/about#vision-mission' },
+      { name: 'Core Values', href: '/about#values' },
+      { name: 'Our Team', href: '/about#team' },
+      { name: 'Why Saavi?', href: '/about#why-saavi' },
+    ].map((item) => (
+      <DropdownMenuItem 
+        key={item.name} 
+        className="p-2 hover:bg-gray-100 rounded-md focus:outline-none focus:bg-transparent" >
+        <Link
+          to={item.href}
+          className="w-full text-black hover:text-red-700 "
+        >
+          {item.name}
+        </Link>
+      </DropdownMenuItem>
+    ))}
+  </DropdownMenuContent>
+</DropdownMenu>
+
 
           <Link
             to="/gallery"
