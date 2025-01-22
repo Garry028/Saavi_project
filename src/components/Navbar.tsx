@@ -173,7 +173,7 @@ export default function Navbar() {
             <DropdownMenuTrigger className="flex items-center gap-1 border-0 text-sm bg-white font-semibold text-black outline-none focus:outline-none hover:border-0">
               <Menu className="h-6 w-6" />
             </DropdownMenuTrigger>
-            <DropdownMenuContent className="w-[250px] p-2">
+            <DropdownMenuContent className="w-[250px] bg-white p-2">
               {[
                 // { name: 'Contact us', href: '/contact' },
                 { name: 'Careers', href: '/careers' },
@@ -183,7 +183,7 @@ export default function Navbar() {
                 <DropdownMenuItem key={item.name} className="p-0 focus:bg-transparent">
                   <Link
                     to={item.href}
-                    className="w-full p-2 hover:text-primary transition-colors"
+                    className="w-full p-2 text-black hover:text-red-700 transition-colors"
                   >
                     {item.name}
                   </Link>
