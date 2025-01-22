@@ -15,13 +15,15 @@ import homeImage1 from "../../public/assets/homeImage1.png";
 import homeImage2 from "../../public/assets/homeImage2.png";
 import homeImage3 from "../../public/assets/HomeImage3.png";
 
+import { useNavigate } from "react-router-dom";
+
 import "react-datepicker/dist/react-datepicker.css";
 
 import HomeForm from "@/components/homeForm";
 
 // import SearchFrom from "@/components/searchform";
 
-import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { ParallaxProvider } from 'react-scroll-parallax';
 
 function Facilities({ }) {
@@ -43,7 +45,7 @@ function Facilities({ }) {
   const y = useTransform(scrollYProgress, [0, 1], [0, -100]);
 
   return (
-    <motion.section 
+    <motion.section
       ref={targetRef}
       className="relative h-[300vh]"
       initial={{ opacity: 0 }}
@@ -53,7 +55,7 @@ function Facilities({ }) {
       <div className="sticky top-0 h-screen overflow-hidden bg-gradient-to-b from-white via-red-50/30 to-white">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-[0.05] pointer-events-none">
-          <div className="absolute inset-0" style={{ 
+          <div className="absolute inset-0" style={{
             backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23991b1b\' fill-opacity=\'0.4\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
             backgroundSize: '40px 40px'
           }} />
@@ -90,7 +92,7 @@ function Facilities({ }) {
           />
 
           {/* Scroll-responsive elements */}
-          <motion.div 
+          <motion.div
             className="absolute top-1/4 left-[5%] w-40 h-40"
             style={{ y, rotate }}
           >
@@ -144,7 +146,7 @@ function Facilities({ }) {
           ))}
         </div>
 
-        <motion.h2 
+        <motion.h2
           className="relative text-3xl font-bold text-center font-serif text-red-700 pt-12 mb-8"
           initial={{ opacity: 0, y: -40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -153,7 +155,7 @@ function Facilities({ }) {
           Our Facilities
         </motion.h2>
 
-        <motion.div 
+        <motion.div
           className="flex gap-16 px-[10vw]"
           style={{ x }}
         >
@@ -163,7 +165,7 @@ function Facilities({ }) {
               className="w-[35vw] flex-shrink-0 group"
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ 
+              transition={{
                 delay: index * 0.1,
                 duration: 0.5,
                 ease: "easeOut"
@@ -187,7 +189,7 @@ function Facilities({ }) {
           ))}
         </motion.div>
 
-        <motion.div 
+        <motion.div
           className="absolute bottom-8 left-[15vw] right-[15vw] h-1 bg-red-700 rounded-full"
           style={{ scaleX: scrollYProgress }}
         />
@@ -203,6 +205,9 @@ function OurStory() {
     threshold: 0.2,
   });
 
+  const handleClick = () => {
+    navigate('/about#company');
+  };
   // Merge refs
   useEffect(() => {
     if (storyRef.current) {
@@ -218,6 +223,8 @@ function OurStory() {
   // Parallax effect for background
   const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
   const contentY = useTransform(scrollYProgress, [0, 1], ["0%", "-10%"]);
+  const navigate = useNavigate();
+
 
   return (
     <motion.section
@@ -230,7 +237,7 @@ function OurStory() {
       {/* Background Elements Layer */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {/* Blurred background */}
-        <motion.div 
+        <motion.div
           className="absolute inset-0 opacity-10"
           style={{ y: backgroundY }}
         >
@@ -272,7 +279,7 @@ function OurStory() {
       </div>
 
       {/* Content Layer */}
-      <motion.div 
+      <motion.div
         className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10"
         style={{ y: contentY }}
       >
@@ -284,8 +291,8 @@ function OurStory() {
               transition={{ duration: 1, ease: "easeOut" }}
               className="h-1 bg-red-700 mb-8"
             /> */}
-            
-            <motion.h2 
+
+            <motion.h2
               className="text-4xl font-serif font-bold mb-4"
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -293,7 +300,7 @@ function OurStory() {
             >
               Our Story
             </motion.h2>
-            
+
             {/* Rest of the content */}
             <motion.h3 className="text-2xl font-serif font-semibold text-red-700 mb-8">
               A Legacy of Luxury
@@ -332,9 +339,10 @@ function OurStory() {
               whileInView={{ opacity: 1 }}
               transition={{ delay: 0.8 }}
             >
-              <motion.button 
+              <motion.button
                 className="flex items-center bg-red-700 text-white px-6 py-3 rounded-lg group relative overflow-hidden"
                 whileHover="hover"
+                onClick={handleClick}
               >
                 <motion.span
                   className="relative z-10 flex items-center"
@@ -344,7 +352,11 @@ function OurStory() {
                     }
                   }}
                 >
+
+
                   Learn More
+
+                  
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </motion.span>
                 <motion.div
@@ -377,12 +389,12 @@ function OurStory() {
                 />
                 <motion.div
                   className="absolute -left-8 -bottom-8 w-48 h-48 border-2 border-red-400/30 rounded-full"
-                  animate={{ 
+                  animate={{
                     scale: [1, 1.1, 1],
                     rotate: [0, -360]
                   }}
-                  transition={{ 
-                    duration: 20, 
+                  transition={{
+                    duration: 20,
                     repeat: Infinity,
                     ease: "linear"
                   }}
@@ -418,16 +430,32 @@ function OurStory() {
 
 export default function Home() {
   const [currentImage, setCurrentImage] = useState(homeImage1);
-  const [previousImage, setPreviousImage] = useState(homeImage1);
+  // const [previousImage, setPreviousImage] = useState(homeImage1);
   const imageArray = [homeImage1, homeImage2, homeImage3];
+  // const [text, setText] = useState("Where Every Stay Becomes a Memory");
+
+  const textArray = [
+    "Where Every Stay Becomes a Memory", 
+    "Where comfort feels luxurious", 
+    "Luxury meets comfort at Saavi"
+  ];
+  const [text, setText] = useState(textArray[0]); // Initial text
+  //Where comfort feels luxurious
+  //Luxury meets confortable at Saavi
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setPreviousImage(currentImage);
+      // setPreviousImage(currentImage);
       setCurrentImage((prevImage) => {
         const currentIndex = imageArray.indexOf(prevImage);
         const nextIndex = (currentIndex + 1) % imageArray.length;
         return imageArray[nextIndex];
+      });
+
+      setText((prevText) => {
+        const currentTextIndex = textArray.indexOf(prevText);
+        const nextTextIndex = (currentTextIndex + 1) % textArray.length;
+        return textArray[nextTextIndex];
       });
     }, 5000); // Slightly longer duration for more comfortable viewing
 
@@ -456,74 +484,83 @@ export default function Home() {
     <ParallaxProvider>
       <div className="">
         {/* Hero Section */}
-        <motion.section 
+        <motion.section
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
-          className="relative h-[90vh] flex items-center justify-center overflow-hidden"
+          className="relative h-[60vh] flex items-center justify-center overflow-hidden"
         >
-          <AnimatePresence mode="sync">
-            <motion.div 
-              key={currentImage}
-              variants={imageVariants}
-              initial="enter"
-              animate="center"
-              exit="exit"
-              transition={{
-                opacity: { duration: 1.2, ease: "easeInOut" },
-                scale: { duration: 1.5, ease: "easeOut" },
-              }}
-              className="absolute inset-0"
-            >
-              {/* Previous image for smooth crossfade */}
-              <motion.img
-                src={previousImage}
-                alt="Luxury Hotel Background"
-                className="absolute inset-0 w-full h-full object-cover"
-                initial={{ opacity: 1 }}
-                animate={{ opacity: 0 }}
-                transition={{ duration: 1.2, ease: "easeInOut" }}
-              />
-              
-              {/* Current image */}
-              <img
-                src={currentImage}
-                alt="Luxury Hotel"
-                className="w-full h-full object-cover"
-              />
+          {/* Background Image */}
+          <motion.div
+            key={currentImage}
+            variants={imageVariants}
+            initial="enter"
+            animate="center"
+            exit="exit"
+            transition={{
+              opacity: { duration: 1.2, ease: "easeInOut" },
+              scale: { duration: 1.5, ease: "easeOut" },
+            }}
+            className="absolute inset-0 z-0"
+          >
+            <img
+              src={currentImage}
+              alt="Luxury Hotel"
+              className="w-full h-full object-cover"
+            />
 
-              {/* Subtle gradient overlay */}
-              <motion.div 
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1 }}
-                className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/30"
-              />
-            </motion.div>
-          </AnimatePresence>
+            {/* Subtle Gradient Overlay */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1 }}
+              className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/30"
+            />
+          </motion.div>
+          <div>
+            <div className="-mr-10 mt-20">
+              <div className="relative z-10 text-center max-w-3xl pr-60">
+                <motion.h1
+                  initial={{ opacity: 0, y: -20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, ease: "easeOut" }}
+                  className="text-white text-4xl font-sans md:text-5xl font-bold leading-tight"
+                  
+                >
+                  {text}
+                </motion.h1>
+              </div>
+            </div>
 
-          {/* Content */}
-          <div className="relative z-10 w-full mt-10 max-w-7xl mx-auto px-4 lg:px-8 flex flex-col items-center">
-            <motion.div 
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ 
-                delay: 0.3, 
-                duration: 0.8, 
-                ease: "easeOut" 
-              }}
-              className="hidden md:block"
-            >
-              <HomeForm />
-            </motion.div>
+            {/* Text Content */}
+
+            <div className="mt-20">
+              <div className="relative z-50 w-full max-w-7xl mx-auto px-4 lg:px-8 flex flex-col items-center">
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{
+                    delay: 0.3,
+                    duration: 0.8,
+                    ease: "easeOut"
+                  }}
+                  className="hidden md:block"
+                >
+                  <HomeForm />
+                </motion.div>
+              </div>
+            </div>
           </div>
+
+          {/* Form Content */}
+
         </motion.section>
 
         {/* Hide HomeForm on mobile screens */}
-       
+
 
         {/* Featured Hotels */}
-        <motion.section 
+        <motion.section
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}

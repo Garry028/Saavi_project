@@ -72,7 +72,7 @@ const BookingForm = () => {
       >
         <form
           onSubmit={handleSubmit}
-          className="flex flex-nowrap justify-between items-center space-x- mt-72"
+          className="flex flex-nowrap justify-between items-center space-x-2 mt-20 pt-20"
         >
           {/* Destination */}
           <motion.div className="flex flex-col w-[15%]">

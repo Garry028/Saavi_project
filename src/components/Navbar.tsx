@@ -74,9 +74,10 @@ export default function Navbar() {
         <div className="flex lg:flex-1">
           <Link to="/" className="-m-1.5 p-1.5 flex items-center gap-2">
             <div className="flex flex-col items-center">
-              <img src={logo} alt="Saavi logo" className="w-39 h-25 object-cover rounded-md" />
-              <span className="text-xs font-semibold text-black ">A Comfortable stay</span>
+              <img src={logo} alt="Saavi logo" className="w-[120px] h-30 object-cover rounded-md" />
+              
             </div>
+            <span className="text-xs font-semibold text-black ">A Comfortable stay</span>
           </Link>
         </div>
 

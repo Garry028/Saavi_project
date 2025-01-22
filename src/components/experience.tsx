@@ -1,10 +1,16 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import image from '../../public/assets/adventureImage.png';
+import { useNavigate } from 'react-router-dom';
 
 export default function ExperienceUnforgettable() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/promotions');
+  };
 
   return (
     <div ref={ref} className="w-full text-center font-serif text-red-700 mt-10">
@@ -36,6 +42,7 @@ export default function ExperienceUnforgettable() {
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : {}}
             transition={{ duration: 0.5, delay: 0.6 }}
+            onClick={handleClick}
           >
             Explore
           </motion.button>

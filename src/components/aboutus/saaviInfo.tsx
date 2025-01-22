@@ -1,5 +1,5 @@
 import React from "react";
-import Image01 from "../../../public/assets/homeImage1.png"
+import Image01 from "../../../public/assets/Image_3.jpeg"
 
 const SaaviInfo: React.FC = () => {
   return (

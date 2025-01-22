@@ -56,7 +56,7 @@ export default function HotelCarousel() {
                     <motion.img
                       src={hotel.image}
                       alt={hotel.name}
-                      className="w-full h-full object-cover"
+                      className="w-full h-[300px] object-cover"
                       whileHover={{ scale: 1.1 }}
                       transition={{ duration: 0.3 }}
                     />

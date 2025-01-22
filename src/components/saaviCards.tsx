@@ -5,6 +5,7 @@ import Card2 from "../../public/assets/building.png";
 import Card3 from "../../public/assets/suite.png";
 import { useEffect, useState } from "react";
 
+
 const SaaviCards = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -56,7 +57,7 @@ const SaaviCards = () => {
             </h2>
             <p className="text-gray-700 text-sm flex-grow">{card.description}</p>
             <a
-              href="/partner"
+              href="/contact"
               className="text-gray-500 underline mt-4 text-sm"
             >
               {card.link}
