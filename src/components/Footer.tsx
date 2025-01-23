@@ -1,5 +1,5 @@
 import { Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
-import logo from '../../public/assets/saavi_logo.jpeg';
+import logo from '../../public/assets/saavi_logo.png';
 import { Link } from 'react-router-dom';
 
 export default function Footer() {
