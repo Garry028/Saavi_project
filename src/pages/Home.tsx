@@ -329,6 +329,7 @@ function OurStory() {
                   }}
                   className="text-base text-gray-600 mb-6 leading-relaxed"
                   dangerouslySetInnerHTML={{ __html: paragraph.text }}
+
                 />
               ))}
             </motion.div>
@@ -356,7 +357,7 @@ function OurStory() {
 
                   Learn More
 
-                  
+
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </motion.span>
                 <motion.div
@@ -435,11 +436,20 @@ export default function Home() {
   // const [text, setText] = useState("Where Every Stay Becomes a Memory");
 
   const textArray = [
-    "Where Every Stay Becomes a Memory", 
-    "Where comfort feels luxurious", 
+    "Where Every Stay Becomes a Memory",
+    "Where comfort feels luxurious",
     "Luxury meets comfort at Saavi"
   ];
+
+  const quoteArray = [
+    "Saavi is where elegance meets comfort and luxury feels like home, redefining indulgence with unforgettable stays, crafted to perfection.",
+    "Saavi creates an atmosphere of elegance and warmth, where every moment becomes a cherished memory.",
+    "At Saavi, every stay is designed to exceed expectations, offering unmatched luxury and comfort."
+  ];
+
   const [text, setText] = useState(textArray[0]); // Initial text
+  const [currentQuote, setCurrentQuote] = useState(quoteArray[0]); // Initial quote
+
   //Where comfort feels luxurious
   //Luxury meets confortable at Saavi
 
@@ -457,7 +467,15 @@ export default function Home() {
         const nextTextIndex = (currentTextIndex + 1) % textArray.length;
         return textArray[nextTextIndex];
       });
-    }, 5000); // Slightly longer duration for more comfortable viewing
+  
+      // Change quote
+      setCurrentQuote((prevQuote) => {
+        const currentQuoteIndex = quoteArray.indexOf(prevQuote);
+        const nextQuoteIndex = (currentQuoteIndex + 1) % quoteArray.length;
+        return quoteArray[nextQuoteIndex];
+      });
+    }, 7000); // Slightly longer duration for more comfortable viewing
+  
 
     return () => clearInterval(interval);
   }, [currentImage]);
@@ -518,23 +536,34 @@ export default function Home() {
             />
           </motion.div>
           <div>
-            <div className="-mr-10 mt-20">
+            <div className="-mr-10 mt-10 ">
               <div className="relative z-10 text-center max-w-3xl pr-60">
                 <motion.h1
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, ease: "easeOut" }}
                   className="text-white text-4xl font-sans md:text-5xl font-bold leading-tight"
-                  
+
                 >
                   {text}
+
                 </motion.h1>
+                <div className="mt-10">
+                  <motion.p
+                    initial={{ opacity: 0, y: -20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    className="text-white text-center text-l font-semibold leading-relaxed"
+                  >
+                    {currentQuote}
+                  </motion.p>
+                </div>
               </div>
             </div>
 
             {/* Text Content */}
 
-            <div className="mt-20">
+            <div className="mt-15">
               <div className="relative z-50 w-full max-w-7xl mx-auto px-4 lg:px-8 flex flex-col items-center">
                 <motion.div
                   initial={{ opacity: 0, y: 10 }}
