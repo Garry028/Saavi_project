@@ -1,5 +1,5 @@
 import { images } from "../../public/assets/export";
-import foodImage from "../../public/assets/food.jpeg";
+import foodImage from "../../public/assets/food.png";
 // import roomImage from "../../public/assets/roomImage.png";
 import bonfireImage from "../../public/assets/bonfire.png";
 // import guestAccessImage from "../../public/assets/guestAccess.png";
@@ -76,7 +76,7 @@ export const content = {
     {
       id: 7,
       name: "Saavi Hotel Jibhi",
-      location: "Manali,Himachal Pradesh, India",
+      location: "Jibhi,Himachal Pradesh, India",
       image: images.Fjb,
       description: "A charming retreat offering cozy accommodations, modern amenities, and stunning views of the lush Himalayan landscape.",
       amenities: ["Banquet Halls", "Bonfire", "Outdoor Pool", "Kids' Play Area"]

@@ -1,6 +1,6 @@
 
 import Nature from '../../public/assets/nature.png';
-import Chill from '../../public/assets/chill.png';
+import Chill from '../../public/assets/chill.jpeg';
 import Peace from '../../public/assets/peace.png';
 import TastyFood from '../../public/assets/tastyFood.png';
 import LuxuaryRoom from '../../public/assets/luxuaryRoom.png';

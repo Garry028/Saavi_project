@@ -1,4 +1,4 @@
-import Chill from '../../public/assets/chill.png';
+import Chill from '../../public/assets/chill.jpeg';
 import bonfireImage from "../../public/assets/bonfire.png";
 
 
