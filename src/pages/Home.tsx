@@ -488,7 +488,7 @@ export default function Home() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
-          className="relative h-[60vh] flex items-center justify-center overflow-hidden"
+          className="relative h-[85vh] flex items-center justify-center overflow-hidden"
         >
           {/* Background Image */}
           <motion.div
