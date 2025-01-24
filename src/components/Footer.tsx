@@ -14,8 +14,8 @@ export default function Footer() {
               <span className="text-xl font-semibold text-white">Saavi Hotels</span>
             </Link>
             <p className="mt-4 text-sm">
-              Saavi Hotels is a chain of boutique hotels and a subsidiary of Saavi Events and
-              Entertainment Pvt. Ltd headquartered at Gurgaon. Incorporated by the founder
+              Saavi Hotels is a chain of boutique hotels and a subsidiary of Saavi Hotels and
+              Resort Pvt. Ltd headquartered at Gurgaon. Incorporated by the founder
               himself, Mr. Deepak Dangi, the company is a part of the PV Group, one of India's
               growing business conglomerates.
             </p>
