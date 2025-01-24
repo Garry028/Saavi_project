@@ -436,15 +436,11 @@ export default function Home() {
   // const [text, setText] = useState("Where Every Stay Becomes a Memory");
 
   const textArray = [
-    "Where Every Stay Becomes a Memory",
-    "Where comfort feels luxurious",
-    "Luxury meets comfort at Saavi"
+    "",
   ];
 
   const quoteArray = [
-    "Saavi is where elegance meets comfort and luxury feels like home, redefining indulgence with unforgettable stays, crafted to perfection.",
-    "Saavi creates an atmosphere of elegance and warmth, where every moment becomes a cherished memory.",
-    "At Saavi, every stay is designed to exceed expectations, offering unmatched luxury and comfort."
+    ""
   ];
 
   const [text, setText] = useState(textArray[0]); // Initial text
@@ -536,7 +532,7 @@ export default function Home() {
             />
           </motion.div>
           <div>
-            <div className="-mr-10 mt-10 ">
+            <div className="-mr-10 mt-15 ">
               <div className="relative z-10 text-center max-w-3xl pr-60">
                 <motion.h1
                   initial={{ opacity: 0, y: -20 }}
@@ -563,7 +559,7 @@ export default function Home() {
 
             {/* Text Content */}
 
-            <div className="mt-15">
+            <div className="mt-15 ">
               <div className="relative z-50 w-full max-w-7xl mx-auto px-4 lg:px-8 flex flex-col items-center">
                 <motion.div
                   initial={{ opacity: 0, y: 10 }}
