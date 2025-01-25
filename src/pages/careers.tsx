@@ -56,7 +56,7 @@ export default function careers() {
                 
             </div>
             <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl font-bold text-center text-red-700 mb-8">Application Form</h2>
+        <h2 className="text-2xl font-bold text-center text-[#8B2B06] mb-8">Application Form</h2>
         <form onSubmit={handleSubmit} className="bg-white shadow-md rounded-lg p-6 space-y-4">
           <div>
             <label htmlFor="name" className="block bg-white text-gray-700 font-medium mb-2">
@@ -139,7 +139,7 @@ export default function careers() {
 
           <button
             type="submit"
-            className="w-full bg-red-700 text-white py-2 px-4 rounded-lg hover:bg-orange-600"
+            className="w-full bg-[#8B2B06] text-white py-2 px-4 rounded-lg hover:bg-orange-600"
           >
             Submit
           </button>

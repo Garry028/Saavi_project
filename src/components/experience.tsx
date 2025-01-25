@@ -13,7 +13,7 @@ export default function ExperienceUnforgettable() {
   };
 
   return (
-    <div ref={ref} className="w-full text-center font-serif text-red-700 mt-10">
+    <div ref={ref} className="w-full text-center font-serif text-[#8B2B06] mt-10">
       <div className="py-8 relative">
         <h1 className="text-2xl font-bold tracking-wide"> Unforgettable Experience</h1>
       </div>
@@ -36,7 +36,7 @@ export default function ExperienceUnforgettable() {
             ADVENTURES
           </motion.h2>
           <motion.button
-            className="mt-12 px-16 py-3 shadow-md bg-red-800 text-white rounded-lg text-lg hover:bg-red-900 transition ease-in-out duration-300"
+            className="mt-12 px-16 py-3 shadow-md bg-[#8B2B06] text-white rounded-lg text-lg hover:bg-[#8B2B06] transition ease-in-out duration-300"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             initial={{ opacity: 0 }}

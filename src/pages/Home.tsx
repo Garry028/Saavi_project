@@ -52,7 +52,7 @@ function Facilities({ }) {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
     >
-      <div className="sticky top-0 h-screen overflow-hidden bg-gradient-to-b from-white via-red-50/30 to-white">
+      <div className="sticky top-0 h-screen overflow-hidden bg-gradient-to-b from-white via-[#8B2B06] to-white">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-[0.05] pointer-events-none">
           <div className="absolute inset-0" style={{
@@ -65,7 +65,7 @@ function Facilities({ }) {
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           {/* Large floating circles */}
           <motion.div
-            className="absolute top-20 left-[10%] w-32 h-32 rounded-full bg-gradient-to-br from-red-200/40 to-red-100/40 backdrop-blur-sm"
+            className="absolute top-20 left-[10%] w-32 h-32 rounded-full bg-gradient-to-br from-[#8B2B06] to-red-100/40 backdrop-blur-sm"
             animate={{
               y: [0, -20, 0],
               scale: [1, 1.1, 1],
@@ -78,7 +78,7 @@ function Facilities({ }) {
             }}
           />
           <motion.div
-            className="absolute top-40 right-[15%] w-24 h-24 rounded-full bg-gradient-to-tr from-red-300/30 to-red-200/30 backdrop-blur-sm"
+            className="absolute top-40 right-[15%] w-24 h-24 rounded-full bg-gradient-to-tr from-[#8B2B06] to-red-200/30 backdrop-blur-sm"
             animate={{
               y: [0, 20, 0],
               scale: [1, 1.2, 1],
@@ -96,8 +96,8 @@ function Facilities({ }) {
             className="absolute top-1/4 left-[5%] w-40 h-40"
             style={{ y, rotate }}
           >
-            <div className="w-full h-full border-3 border-red-300/40 rounded-full shadow-lg" />
-            <div className="absolute inset-4 border-3 border-red-400/30 rounded-full shadow-lg" />
+            <div className="w-full h-full border-3 border-[#8B2B06] rounded-full shadow-lg" />
+            <div className="absolute inset-4 border-3 border-[#8B2B06] rounded-full shadow-lg" />
           </motion.div>
 
           <motion.div
@@ -128,7 +128,7 @@ function Facilities({ }) {
           {[...Array(25)].map((_, i) => (
             <motion.div
               key={i}
-              className="absolute w-2 h-2 bg-gradient-to-r from-red-400/40 to-red-300/40 rounded-full shadow-lg"
+              className="absolute w-2 h-2 bg-gradient-to-r from-[#8B2B06]/40 to-[#8B2B06]/40 rounded-full shadow-lg"
               style={{
                 left: `${Math.random() * 100}%`,
                 top: `${Math.random() * 100}%`,
@@ -147,7 +147,7 @@ function Facilities({ }) {
         </div>
 
         <motion.h2
-          className="relative text-3xl font-bold text-center font-serif text-red-700 pt-12 mb-8"
+          className="relative text-3xl font-bold text-center font-serif text-[#8B2B06] pt-12 mb-8"
           initial={{ opacity: 0, y: -40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
@@ -190,7 +190,7 @@ function Facilities({ }) {
         </motion.div>
 
         <motion.div
-          className="absolute bottom-8 left-[15vw] right-[15vw] h-1 bg-red-700 rounded-full"
+          className="absolute bottom-8 left-[15vw] right-[15vw] h-1 bg-[#8B2B06] rounded-full"
           style={{ scaleX: scrollYProgress }}
         />
       </div>
@@ -302,7 +302,7 @@ function OurStory() {
             </motion.h2>
 
             {/* Rest of the content */}
-            <motion.h3 className="text-2xl font-serif font-semibold text-red-700 mb-8">
+            <motion.h3 className="text-2xl font-serif font-semibold text-[#8B2B06] mb-8">
               A Legacy of Luxury
             </motion.h3>
 
@@ -317,7 +317,7 @@ function OurStory() {
               }}
             >
               {[
-                { text: "<span class='font-bold text-red-700'>SAAVI HOTELS</span>, established in 2019, has been redefining the hospitality industry with luxury and comfort." },
+                { text: "<span class='font-bold text-[#8B2B06]'>SAAVI HOTELS</span>, established in 2019, has been redefining the hospitality industry with luxury and comfort." },
                 { text: "Our journey began with a vision to create world-class accommodations that cater to the diverse needs of our guests." },
                 { text: "We pride ourselves on offering exceptional hospitality, from the moment you step into our lobby to the time you check out." }
               ].map((paragraph, index) => (
@@ -341,7 +341,7 @@ function OurStory() {
               transition={{ delay: 0.8 }}
             >
               <motion.button
-                className="flex items-center bg-red-700 text-white px-6 py-3 rounded-lg group relative overflow-hidden"
+                className="flex items-center bg-[#8B2B06] text-white px-6 py-3 rounded-lg group relative overflow-hidden"
                 whileHover="hover"
                 onClick={handleClick}
               >
@@ -361,7 +361,7 @@ function OurStory() {
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </motion.span>
                 <motion.div
-                  className="absolute inset-0 bg-red-800"
+                  className="absolute inset-0 bg-[#8B2B06]"
                   variants={{
                     hover: {
                       x: ["100%", "0%"]
@@ -384,12 +384,12 @@ function OurStory() {
               {/* Background decorative elements */}
               <div className="absolute -inset-8 -z-10">
                 <motion.div
-                  className="absolute -right-12 -top-12 w-64 h-64 border-2 border-red-300/40"
+                  className="absolute -right-12 -top-12 w-64 h-64 border-2 border-[#8B2B06]/40"
                   animate={{ rotate: 360 }}
                   transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
                 />
                 <motion.div
-                  className="absolute -left-8 -bottom-8 w-48 h-48 border-2 border-red-400/30 rounded-full"
+                  className="absolute -left-8 -bottom-8 w-48 h-48 border-2 border-[#8B2B06]/30 rounded-full"
                   animate={{
                     scale: [1, 1.1, 1],
                     rotate: [0, -360]
@@ -418,8 +418,8 @@ function OurStory() {
                 </motion.div>
 
                 {/* Enhanced corner accents */}
-                <div className="absolute -top-2 -right-2 w-16 h-16 border-t-4 border-r-4 border-red-700/30" />
-                <div className="absolute -bottom-2 -left-2 w-16 h-16 border-b-4 border-l-4 border-red-700/30" />
+                <div className="absolute -top-2 -right-2 w-16 h-16 border-t-4 border-r-4 border-[#8B2B06]/30" />
+                <div className="absolute -bottom-2 -left-2 w-16 h-16 border-b-4 border-l-4 border-[#8B2B06]/30" />
               </div>
             </motion.div>
           </div>
@@ -594,7 +594,7 @@ export default function Home() {
           style={{ backgroundImage: `url(${background_Image1})` }}
         >
           <div className="w-full px-0">
-            <h2 className="text-3xl font-serif text-red-700 font-bold text-center mb-12 animate-slide-in-top">
+            <h2 className="text-3xl font-serif text-[#8B2B06] font-bold text-center mb-12 animate-slide-in-top">
               Experience Saavi Hospitality
             </h2>
             <div className="w-full">

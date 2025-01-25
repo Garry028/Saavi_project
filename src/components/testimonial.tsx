@@ -69,7 +69,7 @@ const Guest = () => {
         <div className="w-auto mx-auto text-center mt-8">
             {/* Header */}
             <header className="mb-8">
-                <h1 className="text-3xl text-red-700 font-bold font-serif">What Our Guests Say</h1>
+                <h1 className="text-3xl text-[#8B2B06] font-bold font-serif">What Our Guests Say</h1>
                 <p className="text-lg text-gray-600 font-serif">Hear from our satisfied travelers</p>
             </header>
             <Marquee>
@@ -154,11 +154,11 @@ const Guest = () => {
                             <input
                                 type="email"
                                 placeholder="Enter your email address"
-                                className="px-4 py-2 rounded-lg text-sm border border-gray-300 w-full sm:w-72 bg-white focus:outline-none focus:ring-2 focus:ring-red-800"
+                                className="px-4 py-2 rounded-lg text-sm border border-gray-300 w-full sm:w-72 bg-white focus:outline-none focus:ring-2 focus:ring-[#8B2B06]"
                             />
                         </div>
                         {/* Button */}
-                        <button className="px-8 py-2 bg-white text-black border-b-4 border-black rounded-lg font-semibold shadow-md hover:bg-red-800 hover:text-white transition w-full sm:w-auto">
+                        <button className="px-8 py-2 bg-white text-black border-b-4 border-black rounded-lg font-semibold shadow-md hover:bg-[#8B2B06] hover:text-white transition w-full sm:w-auto">
                             Notify Me
                         </button>
                     </div>

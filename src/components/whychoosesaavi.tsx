@@ -24,10 +24,9 @@ function WhyChooseSaavi() {
       imgSrc: Card2,
     },
     {
-      title: "Luxurious Comfort",
-      description:
-        "Relax in our luxurious rooms, designed for ultimate comfort and relaxation.",
-      imgSrc: Card3,
+      title: "Food",
+      description:"Indulge in our exquisite culinary offerings, designed to provide the ultimate dining experience and satisfaction." ,    
+       imgSrc: Card3,
     },
   ];
 
@@ -73,10 +72,10 @@ function WhyChooseSaavi() {
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}
         transition={{ duration: 0.6 }}
       >
-        <h1 className="text-3xl sm:text-4xl font-serif font-bold mb-2">
+        <h1 className="text-3xl sm:text-4xl font-serif font-bold mb-2 text-[#8B2B06]">
           Why Choose Saavi?
         </h1>
-        <p className="text-base sm:text-lg mb-20 font-serif text-red-700">
+        <p className="text-base sm:text-lg mb-20 font-serif text-[#8B2B06]">
           Luxurious accommodations, world-class service, and prime locations.
         </p>
       </motion.header>
@@ -104,7 +103,7 @@ function WhyChooseSaavi() {
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.2 }}
               />
-              <h2 className="text-red-700 text-lg font-semibold mb-2">
+              <h2 className="text-[#8B2B06] text-lg font-semibold mb-2">
                 {feature.title}
               </h2>
               <p className="text-gray-600 text-sm">{feature.description}</p>

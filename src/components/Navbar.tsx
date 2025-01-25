@@ -18,8 +18,8 @@ export default function Navbar() {
 
   return (
     <header className="z-50 bg-white w-full backdrop-blur-sm shadow-sm">
-    <div className="bg-red-900 text-white p-2 text-sm px-4 sm:px-8">
-  <div className="flex flex-wrap items-center justify-between gap-y-4 sm:gap-y-0">
+<div className="bg-[#8B2B06] text-white p-2 text-sm px-4 sm:px-8">
+<div className="flex flex-wrap items-center justify-between gap-y-4 sm:gap-y-0">
     {/* Contact Info */}
     <p className="flex flex-wrap items-center gap-3 text-xs sm:text-sm">
       <FaPhoneAlt className="text-base" />

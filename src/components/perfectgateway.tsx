@@ -12,7 +12,7 @@ function PerfectGateway() {
     <div className="w-11/12 mx-auto text-center ">
       <header className="text-left mb-8">
         <h1 className="text-3xl font-bold mb-4 animate-slide-in-left font-serif">Your Perfect Getaway</h1>
-        <p className="text-xl text-red-700 font-serif">Experience the Best of Nature and Luxury</p>
+        <p className="text-xl text-[#8B2B06] font-serif">Experience the Best of Nature and Luxury</p>
       </header>
 <Marquee>
       <div className="ml-4 relative overflow-hidden">
@@ -20,7 +20,7 @@ function PerfectGateway() {
         <div className="flex gap-4 mt-4 animate-scroll-left">
           <div className="flex-none w-72 bg-white rounded-xl shadow-lg relative">
             <img src={Nature} alt="Nature" className="w-full h-48 object-cover rounded-t-xl" />
-            <div className="absolute bottom-0 left-0 right-0 bg-red-700 text-white py-2 text-center text-xl font-bold uppercase">
+            <div className="absolute bottom-0 left-0 right-0 bg-[#8B2B06] text-white py-2 text-center text-xl font-bold uppercase">
               Nature
             </div>
           </div>
@@ -35,7 +35,7 @@ function PerfectGateway() {
 
           <div className="flex-none w-72 bg-white rounded-xl shadow-lg relative">
             <img src={LuxuaryRoom} alt="Luxuary Room" className="w-full h-48 object-cover rounded-t-xl" />
-            <div className="absolute bottom-0 left-0 right-0 bg-red-700 text-white py-2 text-center text-xl font-bold uppercase">
+            <div className="absolute bottom-0 left-0 right-0 bg-[#8B2B06] text-white py-2 text-center text-xl font-bold uppercase">
               Luxury Room
             </div>
           </div>
@@ -50,7 +50,7 @@ function PerfectGateway() {
 
           <div className="flex-none w-72 bg-white rounded-xl shadow-lg relative">
             <img src={TastyFood} alt="Tasty Foods" className="w-full h-48 object-cover rounded-t-xl" />
-            <div className="absolute bottom-0 left-0 right-0 bg-red-700 text-white py-2 text-center text-xl font-bold uppercase">
+            <div className="absolute bottom-0 left-0 right-0 bg-[#8B2B06] text-white py-2 text-center text-xl font-bold uppercase">
               Tasty Foods
             </div>
           </div>
@@ -60,7 +60,7 @@ function PerfectGateway() {
         <div className="flex gap-4 mt-8 animate-scroll-left">
           <div className="flex-none w-72 bg-white rounded-xl shadow-lg relative">
             <img src={Chill} alt="Nature" className="w-full h-48 object-cover rounded-t-xl" />
-            <div className="absolute bottom-0 left-0 right-0 bg-red-700 text-white py-2 text-center text-xl font-bold uppercase">
+            <div className="absolute bottom-0 left-0 right-0 bg-[#8B2B06] text-white py-2 text-center text-xl font-bold uppercase">
               Chill
             </div>
           </div>
@@ -75,21 +75,21 @@ function PerfectGateway() {
 
           <div className="flex-none w-72 bg-white rounded-xl shadow-lg relative">
             <img src={LuxuaryRoom} alt="Luxury Room" className="w-full h-48 object-cover rounded-t-xl" />
-            <div className="absolute bottom-0 left-0 right-0 bg-red-700 text-white py-2 text-center text-xl font-bold uppercase">
+            <div className="absolute bottom-0 left-0 right-0 bg-[#8B2B06] text-white py-2 text-center text-xl font-bold uppercase">
               Hotel's Room
             </div>
           </div>
 
           <div className="flex-none w-72 bg-white rounded-xl shadow-lg relative">
             <img src={TastyFood} alt="Tasty Foods" className="w-full h-48 object-cover rounded-t-xl" />
-            <div className="absolute bottom-0 left-0 right-0 bg-red-700 text-white py-2 text-center text-xl font-bold uppercase">
+            <div className="absolute bottom-0 left-0 right-0 bg-[#8B2B06] text-white py-2 text-center text-xl font-bold uppercase">
               Foods
             </div>
           </div>
 
           <div className="flex-none w-72 bg-white rounded-xl shadow-lg relative">
             <img src={Peace} alt="Nature" className="w-full h-48 object-cover rounded-t-xl" />
-            <div className="absolute bottom-0 left-0 right-0 bg-red-700 text-white py-2 text-center text-xl font-bold uppercase">
+            <div className="absolute bottom-0 left-0 right-0 bg-[#8B2B06] text-white py-2 text-center text-xl font-bold uppercase">
             Peace
             </div>
           </div>

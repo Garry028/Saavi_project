@@ -9,8 +9,8 @@ const GalleryItem = ({ text, onClick, isSelected }: GalleryItemProps) => {
     <button
       className={`px-4 py-2 rounded transition-all ${
         isSelected
-          ? "bg-red-700 text-white border-red-700"
-          : "text-red-700 bg-white border-red-700"
+          ? "bg-[#8B2B06] text-white border-[#8B2B06]"
+          : "text-[#8B2B06] bg-white border-[#8B2B06]"
       }`}
       onClick={onClick}
     >

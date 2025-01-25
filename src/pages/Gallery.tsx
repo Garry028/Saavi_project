@@ -62,7 +62,7 @@ const Gallery = () => {
 
   return (
     <div style={{ textAlign: "center", padding: "20px" }}>
-      <h1 className="text-4xl font-bold text-red-700 text-center mb-16">OUR GALLERY</h1>
+      <h1 className="text-4xl font-bold text-[#8B2B06] text-center mb-16">OUR GALLERY</h1>
       <div
         style={{
           display: "flex",

@@ -12,14 +12,14 @@ const SaaviInfo: React.FC = () => {
         </div>
         <div className="sm:w-1/2 p-5">
           <div className="text">
-            <span className="text-gray-500 border-b-2 border-red-700 uppercase">
+            <span className="text-gray-500 border-b-2 border-[#8B2B06] uppercase">
               About us
             </span>
             <h2 className="my-4 font-bold text-3xl sm:text-4xl">
-              About <span className="text-red-700">Our Company</span>
+              About <span className="text-[#8B2B06]">Our Company</span>
             </h2>
             <p className="text-gray-700">
-              <strong className="text-red-700">Saavi Hotels and Resorts Private Limited</strong> is an emerging hospitality
+              <strong className="text-[#8B2B06]">Saavi Hotels and Resorts Private Limited</strong> is an emerging hospitality
               brand in India, founded by Deepak Dangi, a seasoned professional with over 13 years of
               experience in five-star hospitality. Saavi Hotels is committed to redefining corporate
               hospitality by offering world-class accommodations, personalized services, and modern
@@ -33,27 +33,27 @@ const SaaviInfo: React.FC = () => {
         <h2 className="text-lg font-bold text-red-700 mb-2">Key Features of Saavi Hotels</h2>
         <ul className="list-disc list-inside text-gray-700 space-y-2">
           <li>
-            <strong className="text-red-700">Corporate-Focused Stays:</strong> Tailored solutions for
+            <strong className="text-[#8B2B06]">Corporate-Focused Stays:</strong> Tailored solutions for
             business travelers, including high-speed Wi-Fi, fully equipped
             business centers, meeting rooms, and seamless check-in/check-out
             processes.
           </li>
           <li>
-            <strong className="text-red-700">Uncompromising Comfort:</strong> Each property is designed
+            <strong className="text-[#8B2B06]">Uncompromising Comfort:</strong> Each property is designed
             to provide a luxurious yet functional experience, ensuring
             relaxation and productivity for guests.
           </li>
           <li>
-            <strong className="text-red-700">Strategic Locations:</strong> Saavi Hotels are strategically
+            <strong className="text-[#8B2B06]">Strategic Locations:</strong> Saavi Hotels are strategically
             located in business hubs and major cities, making them easily
             accessible for corporate clients.
           </li>
           <li>
-            <strong className="text-red-700">Sustainability:</strong> Saavi Hotels emphasizes eco-friendly
+            <strong className="text-[#8B2B06]">Sustainability:</strong> Saavi Hotels emphasizes eco-friendly
             practices, ensuring operations contribute to a greener environment.
           </li>
           <li>
-            <strong className="text-red-700">Exceptional Guest Service:</strong> The team at Saavi Hotels
+            <strong className="text-[#8B2B06]">Exceptional Guest Service:</strong> The team at Saavi Hotels
             is trained to deliver personalized and attentive service, creating
             memorable experiences for every guest.
           </li>

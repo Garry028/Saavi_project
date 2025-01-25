@@ -50,7 +50,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #800000; /* Maroon red for buttons */
+  background-color: #8B2B06; /* Maroon red for buttons */
   color: #ffffff; /* White text color */
   cursor: pointer;
   transition: border-color 0.25s;

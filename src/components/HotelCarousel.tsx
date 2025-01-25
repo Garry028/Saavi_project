@@ -76,7 +76,7 @@ export default function HotelCarousel() {
                           whileHover={{ scale: 1.05 }}
                           whileTap={{ scale: 0.95 }}
                         >
-                          <Button className="text-lg bg-red-700 hover:bg-red-800">
+                          <Button className="text-lg bg-[#8B2B06] hover:bg-[#8B2B06]">
                             Book Now
                           </Button>
                         </motion.div>
@@ -96,10 +96,10 @@ export default function HotelCarousel() {
         transition={{ delay: 0.5 }}
       >
         <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-          <CarouselPrevious className="carousel-previous relative bg-red-700 !static" />
+          <CarouselPrevious className="carousel-previous relative bg-[#8B2B06] !static" />
         </motion.div>
         <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-          <CarouselNext className="carousel-next relative bg-red-700 !static" />
+          <CarouselNext className="carousel-next relative bg-[#8B2B06] !static" />
         </motion.div>
       </motion.div>
     </Carousel>

@@ -52,7 +52,7 @@ const SaaviCards = () => {
             key={index}
             className="relative flex flex-col justify-between bg-white rounded-2xl border border-gray-300 shadow-md p-6 w-full sm:w-80 md:w-96 max-w-xs min-h-[330px] overflow-hidden"
           >
-            <h2 className="text-red-700 text-xl font-semibold mb-4 mt-2">
+            <h2 className="text-[#8B2B06] text-xl font-semibold mb-4 mt-2">
               {card.title}
             </h2>
             <p className="text-gray-700 text-sm flex-grow">{card.description}</p>

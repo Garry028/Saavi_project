@@ -9,7 +9,7 @@ const CoreValuesPage: React.FC = () => {
         {/* Core Values Cards Section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="bg-white p-6 rounded-lg shadow-lg">
-            <h3 className="text-xl font-bold text-red-700 text-center mb-4">Guest-Centric Excellence</h3>
+            <h3 className="text-xl font-bold text-[#8B2B06] text-center mb-4">Guest-Centric Excellence</h3>
             <ul className="text-gray-700 space-y-4">
               <li><strong>Commitment to Exceptional Experiences:</strong> Every decision is made with the guest in mind, ensuring their comfort, convenience, and satisfaction.</li>
               <li><strong>Personalized Service:</strong> Recognizing the unique needs of each guest, especially corporate travelers, and providing tailored solutions.</li>
@@ -17,7 +17,7 @@ const CoreValuesPage: React.FC = () => {
           </div>
 
           <div className="bg-white p-6 rounded-lg shadow-lg">
-            <h3 className="text-xl font-bold text-red-700 text-center mb-4">Pursuit of Excellence</h3>
+            <h3 className="text-xl font-bold text-[#8B2B06] text-center mb-4">Pursuit of Excellence</h3>
             <ul className="text-gray-700 space-y-4">
               <li><strong>Uncompromising Quality:</strong> Striving for perfection in every aspect of operations, from room service to facility management.</li>
               <li><strong>Continuous Improvement:</strong> Regularly evaluating and upgrading services to stay ahead in the competitive hospitality industry.</li>
