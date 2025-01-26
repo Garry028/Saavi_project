@@ -594,7 +594,7 @@ export default function Home() {
           style={{ backgroundImage: `url(${background_Image1})` }}
         >
           <div className="w-full px-0">
-            <h2 className="text-3xl font-serif text-[#8B2B06] font-bold text-center mb-12 animate-slide-in-top">
+            <h2 className="text-3xl font-serif text-[#8B2B06] z-10 font-bold text-center mb-12 animate-slide-in-top">
               Experience Saavi Hospitality
             </h2>
             <div className="w-full">
