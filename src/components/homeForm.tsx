@@ -109,7 +109,7 @@ const BookingForm = () => {
         checkOut,
         guests: adults + children,
       });
-      alert('Booking successful!');
+      // alert('Booking successful!');
     }
   };
 
@@ -176,6 +176,7 @@ const BookingForm = () => {
                 </div>
               )}
             </div>
+            {errors.destination && <p className="text-red-500 text-sm mt-1">{errors.destination}</p>}
           </div>
 
           {/* Guests Dropdown */}
@@ -241,6 +242,7 @@ const BookingForm = () => {
       </div>
     )}
   </div>
+  
 </div>
 
 
@@ -276,6 +278,8 @@ const BookingForm = () => {
                 className="w-full pl-10 pr-4 py-2.5 border border-gray-300 rounded-lg bg-white text-gray-900 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
               />
             </div>
+            {errors.checkIn && <p className="text-red-500 text-sm mt-1">{errors.checkIn}</p>}
+
           </div>
 
           <div className="relative">
@@ -291,8 +295,10 @@ const BookingForm = () => {
                 min={checkIn || new Date().toISOString().split('T')[0]}
                 className="w-full pl-10 pr-4 py-2.5 border border-gray-300 rounded-lg bg-white text-gray-900 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
               />
+
             </div>
-            
+            {errors.checkOut && <p className="text-red-500 text-sm mt-1">{errors.checkOut}</p>}
+
           </div>
 
           <div className="relative">
