@@ -137,7 +137,7 @@ const Guest = () => {
                 style={{ backgroundImage: `url(${Background_image})` }}
             >
                 {/* Overlay */}
-                <div className="absolute inset-0 bg-red-800 opacity-60"></div>
+                <div className="absolute inset-0 bg-[#8b2b06] opacity-60"></div>
 
                 {/* Content */}
                 <div className="relative z-10 flex justify-between items-center h-full px-6 sm:px-8 md:px-12">

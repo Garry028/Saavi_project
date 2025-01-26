@@ -91,7 +91,7 @@ function WhyChooseSaavi() {
           {features.map((feature, index) => (
             <motion.div
               key={index}
-              className="bg-white border-2 border-gray-200 rounded-lg shadow-[0px_-10px_0px_rgba(157,13,13,1)] w-full sm:w-1/3 lg:w-1/4 p-5 text-center"
+              className="bg-white border-2 border-gray-200 rounded-lg shadow-[0px_-10px_0px_#8b2b06] w-full sm:w-1/3 lg:w-1/4 p-5 text-center"
               variants={cardVariants}
               whileHover="hover"
               whileTap={{ scale: 0.98 }}

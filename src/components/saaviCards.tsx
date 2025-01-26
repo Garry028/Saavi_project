@@ -76,7 +76,7 @@ const SaaviCards = () => {
         className="relative w-full h-32 bg-cover bg-center rounded-lg mt-10"
         style={{ backgroundImage: `url(${Frame})` }}
       >
-        <div className="absolute inset-0 bg-red-800 opacity-80"></div>
+        <div className="absolute inset-0 bg-[#8b2b06] opacity-80"></div>
       </div>
     </div>
   );
