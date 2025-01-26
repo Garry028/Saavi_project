@@ -57,46 +57,70 @@ const BookingForm = () => {
   //   }
 
 
-    const [destination, setDestination] = useState('');
-    const [isDestinationOpen, setIsDestinationOpen] = useState(false);
-    const [rooms, setRooms] = useState('1');
-    const [checkIn, setCheckIn] = useState('');
-    const [checkOut, setCheckOut] = useState('');
-    const [isGuestsOpen, setIsGuestsOpen] = useState(false);
-    const [adults, setAdults] = useState(1);
-    const [children, setChildren] = useState(0);
-  
-    const destinations = ['Gurugram', 'Shimla', 'Manali', 'Rishikesh'];
-    const destinationRef = useRef<HTMLDivElement>(null);
-    const guestsRef = useRef<HTMLDivElement>(null);
-  
-    useEffect(() => {
-      const handleClickOutside = (event: MouseEvent) => {
-        if (destinationRef.current && !destinationRef.current.contains(event.target as Node)) {
-          setIsDestinationOpen(false);
-        }
-        if (guestsRef.current && !guestsRef.current.contains(event.target as Node)) {
-          setIsGuestsOpen(false);
-        }
-      };
-  
-      document.addEventListener('mousedown', handleClickOutside);
-      return () => document.removeEventListener('mousedown', handleClickOutside);
-    }, []);
-  
-    const handleSubmit = (e: React.FormEvent) => {
-      e.preventDefault();
-      // Handle form submission
-    };
-  
-    const updateGuests = (type: 'adult' | 'child', operation: 'increment' | 'decrement') => {
-      if (type === 'adult') {
-        if (operation === 'increment' && adults < 30) setAdults(adults + 1);
-        if (operation === 'decrement' && adults > 1) setAdults(adults - 1);
-      } else {
-        if (operation === 'increment' && children < 30) setChildren(children + 1);
-        if (operation === 'decrement' && children >= 1) setChildren(children - 1);
+  const [destination, setDestination] = useState('');
+  const [isDestinationOpen, setIsDestinationOpen] = useState(false);
+  const [rooms, setRooms] = useState('1');
+  const [checkIn, setCheckIn] = useState('');
+  const [checkOut, setCheckOut] = useState('');
+  const [isGuestsOpen, setIsGuestsOpen] = useState(false);
+  const [adults, setAdults] = useState(1);
+  const [children, setChildren] = useState(0);
+  const [errors, setErrors] = useState<Record<string, string>>({}); // Validation errors
+
+  const destinations = ['Gurugram', 'Shimla', 'Manali', 'Rishikesh'];
+  const destinationRef = useRef<HTMLDivElement>(null);
+  const guestsRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (destinationRef.current && !destinationRef.current.contains(event.target as Node)) {
+        setIsDestinationOpen(false);
       }
+      if (guestsRef.current && !guestsRef.current.contains(event.target as Node)) {
+        setIsGuestsOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  const validateInputs = () => {
+    const newErrors: Record<string, string> = {};
+
+    if (!destination) newErrors.destination = 'Destination is required.';
+    if (!checkIn) newErrors.checkIn = 'Check-in date is required.';
+    if (!checkOut) newErrors.checkOut = 'Check-out date is required.';
+    if (checkIn && checkOut && checkOut <= checkIn) newErrors.checkOut = 'Check-out date must be after check-in date.';
+    if (!rooms) newErrors.rooms = 'Select at least one room.';
+    if (adults + children === 0) newErrors.guests = 'At least one guest is required.';
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0; // Returns true if no errors
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (validateInputs()) {
+      console.log({
+        destination,
+        rooms,
+        checkIn,
+        checkOut,
+        guests: adults + children,
+      });
+      alert('Booking successful!');
+    }
+  };
+
+  const updateGuests = (type: 'adult' | 'child', operation: 'increment' | 'decrement') => {
+    if (type === 'adult') {
+      if (operation === 'increment' && adults < 30) setAdults(adults + 1);
+      if (operation === 'decrement' && adults > 1) setAdults(adults - 1);
+    } else {
+      if (operation === 'increment' && children < 30) setChildren(children + 1);
+      if (operation === 'decrement' && children > 0) setChildren(children - 1);
+    }
 
   };
 
@@ -114,7 +138,7 @@ const BookingForm = () => {
           visible: { opacity: 1, y: 0, transition: { duration: 0.6, staggerChildren: 0.1 } },
         }}
       >
-        <div className="container mx-auto px-4 mt-72 relative z-10">
+        <div className="container mx-auto px-4 mt-96 relative z-50">
         <form 
           onSubmit={handleSubmit}
           className="bg-white rounded-xl shadow-2xl p-6 grid grid-cols-1 md:grid-cols-6 gap-4"
@@ -136,7 +160,7 @@ const BookingForm = () => {
                 <ChevronDown className="h-4 w-4 text-gray-400" />
               </div>
               {isDestinationOpen && (
-                <div className="absolute top-full left-0 right-0 mt-1 bg-white border border-gray-200 rounded-lg shadow-lg z-50">
+                <div className="absolute bottom-full left-0 right-0 mt-1 bg-white border border-gray-200 rounded-lg shadow-lg z-50">
                   {destinations.map((dest) => (
                     <div
                       key={dest}
@@ -155,7 +179,7 @@ const BookingForm = () => {
           </div>
 
           {/* Guests Dropdown */}
-          <div className="relative" ref={guestsRef}>
+          <div className="relative z-100" ref={guestsRef}>
   <label className="block text-sm font-medium text-gray-700 text-left mb-1">Guests</label>
   <div className="relative">
     <Users className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 h-5 w-5" />
@@ -169,8 +193,8 @@ const BookingForm = () => {
       <ChevronDown className="h-4 w-4 text-gray-400" />
     </div>
     {isGuestsOpen && (
-      <div className="absolute top-full left-0  mt-2 bg-white border border-gray-200 rounded-lg shadow-lg z-50 p-4">
-        <div className="space-y-6">
+      <div className="absolute bottom-full left-0 mb-2 bg-white border border-gray-200 rounded-lg shadow-lg z-50 p-4">
+      <div className="space-y-6">
           {/* Adults */}
           <div className="flex items-center justify-between">
             <span className="text-gray-700 font-medium">Adults</span>
@@ -229,7 +253,7 @@ const BookingForm = () => {
               <select
                 value={rooms}
                 onChange={(e) => setRooms(e.target.value)}
-                className="w-full pl-10 pr-4 py-2.5 border text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 appearance-none bg-white"
+                className="w-full bottom-full pl-10 pr-4 py-2.5 border text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 appearance-none bg-white"
               >
                 {[1, 2, 3, 4, 5,6,7,8,9,10,11,12,13,14,15,16,17,18].map(num => (
                   <option key={num} value={num}>{num} {num === 1 ? 'Room' : 'Rooms'}</option>
@@ -268,6 +292,7 @@ const BookingForm = () => {
                 className="w-full pl-10 pr-4 py-2.5 border border-gray-300 rounded-lg bg-white text-gray-900 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
               />
             </div>
+            
           </div>
 
           <div className="relative">
@@ -276,7 +301,7 @@ const BookingForm = () => {
             </label>
             <button
               type="submit"
-              className="w-full bg-red-700  hover:bg-blue-700 text-white font-semibold  px-6 rounded-lg transition duration-200 "
+              className="w-full bg-red-800 hover:bg-red-700 text-white font-semibold  px-6 rounded-lg transition duration-200 "
             >
               Book Now
             </button>
