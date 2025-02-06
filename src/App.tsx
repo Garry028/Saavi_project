@@ -12,6 +12,9 @@ import Promotions from '@/pages/Promotions';
 import Career from '@/pages/careers'
 import Contact from '@/pages/Contact';
 import BanqAndEvents from '@/pages/banqAndEvents';
+import HotelDetail from '@/pages/HotelDescription';
+import ImportantLinks from '@/pages/ImportantLinks';
+import ExplorePage from '@/pages/Explore';
 
 function App() {
   return (
@@ -31,9 +34,12 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/banqAndEvents" element={<BanqAndEvents />} />
             <Route path="/careers" element={<Career />} />
+            <Route path="/hotelDesc/:hotelId" element={<HotelDetail />} />
+            <Route path="/links" element={<ImportantLinks />} />
+            <Route path="/explore" element={<ExplorePage />} />
           </Routes>
         </main>
-        <Footer />
+        <Footer /> 
       </div>
     </ThemeProvider>
   );

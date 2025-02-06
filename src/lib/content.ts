@@ -26,7 +26,7 @@ export const content = {
   },
   hotels: [
     {
-      id: 1,
+      id: "golf-course-luxury",
       name: "Saavi Hotel Golf course",
       location: "Gurugram, Haryana, India",
       image: images.Image_1,
@@ -58,7 +58,7 @@ export const content = {
       amenities: ["Conference Rooms", "Fitness Center", "24/7 Room Service", "Bonfire"]
     },
     {
-      id: 5,
+      id: 'shimla-mountain-resort',
       name: "Hassan Valley By Saavi",
       location: "Shimla, Himachal Pradesh, India",
       image: images.Image_5,
@@ -81,7 +81,6 @@ export const content = {
       description: "A charming retreat offering cozy accommodations, modern amenities, and stunning views of the lush Himalayan landscape.",
       amenities: ["Banquet Halls", "Bonfire", "Outdoor Pool", "Kids' Play Area"]
     }
-    
   ],
   upcomingProjects: [
     {
@@ -222,5 +221,52 @@ export const content = {
       description: 'With over 10 years of experience, Shipra Singh ensures top-tier hospitality and operational excellence, grooming talent and delivering outstanding results for Saavi Hotels.',
       imageSrc: 'https://via.placeholder.com/150',
     },
+  ],
+  terms_and_conditions: [
+    {
+      title: 'Terms and Conditions',
+      content: `Terms and Conditions for Saavi Hotel
+
+Welcome to Saavi Hotel. By accessing or using our services, including making reservations, checking in, and utilizing hotel facilities, you agree to comply with the following terms and conditions. Please read them carefully.
+
+Reservation Policy
+
+Reservations can be made via our official website, phone, or authorized third-party platforms.
+A valid credit card is required to secure a booking.
+Cancellation policies vary depending on the booking type. Guests are advised to refer to their specific reservation details for cancellation timelines and fees.
+No-shows and late cancellations may result in a penalty charge, including but not limited to the cost of the first night’s stay.
+Check-in/Check-out Policy
+
+Check-in time begins at 2:00 PM. Early check-in is subject to availability and may incur additional charges.
+Check-out time is by 12:00 PM. Late check-outs may be subject to additional fees if they exceed one hour beyond the stated check-out time.
+Payment Terms
+
+Payment for the stay is due at the time of check-in or as specified in the reservation agreement.
+Accepted payment methods include credit/debit cards and cash (subject to hotel discretion).
+All applicable taxes and service charges will be added to the final bill and may vary based on local regulations.
+Guest Responsibilities
+
+Guests are required to maintain appropriate conduct while on hotel property, adhering to all hotel policies, rules, and regulations.
+Saavi Hotel reserves the right to refuse service to any guest displaying disruptive or illegal behavior, including but not limited to intoxication, noise disturbances, or property damage.
+Privacy and Data Protection
+
+Personal information collected during the reservation process or during the stay will be stored and processed in accordance with applicable privacy laws and Saavi Hotel’s privacy policy.
+The hotel will not disclose any personal data without the consent of the guest, unless required by law or in relation to the provision of services.
+Liability
+
+Saavi Hotel is not liable for any loss, damage, or injury to guests or their property, except in cases of negligence on the part of the hotel.
+The hotel does not assume responsibility for personal items left in guest rooms or common areas. Guests are encouraged to use in-room safes or lockers for valuable items.
+Hotel Amenities and Services
+
+Access to certain hotel amenities such as the pool, gym, and restaurant may be subject to additional charges and availability.
+The hotel reserves the right to alter or suspend certain services or amenities due to maintenance, local regulations, or unforeseen circumstances.
+Force Majeure
+
+Saavi Hotel shall not be held responsible for failure or delay in the performance of any obligations due to circumstances beyond its reasonable control, including but not limited to natural disasters, pandemics, or governmental restrictions.
+Amendments to Terms and Conditions
+
+Saavi Hotel reserves the right to update or modify these terms and conditions at any time. All updates will be published on our website and will apply to any bookings or services made thereafter.
+By proceeding with a reservation or stay, you acknowledge that you have read, understood, and agreed to these terms and conditions. If you have any questions or require further clarification, please contact our guest services team.`
+    }
   ],
 };

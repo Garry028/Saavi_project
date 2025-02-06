@@ -101,7 +101,7 @@ export default function Navbar() {
               {content.hotels.map((hotel) => (
                 <DropdownMenuItem key={hotel.id} className="p-0 focus:bg-transparent">
                   <Link
-                    to={`/hotels/${hotel.id}`}
+                    to={`/hotelDesc/${hotel.id}`}
                     className="flex items-center gap-4 w-full p-2 rounded-md hover:bg-gray-100 transition-colors"
                   >
                     <img
