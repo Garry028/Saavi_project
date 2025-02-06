@@ -1,5 +1,5 @@
 import { content } from "@/lib/content";
-import { Button } from "@/components/ui/button";
+
 import { Link } from "react-router-dom";
 
 export default function Business() {

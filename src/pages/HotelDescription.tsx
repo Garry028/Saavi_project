@@ -6,17 +6,17 @@ import {
   // Users, 
   // Building2, 
   MapPin, 
-  Wifi, 
-  Car, 
-  Tv, 
-  Coffee, 
-  UtensilsCrossed, 
-  Bath, 
-  Wind, 
+  // Wifi, 
+  // Car, 
+  // Tv, 
+  // Coffee, 
+  // UtensilsCrossed, 
+  // Bath, 
+  // Wind, 
   Star,
-  BedDouble,
-  Home,
-  Users2
+  // BedDouble,
+  // Home,
+  // Users2
 } from 'lucide-react';
 
 import {hotels} from '../lib/hotelContent'
@@ -27,15 +27,15 @@ import {hotels} from '../lib/hotelContent'
 //   { id: 2, name: "Beach Resort", location: "Miami", rating: 4.2, images: ["/hotel2.jpg"], price: 300, amenities: ["Coffee Maker", "Bathtub", "Air Conditioning"], description: "Relax and enjoy the beachside view." },
 // ];
 
-const amenityIcons: Record<string, any> = {
-  'Free High-speed WiFi': Wifi,
-  'Free Private Parking': Car,
-  'Flat-screen TV for Entertainment': Tv,
-  'Coffee Maker': Coffee,
-  'Kitchen': UtensilsCrossed,
-  'Bathtub': Bath,
-  'Air Conditioning for a Comfortable Stay': Wind,
-};
+// const amenityIcons: Record<string, any> = {
+//   'Free High-speed WiFi': Wifi,
+//   'Free Private Parking': Car,
+//   'Flat-screen TV for Entertainment': Tv,
+//   'Coffee Maker': Coffee,
+//   'Kitchen': UtensilsCrossed,
+//   'Bathtub': Bath,
+//   'Air Conditioning for a Comfortable Stay': Wind,
+// };
 
 export default function HotelDetail() {
   const { hotelId } = useParams();  // Get hotel ID from URL
