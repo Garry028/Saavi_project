@@ -1,6 +1,7 @@
 import  { useState } from 'react';
 import { useParams } from 'react-router-dom';
 // import {  BookingFormData } from '../types';
+// import { useNavigate } from 'react-router-dom';
 import { 
   // Calendar, 
   // Users, 
@@ -41,6 +42,7 @@ export default function HotelDetail() {
   const { hotelId } = useParams();  // Get hotel ID from URL
   // const navigate = useNavigate();   // For back button navigation
   const hotel = hotels.find(h => h.id === hotelId);
+  // const navigate = useNavigate();
 
   const [selectedImage, setSelectedImage] = useState(0);
   // const [bookingData, setBookingData] = useState<BookingFormData>({
@@ -54,6 +56,12 @@ export default function HotelDetail() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    if (hotel?.bookingEngine) {
+      window.location.href = hotel.bookingEngine; // Redirect to external URL in the same tab
+    } else {
+      console.warn("Booking engine not available for this hotel.");
+    }
+    
     // console.log('Booking submitted:', bookingData);
   };
 

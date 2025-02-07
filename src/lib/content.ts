@@ -29,54 +29,65 @@ export const content = {
       id: "golf-course-luxury",
       name: "Saavi Hotel Golf course",
       location: "Gurugram, Haryana, India",
+      city: "Gurugram",
       image: images.Image_1,
       description: "Combines luxury accommodations with a serene, well-maintained golf experience.",
-      amenities: ["Scenic Views", "Bonfire", "Indoor Dining", "Luxury Suites"]
+      amenities: ["Scenic Views", "Bonfire", "Indoor Dining", "Luxury Suites"],
+      bookingEngine : "http://bookingengine.maximojo.com?hid=IN-7fc00e1a-24e9-4e40-9e88-b3f0f8a6d8ac"
     },
     {
-      id: 2,
+      id: "sector-46",
       name: "Saavi Hotel Sector 46",
       location: "Gurugram, Haryana, India",
+      city: "Gurugram",
       image: images.F46,
       description: " Offers comfortable accommodations with modern amenities in a convenient and vibrant location.",
-      amenities: ["Canal Views", "Bike Rentals", "Art Gallery", "Bonfire"]
+      amenities: ["Canal Views", "Bike Rentals", "Art Gallery", "Bonfire"],
+      bookingEngine : "http://bookingengine.maximojo.com?hid=IN-d94400e8-db75-4daa-9a98-d84564413313"
     },
     {
-      id: 3,
+      id: "sector-45",
       name: "Saavi Hotel Sector 45",
       location: "Gurugram, Haryana, India",
+      city: "Gurugram",
       image: images.F45,
       description: "Provides cozy accommodations with modern facilities, ensuring a convenient and pleasant stay.",
-      amenities: ["Golf Course", "Fine Dining", "Luxury Suites", "Infinity Pool"]
+      amenities: ["Golf Course", "Fine Dining", "Luxury Suites", "Infinity Pool"],
+      bookingEngine :"http://bookingengine.maximojo.com?hid=IN-c2ecb7a0-0dd5-4ce2-a9b7-2c2afeb8754b"
     },
     {
-      id: 4,
+      id: "sector-10",
       name: "Saavi Hotel Sector 10",
       location: "Gurugram, Haryana, India",
+      city: "Gurugram",
       image: images.F10,
       description: "Offers comfortable and well-equipped accommodations for a relaxing and convenient stay.",
-      amenities: ["Conference Rooms", "Fitness Center", "24/7 Room Service", "Bonfire"]
+      amenities: ["Conference Rooms", "Fitness Center", "24/7 Room Service", "Bonfire"],
+      bookingEngine : "http://bookingengine.maximojo.com?hid=IN-f59a1bd3-916f-4a62-9092-9624599ac2c6"
     },
     {
       id: 'shimla-mountain-resort',
       name: "Hassan Valley By Saavi",
       location: "Shimla, Himachal Pradesh, India",
+      city: "Shimla",
       image: images.Image_5,
       description: "A serene getaway nestled amidst picturesque landscapes, offering modern amenities and a tranquil escape in the heart of nature.",
       amenities: ["Eco-Cottages", "Trekking Assistance", "Bonfire Nights", "Organic Meals"]
     },
     {
-      id: 6,
+      id: "saavi-rishikesh",
       name: "Saavi Hotel and Resorts",
       location: "Rishikesh,Uttrakhand, India",
+      city: "Rishikesh",
       image: images.Image_6,
       description: " Offers a serene retreat with modern amenities, surrounded by the tranquil beauty of the Himalayan foothills and the Ganges River.",
       amenities: ["Wellness Center", "Luxury Rooms", "Multi-Cuisine Dining", "Bonfire"]
     },
     {
-      id: 7,
+      id: "saavi-jibhi",
       name: "Saavi Hotel Jibhi",
       location: "Jibhi,Himachal Pradesh, India",
+      city: "Shimla",
       image: images.Fjb,
       description: "A charming retreat offering cozy accommodations, modern amenities, and stunning views of the lush Himalayan landscape.",
       amenities: ["Banquet Halls", "Bonfire", "Outdoor Pool", "Kids' Play Area"]
@@ -84,17 +95,19 @@ export const content = {
   ],
   upcomingProjects: [
     {
-      id: 1,
+      id: "saavi-gurgaon",
       name: "Saavi Hotel Gurgaon",
       location: "Gurgaon, Delhi",
+      city: "Gurugram",
       image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=800",
       description: "A new level of luxury in the heart of Gurgaon.",
       openingDate: "2025"
     },
     {
-      id: 2,
+      id: "saavi-goa",
       name: "Saavi Hotel Goa",
       location: "Goa, India",
+      city: "Goa",
       image: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=800",
       description: "Elegant suites with stunning views.",
       openingDate: "2025"

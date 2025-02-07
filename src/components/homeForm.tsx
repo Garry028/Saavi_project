@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import 'react-datepicker/dist/react-datepicker.css';
 import 'react-toastify/dist/ReactToastify.css'; // Import the default styling for the toasts
 import { Search, Users, Building2, Calendar, ChevronDown, Plus, Minus } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const BookingForm = () => {
   const [destination, setDestination] = useState('');
@@ -14,6 +15,7 @@ const BookingForm = () => {
   const [adults, setAdults] = useState(1);
   const [children, setChildren] = useState(0);
   const [errors, setErrors] = useState<Record<string, string>>({}); // Validation errors
+  const navigate = useNavigate();
 
   const destinations = ['Gurugram', 'Shimla', 'Manali', 'Rishikesh'];
   const destinationRef = useRef<HTMLDivElement>(null);
@@ -56,17 +58,11 @@ const BookingForm = () => {
   };
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+      e.preventDefault();
     if (validateInputs()) {
-      console.log({
-        destination,
-        rooms,
-        checkIn,
-        checkOut,
-        guests: adults + children,
-      });
-      // alert('Booking successful!');
+      navigate(`/hotels?destination=${encodeURIComponent(destination)}`);
     }
+    
   };
 
   const updateGuests = (type: 'adult' | 'child', operation: 'increment' | 'decrement') => {

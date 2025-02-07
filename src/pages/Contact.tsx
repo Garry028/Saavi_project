@@ -1,13 +1,20 @@
+import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { content } from "@/lib/content";
 import { Building2, Mail, Phone } from "lucide-react";
-import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css'; // Import the default styling for the toasts
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import emailjs from "@emailjs/browser";
+import { ToastContainer } from "react-toastify";
 
-// Interface for form elements
+
+const PUBLIC_KEY = "zNdQllj7Had9NmZc4";
+const SERVICE_ID = "service_lhep98x"; // Replace with your EmailJS service ID
+const TEMPLATE_ID = "template_18gt3et"; // Replace with your EmailJS template ID
+
 interface ContactFormElements extends HTMLFormControlsCollection {
   name: HTMLInputElement;
   email: HTMLInputElement;
@@ -20,49 +27,52 @@ interface ContactForm extends HTMLFormElement {
 }
 
 export default function Contact() {
-  // Form submit handler with validation
+  useEffect(() => {
+    emailjs.init(PUBLIC_KEY);
+  }, []);
+
   const handleSubmit = (e: React.FormEvent<ContactForm>) => {
-    e.preventDefault(); // Prevent page refresh
-
-    const form = e.target as ContactForm;
-
-    // Getting form values
+    e.preventDefault();
+    
+    const form = e.currentTarget;
     const name = form.elements.name.value;
     const email = form.elements.email.value;
     const phone = form.elements.phone.value;
     const message = form.elements.message.value;
 
-    // Simple Validation
     if (!name || !email || !phone || !message) {
-      toast.error("All fields are required!", {
-        autoClose: 5000, // Toast will close after 5 seconds
-      }); 
+      toast.error("All fields are required!");
       return;
     }
 
-    // Email validation
     const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
     if (!emailPattern.test(email)) {
-      toast.error("Please enter a valid email!", {
-        autoClose: 5000,
-      });
+      toast.error("Please enter a valid email!");
       return;
     }
 
-    // Phone number validation (simple check for length and numeric values)
-    // Regex for phone number: allows 10-digit numbers or international formats with optional '+' and country code
     const phonePattern = /^[+]?[0-9]{10,15}$/;
     if (!phonePattern.test(phone)) {
-      toast.error("Please enter a valid phone number!", {
-        autoClose: 5000,
-      });
+      toast.error("Please enter a valid phone number!");
       return;
     }
 
-    // If all fields are valid, show success toast
-    toast.success("Message Sent Successfully!", {
-      autoClose: 5000, // Toast will close after 5 seconds
-    });
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      phone,
+      message,
+    };
+
+    emailjs
+      .send(SERVICE_ID, TEMPLATE_ID, templateParams)
+      .then(() => {
+        toast.success("Message Sent Successfully!");
+        form.reset();
+      })
+      .catch(() => {
+        toast.error("Failed to send message. Please try again.");
+      });
   };
 
   return (
@@ -71,20 +81,16 @@ export default function Contact() {
         <h1 className="text-4xl font-bold text-center mb-16">Contact Us</h1>
 
         <div className="grid md:grid-cols-2 gap-12">
-          {/* Contact Information */}
           <div className="space-y-8">
             <h2 className="text-2xl font-semibold mb-6">Get in Touch</h2>
-
             <div className="space-y-4">
               <div className="flex items-start gap-4">
                 <Building2 className="w-6 h-6 text-primary mt-1" />
                 <div>
                   <h3 className="font-semibold">Address</h3>
-                  <p className="text-gray-600">545, Sector 43, Golf course Road,</p>
-                  <p className="text-gray-600">Gurugram, Haryana 122003</p>
+                  <p className="text-gray-600">545, Sector 43, Golf course Road, Gurugram, Haryana 122003</p>
                 </div>
               </div>
-
               <div className="flex items-start gap-4">
                 <Phone className="w-6 h-6 text-primary mt-1" />
                 <div>
@@ -92,7 +98,6 @@ export default function Contact() {
                   <p className="text-gray-600">9999575044, 7290006773</p>
                 </div>
               </div>
-
               <div className="flex items-start gap-4">
                 <Mail className="w-6 h-6 text-primary mt-1" />
                 <div>
@@ -103,37 +108,25 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Contact Form */}
           <div className="bg-white p-8 rounded-lg shadow-md">
             <h2 className="text-2xl font-semibold mb-6">Send us a Message</h2>
-
             <form className="space-y-6" onSubmit={handleSubmit}>
               <div className="grid gap-2">
                 <Label htmlFor="name">Name</Label>
-                <Input id="name" placeholder="Enter your name" required />
+                <Input id="name" name="name" placeholder="Enter your name" required />
               </div>
-
               <div className="grid gap-2">
                 <Label htmlFor="email">Email</Label>
-                <Input id="email" type="email" placeholder="Enter your email" required />
+                <Input id="email" name="email" type="email" placeholder="Enter your email" required />
               </div>
-
-              {/* Phone Number Field (Replaces Subject) */}
               <div className="grid gap-2">
                 <Label htmlFor="phone">Phone Number</Label>
-                <Input id="phone" type="tel" placeholder="Enter your phone number" required />
+                <Input id="phone" name="phone" type="tel" placeholder="Enter your phone number" required />
               </div>
-
               <div className="grid gap-2">
                 <Label htmlFor="message">Message</Label>
-                <Textarea
-                  id="message"
-                  placeholder="Enter your message"
-                  className="min-h-[150px]"
-                  required
-                />
+                <Textarea id="message" name="message" placeholder="Enter your message" className="min-h-[150px]" required />
               </div>
-
               <Button type="submit" className="w-full">
                 Send Message
               </Button>
@@ -141,9 +134,8 @@ export default function Contact() {
           </div>
         </div>
       </div>
+      <ToastContainer position="top-right" autoClose={false} hideProgressBar={false} newestOnTop closeOnClick pauseOnFocusLoss draggable pauseOnHover />
 
-      {/* ToastContainer component for showing toast notifications */}
-      {/* <ToastContainer /> */}
     </div>
   );
 }

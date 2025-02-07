@@ -8,6 +8,7 @@ export const hotels: Hotel[] = [
     location: 'Gurugram, Haryana, India',
     price: 1200,
     rating: 4.9,
+    bookingEngine : "http://bookingengine.maximojo.com?hid=IN-7fc00e1a-24e9-4e40-9e88-b3f0f8a6d8ac",
     description: `
     This boutique hotel is best for small gathering events – Haldi, wedding , Engagement , birthday parties etc. Couples particularly like the location because of our quality rooms, private dining area and in- room dining services. This boutique hotel also have banquet hall that is best for Weddings, Haldi, Ring Ceremony,  Engagement , birthday parties etc. Has a Beautiful Banquet with state of the art enmities. We speak your language!
 
@@ -75,11 +76,12 @@ Location:
   'Air Conditioning for a Comfortable Stay',]
   },
   {
-    id: '2',
+    id: 'sector-46',
     name: 'Saavi Hotel Sector 46',
     location: 'Gurugram, Haryana, India',
     price: 10000,
     rating: 4.7,
+    bookingEngine : "http://bookingengine.maximojo.com?hid=IN-d94400e8-db75-4daa-9a98-d84564413313",
     description: `
 This boutique hotel is best for small gathering events – Haldi, wedding , Engagement , birthday parties etc. Couples particularly like the location because of our quality rooms, private dining area and in- room dining services. This boutique hotel also have banquet hall that is best for Weddings, Haldi, Ring Ceremony,  Engagement , birthday parties etc. Has a Beautiful Banquet with state of the art enmities. We speak your language!
 
@@ -171,11 +173,12 @@ Bed linens and towels are provided in every room for guest comfort.
   ]
   },
   {
-    id: '3',
+    id: 'sector-45',
     name: 'Saavi Hotel Sector 45',
     location: 'Gurugram, Haryana, India',
     price: 11000,
     rating: 4.8,
+    bookingEngine :"http://bookingengine.maximojo.com?hid=IN-c2ecb7a0-0dd5-4ce2-a9b7-2c2afeb8754b",
     description: `
     This boutique hotel is best for small gathering events – Haldi, wedding , Engagement , birthday parties etc. Couples particularly like the location because of our quality rooms, private dining area and in- room dining services. This boutique hotel also have banquet hall that is best for Weddings, Haldi, Ring Ceremony,  Engagement , birthday parties etc. Has a Beautiful Banquet with state of the art enmities. We speak your language!
 
@@ -243,11 +246,12 @@ Location:
   'Air Conditioning for a Comfortable Stay',]
   },
   {
-    id: '4',
+    id: 'sector-10',
     name: 'Saavi Hotel Sector 10',
     location: 'Gurugram, Haryana, India',
     price: 9000,
     rating: 4.6,
+    bookingEngine : "http://bookingengine.maximojo.com?hid=IN-f59a1bd3-916f-4a62-9092-9624599ac2c6",
     description: `
     This boutique hotel is best for small gathering events – Haldi, wedding , Engagement , birthday parties etc. Couples particularly like the location because of our quality rooms, private dining area and in- room dining services. This boutique hotel also have banquet hall that is best for Weddings, Haldi, Ring Ceremony,  Engagement , birthday parties etc. Has a Beautiful Banquet with state of the art enmities. We speak your language!
     `,
@@ -276,6 +280,7 @@ Location:
     location: 'Shimla, Himachal Pradesh, India',
     price: 15000,
     rating: 4.8,
+    bookingEngine : "",
     description: ` Hassan Valley Retreat is located near Hassan Valley (near Dhalli), 11 kms away from Shimla. Our Retreat is strategically located on the hill ranges of Kufri and serves as a wonderful way to experience Nature, ideal for a wonderful weekend get way. Hassan Valley is the densest conical forest of Asia, stretched from Dhalli, Kufri, Mundaghat to Chail. The range, which includes reserve forest, sanctuary and Shimla water supply catchment forests, is one of most diverse spots in the world in terms of flora and fauna. The sub-tropical climate and heavy snow during the winter season creates an environment where several unique high altitude plants and animal species flourish.
 
 This area, away from human hub, provides tranquility and breathtaking view of the forest clad mountain ranges. Here, you can let the world drift away as you enjoy the exotic surroundings – the spectacular mountain backdrop, lush green cedar trees, unspoiled wilderness, gushing streams, surging waterfalls, breath-taking sunsets – a truly mesmerizing landscape. Even the air is unique, perfumed with the enticing scents of Himalayan plants, jungle flowers, flora and fauna.
@@ -289,11 +294,12 @@ Our Retreat provides grand offer for tourism activities in an area of about 75 B
     amenities: ['Eco-Cottages', 'Trekking Assistance', 'Bonfire Nights', 'Organic Meals', 'Mountain View', 'Room Service', 'Spa', 'Restaurant', 'Bar', 'Fitness Center', 'Heating']
   },
   {
-    id: '6',
+    id: 'saavi-rishikesh',
     name: 'Saavi Hotel and Resorts',
     location: 'Rishikesh, Uttrakhand, India',
     price: 13000,
     rating: 4.7,
+    bookingEngine : "",
     description: `
     This boutique hotel is best for small gathering events – Haldi, wedding , Engagement , birthday parties etc. Couples particularly like the location because of our quality rooms, private dining area and in- room dining services. This boutique hotel also have banquet hall that is best for Weddings, Haldi, Ring Ceremony,  Engagement , birthday parties etc. Has a Beautiful Banquet with state of the art enmities. We speak your language!
 
@@ -361,11 +367,12 @@ Location:
   'Air Conditioning for a Comfortable Stay',]
   },
   {
-    id: '7',
+    id: 'saavi-jibhi',
     name: 'Saavi Hotel Jibhi',
     location: 'Jibhi, Himachal Pradesh, India',
     price: 14000,
     rating: 4.9,
+    bookingEngine : "",
     description: `
     This boutique hotel is best for small gathering events – Haldi, wedding , Engagement , birthday parties etc. Couples particularly like the location because of our quality rooms, private dining area and in- room dining services. This boutique hotel also have banquet hall that is best for Weddings, Haldi, Ring Ceremony,  Engagement , birthday parties etc. Has a Beautiful Banquet with state of the art enmities. We speak your language!
 

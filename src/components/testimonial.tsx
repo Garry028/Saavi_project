@@ -3,6 +3,14 @@ import Profile1 from '../../public/assets/profile1.png';
 import Marquee from 'react-fast-marquee';
 import Background_image from '../../public/assets/guestBackground.png';
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
+const PUBLIC_KEY = "zNdQllj7Had9NmZc4"; // Replace with your EmailJS public key
+const SERVICE_ID = "service_lhep98x"; // Replace with your EmailJS service ID
+const TEMPLATE_ID = "template_a7nj9ff"; // Replace with your EmailJS template ID
 
 const Guest = () => {
     const [activeIndex] = useState(0);
@@ -64,10 +72,38 @@ const Guest = () => {
         }
         return visibleCards;
     };
+    const [email, setEmail] = useState("");
 
+    const handleNotify = () => {
+        if (!email) {
+            toast.error("Please enter an email address.");
+            return;
+        }
+
+        const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+        if (!emailPattern.test(email)) {
+            toast.error("Please enter a valid email address.");
+            return;
+        }
+
+        const templateParams = {
+            user_email: email,
+        };
+
+        emailjs
+            .send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY)
+            .then(() => {
+                toast.success("Subscription successful! You'll be notified of exclusive offers.");
+                setEmail(""); // Clear the input field
+            })
+            .catch(() => {
+                toast.error("Failed to subscribe. Please try again.");
+            });
+    };
     return (
         <div className="w-auto mx-auto text-center mt-8">
             {/* Header */}
+            <ToastContainer position="top-right" autoClose={5000} />
             <header className="mb-8">
                 <h1 className="text-3xl text-[#8B2B06] font-bold font-serif">What Our Guests Say</h1>
                 <p className="text-lg text-gray-600 font-serif">Hear from our satisfied travelers</p>
@@ -151,14 +187,19 @@ const Guest = () => {
                     <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4 mt-4 sm:mt-0">
                         {/* Email Input */}
                         <div className="flex flex-col w-full sm:w-auto">
-                            <input
+                        <input
                                 type="email"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
                                 placeholder="Enter your email address"
                                 className="px-4 py-2 rounded-lg text-sm border border-gray-300 w-full sm:w-72 bg-white focus:outline-none focus:ring-2 focus:ring-[#8B2B06]"
                             />
                         </div>
                         {/* Button */}
-                        <button className="px-8 py-2 bg-white text-black border-b-4 border-black rounded-lg font-semibold shadow-md hover:bg-[#8B2B06] hover:text-white transition w-full sm:w-auto">
+                        <button
+                            onClick={handleNotify}
+                            className="px-8 py-2 bg-white text-black border-b-4 border-black rounded-lg font-semibold shadow-md hover:bg-[#8B2B06] hover:text-white transition w-full sm:w-auto"
+                        >
                             Notify Me
                         </button>
                     </div>

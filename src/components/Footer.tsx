@@ -146,12 +146,12 @@ export default function Footer() {
               <li>
               <Link to="/explore#leisure" className="text-gray-400 hover:text-red-700 transition-colors">Leisure</Link>
               </li>
-              <li>
+              {/* <li>
               <Link to="/explore#select" className="text-gray-400 hover:text-red-700 transition-colors">Select</Link>
               </li>
               <li>
               <Link to="/explore#staycation" className="text-gray-400 hover:text-red-700 transition-colors">Staycation</Link>
-              </li>
+              </li> */}
             </ul>
           </div>
 
@@ -212,17 +212,40 @@ export default function Footer() {
               © {currentYear} LuxStays. All rights reserved.
             </p>
             <div className="flex space-x-6">
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-red-700 transition-colors">
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-red-700 transition-colors">
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-red-700 transition-colors">
-                <Twitter className="h-5 w-5" />
-              </a>
-            </div>
+            <div className="flex items-center gap-4 sm:gap-8">
+      <a
+        href="https://www.facebook.com/profile.php?id=61565142656404"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-primary transition-colors text-white"
+      >
+        <i className="fab fa-facebook-f text-base"></i>
+      </a>
+      <a
+        href="https://www.instagram.com/saavihotels?igsh=and4OXdkMTJoNWcx"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-primary transition-colors text-white"
+      >
+        <i className="fab fa-instagram text-base"></i>
+      </a>
+      <a
+        href="https://www.linkedin.com/company/96062794/admin/dashboard/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-primary transition-colors text-white"
+      >
+        <i className="fab fa-linkedin-in text-base"></i>
+      </a>
+      <a
+        href="https://www.youtube.com/@SaaviHotelsAndResorts"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-primary transition-colors text-white"
+      >
+        <i className="fab fa-youtube text-base"></i>
+      </a>
+    </div>
             </div>
           </div>
         </div>
