@@ -15,6 +15,8 @@ import BanqAndEvents from '@/pages/banqAndEvents';
 import HotelDetail from '@/pages/HotelDescription';
 import ImportantLinks from '@/pages/ImportantLinks';
 import ExplorePage from '@/pages/Explore';
+import { Analytics } from '@vercel/analytics/react';
+
 
 function App() {
   return (
@@ -41,6 +43,7 @@ function App() {
         </main>
         <Footer /> 
       </div>
+      <Analytics />
     </ThemeProvider>
   );
 }
