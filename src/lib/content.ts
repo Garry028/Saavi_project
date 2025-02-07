@@ -43,8 +43,8 @@ export const content = {
     },
     {
       id: 3,
-      name: "Saavi Hotel Sector 45",
-      location: "Gurugram, Haryana, India",
+      name: "SAAVI HOTEL MEDICITY",
+      location: "1527 Sector Road, 122018 Gurgaon,India",
       image: images.F45,
       description: "Provides cozy accommodations with modern facilities, ensuring a convenient and pleasant stay.",
       amenities: ["Golf Course", "Fine Dining", "Luxury Suites", "Infinity Pool"]
@@ -67,8 +67,8 @@ export const content = {
     },
     {
       id: 6,
-      name: "Saavi Hotel and Resorts",
-      location: "Rishikesh,Uttrakhand, India",
+      name: "The SandalWood By Saavi Hotel",
+      location: "Plot no 644, Islampur Colony,Sector 38,Gurugram, Haryana 122003",
       image: images.Image_6,
       description: " Offers a serene retreat with modern amenities, surrounded by the tranquil beauty of the Himalayan foothills and the Ganges River.",
       amenities: ["Wellness Center", "Luxury Rooms", "Multi-Cuisine Dining", "Bonfire"]
