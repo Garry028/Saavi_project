@@ -11,7 +11,10 @@ import bnq3 from "../../public/assets/bnq3.jpeg";
 import bnq4 from "../../public/assets/bnq4.jpeg";
 import bnq5 from "../../public/assets/bnq5.jpeg";
 import bnq6 from "../../public/assets/bnq6.jpeg";
-
+import Deepak from "../../public/assets/Deepak.jfif";
+import DeepakRedhu from "../../public/assets/DeepakRedhu.jfif"
+import KritiMisra from "../../public/assets/KritiMishra.jfif"
+import SauravSingh from "../../public/assets/SauravSingh.jfif"
 
 export const content = {
   company: {
@@ -43,8 +46,8 @@ export const content = {
     },
     {
       id: 3,
-      name: "SAAVI HOTEL MEDICITY",
-      location: "1527 Sector Road, 122018 Gurgaon,India",
+      name: "Saavi Hotel Sector 45",
+      location: "Gurugram, Haryana, India",
       image: images.F45,
       description: "Provides cozy accommodations with modern facilities, ensuring a convenient and pleasant stay.",
       amenities: ["Golf Course", "Fine Dining", "Luxury Suites", "Infinity Pool"]
@@ -67,8 +70,8 @@ export const content = {
     },
     {
       id: 6,
-      name: "The SandalWood By Saavi Hotel",
-      location: "Plot no 644, Islampur Colony,Sector 38,Gurugram, Haryana 122003",
+      name: "Saavi Hotel and Resorts",
+      location: "Rishikesh,Uttrakhand, India",
       image: images.Image_6,
       description: " Offers a serene retreat with modern amenities, surrounded by the tranquil beauty of the Himalayan foothills and the Ganges River.",
       amenities: ["Wellness Center", "Luxury Rooms", "Multi-Cuisine Dining", "Bonfire"]
@@ -188,39 +191,29 @@ export const content = {
     {
       name: 'Deepak Dangi',
       role: 'Founder & CEO',
-      description: 'Mr. Deepak Dangi completed his education in IT (B.Sc IT) and Post Graduation in Management (MBA). With 12 years of industry experience, he founded Saavi Events and Entertainment in 2019, which now operates over five hotels in India.',
-      imageSrc: 'https://via.placeholder.com/150',
+      description: 'Mr Deepak Dangi completed his education in the field of IT (B.Sc IT) and completed his Post Graduation in Management (MBA). Worked with big brands like Imperial Hotel Delhi, Le Meridien , Metropolitan, Pi hotels etc., Mr. Deepak Dangi emerged as an exceptional amalgamation of IT and hospitality. To His love for geniality and his burning desire to achieve the inevitable success, In 2019 founded the Saavi Events and Entertainment, His experience of 12 years in the industry adds fuel to passion driven approach of Saavi Hotel. Now Saavi Hotels operates five plus hotels in India, this contemporary approach of attention to the corporate stay and Social events is driven by the vast expertise of this charming entrepreneur.',
+      imageSrc: Deepak,
     },
     {
-      name: 'Vijay B. Aggarwal',
-      role: 'Managing Director',
-      description: 'Dr. Vijay B. Aggarwal is a pioneer in computer science education in India, with a Ph.D. from the University of Illinois and over 40 years of experience. He has been leading IT education programs and managing large teams.',
-      imageSrc: 'https://via.placeholder.com/150',
+      name: 'Kriti Mishra',
+      role: 'Director Sales & marketing',
+      description: "Kriti Mishra is a results-driven sales professional with 6+ years of experience in banking and finance. With an MBA in Marketing and Finance, she excels in strategic sales, client relationship management, and market analysis. Recognized as a **Top Sales Performer** for three consecutive years, she has successfully grown revenue by 20% YoY and led teams to exceed targets by 30%. Known for her consultative sales approach, Kriti focuses on delivering tailored financial solutions and fostering long-term client relationships.",
+      imageSrc: KritiMisra,
     },
-    {
-      name: 'Manasvi Dutta',
-      role: 'Co-Founder',
-      description: 'With 10 years of experience in event management and a strong academic background, Manasvi Dutta is a proven leader with expertise in art, decor, and comprehensive training for high standards in service delivery.',
-      imageSrc: 'https://via.placeholder.com/150',
-    },
+    
     {
       name: 'Deepak Redhu',
       role: 'Account Head',
-      description: 'With a decade of experience in finance, Mr. Redhu ensures cash flow management and oversees fundraising plans. He has previously worked with IndusInd Bank and L&T Finance.',
-      imageSrc: 'https://via.placeholder.com/150',
+      description: "Deepak Redhu is a senior executive responsible for managing the financial actions of the company. They are often in charge of tracking cash flow, analyzing strengths/weaknesses in the company’s finances and overseeing all aspects of its financial success. Mr. Redhu completed his bachelor's in accounts management. Worked with big brands like Indusind bank and L&T Finance. His expertise is to Ensure cash flow is appropriate for the organization’s operations and Control and evaluate the organization’s fundraising plans and capital structure. Now using his vast experience for more than 10 years to expedite the potential of SAAVI Hotels.",
+      imageSrc: DeepakRedhu,
     },
     {
       name: 'Saurav Singh',
-      role: 'Sales Head',
-      description: 'A hotel management graduate with 20+ years of experience, Saurav Singh specializes in budgeting, marketing, and leadership, driving revenue growth for Saavi Hotels.',
-      imageSrc: 'https://via.placeholder.com/150',
+      role: 'Director Food And Beverages',
+      description: "An experienced F&B leader, I specialize in operations, team management, and strategic growth. With expertise in optimizing guest experiences, cost control, and profitability, I drive excellence in service, quality, and hygiene. Skilled in budgeting, vendor relations, and market analysis, I implement innovative strategies to enhance revenue and streamline operations while staying ahead of industry trends.",
+      imageSrc: SauravSingh,
     },
-    {
-      name: 'Shipra Singh',
-      role: 'Operations Manager',
-      description: 'With over 10 years of experience, Shipra Singh ensures top-tier hospitality and operational excellence, grooming talent and delivering outstanding results for Saavi Hotels.',
-      imageSrc: 'https://via.placeholder.com/150',
-    },
+    
   ],
   terms_and_conditions: [
     {

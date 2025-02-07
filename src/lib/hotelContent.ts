@@ -6,7 +6,7 @@ export const hotels: Hotel[] = [
     id: 'golf-course-luxury',
     name: 'Saavi Hotel Golf Course',
     location: 'Gurugram, Haryana, India',
-    price: 1200,
+    price: 2200,
     rating: 4.9,
     description: `
 
@@ -86,7 +86,7 @@ Location:
     id: '2',
     name: 'Saavi Hotel Sector 46',
     location: 'Gurugram, Haryana, India',
-    price: 10000,
+    price: 2400,
     rating: 4.7,
     description: `
 
@@ -189,21 +189,21 @@ Bed linens and towels are provided in every room for guest comfort.
   },
   {
     id: '3',
-    name: 'SAAVI HOTEL MEDICITY',
-    location: '1527 Sector Road, 122018 Gurgaon,India',
-    price: 11000,
+    name: 'Saavi Hotel Sector 45',
+    location: 'Gurugram, Haryana, India',
+    price: 2500,
     rating: 4.8,
     description: `
 
-    Welcome to Saavi Hotel Medicity
+    Welcome to Saavi Hotel Sector 45
 
-Discover comfort and affordability at Saavi Hotel Medicity, conveniently located in Gurgaon just 7.4 km from MG Road and 20 km from Qutub Minar. Our 2-star accommodation offers a cozy retreat with essential amenities for a pleasant stay.
+Discover comfort and affordability at Saavi Hotel Sector 45, conveniently located in Gurgaon just 7.4 km from MG Road and 20 km from Qutub Minar. Our 2-star accommodation offers a cozy retreat with essential amenities for a pleasant stay.
 
     This boutique hotel is best for small gathering events – Haldi, wedding , Engagement , birthday parties etc. Couples particularly like the location because of our quality rooms, private dining area and in- room dining services. This boutique hotel also have banquet hall that is best for Weddings, Haldi, Ring Ceremony,  Engagement , birthday parties etc. Has a Beautiful Banquet with state of the art enmities. We speak your language!
 
 Top Attractions and Guest Access
 
-Experience the vibrant surroundings of Saavi Hotel Medicity, where convenience and leisure converge to offer a memorable stay.
+Experience the vibrant surroundings of Saavi Hotel Sector 45, where convenience and leisure converge to offer a memorable stay.
 
 Embark on journeys to renowned landmarks and natural beauty spots:
 Qutub Minar (20 km away)
@@ -242,7 +242,7 @@ Delhi International Airport (20 km)
 
 Rooms:
 
-Each room at Saavi Hotel Medicity offers comfort and convenience.
+Each room at Saavi Hotel Sector 45 offers comfort and convenience.
 Guests can enjoy amenities such as a wardrobe for storage.
 Private bathrooms in all units are equipped with a shower and complimentary toiletries.
 All rooms feature a flat-screen TV and air conditioning for entertainment and comfort.
@@ -274,7 +274,7 @@ Location:
     id: '4',
     name: 'Saavi Hotel Sector 10',
     location: 'Gurugram, Haryana, India',
-    price: 9000,
+    price: 2200,
     rating: 4.6,
     description: `
     Hotel De Luxe Basai Road, GurgaonA boutique hotel of classic urban feel perfect for conferences ,Wedding Events and long stays is in the Centre of Gurgaon  – just 5 Minutes Drive from Rajiv Chowk and Hero Honda Chowk .
@@ -304,7 +304,7 @@ Location:
     id: 'shimla-mountain-resort',
     name: 'Hassan Valley By Saavi',
     location: 'Shimla, Himachal Pradesh, India',
-    price: 15000,
+    price: 2400,
     rating: 4.8,
     description: ` Hassan Valley Retreat is located near Hassan Valley (near Dhalli), 11 kms away from Shimla. Our Retreat is strategically located on the hill ranges of Kufri and serves as a wonderful way to experience Nature, ideal for a wonderful weekend get way. Hassan Valley is the densest conical forest of Asia, stretched from Dhalli, Kufri, Mundaghat to Chail. The range, which includes reserve forest, sanctuary and Shimla water supply catchment forests, is one of most diverse spots in the world in terms of flora and fauna. The sub-tropical climate and heavy snow during the winter season creates an environment where several unique high altitude plants and animal species flourish.
 
@@ -320,14 +320,14 @@ Our Retreat provides grand offer for tourism activities in an area of about 75 B
   },
   {
     id: '6',
-    name: 'The SandalWood By Saavi Hotel',
+    name: 'Saavi Hotel and Resorts',
     location: 'Plot no 644, Islampur Colony,Sector 38,Gurugram, Haryana 122003',
-    price: 13000,
+    price: 2300,
     rating: 4.7,
     description: `
-Welcome to The Sandalwood By Saavi Hotel
+Welcome to The Saavi Hotel and Resorts
 
-Experience comfort and convenience at The Sandalwood, located in Gurgaon just 7.5 km from WorldMark Gurgaon. Our hotel offers a serene ambiance with modern amenities to ensure a memorable stay.
+Experience comfort and convenience at The Saavi Hotel and Resorts, located in Gurgaon just 7.5 km from WorldMark Gurgaon. Our hotel offers a serene ambiance with modern amenities to ensure a memorable stay.
     
 This boutique hotel is best for small gathering events – Haldi, wedding , Engagement , birthday parties etc. Couples particularly like the location because of our quality rooms, private dining area and in- room dining services. This boutique hotel also have banquet hall that is best for Weddings, Haldi, Ring Ceremony,  Engagement , birthday parties etc. Has a Beautiful Banquet with state of the art enmities. We speak your language!
 
@@ -421,7 +421,7 @@ Location:
     id: '7',
     name: 'Saavi Hotel Jibhi',
     location: 'Jibhi, Himachal Pradesh, India',
-    price: 14000,
+    price: 2400,
     rating: 4.9,
     description: `
 
