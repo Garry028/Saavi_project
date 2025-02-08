@@ -1,5 +1,32 @@
 import { Hotel } from '../types';
 // import { images } from '../../public/assets/export'; // Assuming you have an images file for the new hotel images
+import JB1 from '../../public/assets/jb1.jpeg';
+import JB2 from '../../public/assets/jb2.jpeg';
+import JB3 from '../../public/assets/jb3.jpeg';
+import JB4 from '../../public/assets/jb4.jpeg';
+import S101 from '../../public/assets/s101.jpeg';
+import S102 from '../../public/assets/s102.jpeg';
+import S103 from '../../public/assets/s103.jpeg';
+import S104 from '../../public/assets/s104.jpeg';
+import S431 from '../../public/assets/s431.jpeg';
+import S432 from '../../public/assets/s432.jpeg';
+import S433 from '../../public/assets/s433.jpeg';
+import S434 from '../../public/assets/s434.jpeg';
+import S451 from '../../public/assets/s451.jpeg';
+import S452 from '../../public/assets/s452.jpeg';
+import S453 from '../../public/assets/s453.jpeg';
+import S454 from '../../public/assets/s454.jpeg';
+import S461 from '../../public/assets/s461.jpeg';
+import S462 from '../../public/assets/s462.jpeg';
+import S463 from '../../public/assets/s463.jpeg';
+import S464 from '../../public/assets/s464.jpeg';
+
+
+
+
+
+
+
 
 export const hotels: Hotel[] = [
   {
@@ -16,7 +43,7 @@ Welcome to Saavi Hotel Golf Course
 Located in Gurgaon, just 3.8 km from MG Road, Saavi Hotel Golf Course offers a tranquil retreat with a range of amenities to ensure a comfortable stay. Situated amidst lush greenery, our hotel provides a serene ambiance for relaxation and rejuvenation.
 
 
-  Chiya  boutique hotel is best for small gathering events – Haldi, wedding , Engagement , birthday parties etc. Couples particularly like the location because of our quality rooms, private dining area and in- room dining services. This boutique hotel also have banquet hall that is best for Weddings, Haldi, Ring Ceremony,  Engagement , birthday parties etc. Has a Beautiful Banquet with state of the art enmities. We speak your language!
+  Saavi boutique hotel is best for small gathering events – Haldi, wedding , Engagement , birthday parties etc. Couples particularly like the location because of our quality rooms, private dining area and in- room dining services. This boutique hotel also have banquet hall that is best for Weddings, Haldi, Ring Ceremony,  Engagement , birthday parties etc. Has a Beautiful Banquet with state of the art enmities. We speak your language!
 
 Guest Access:
 Experience the vibrant surroundings of Saavi Hotel Golf Course, where convenience and leisure converge to offer a memorable stay.
@@ -67,10 +94,10 @@ Location:
 - 545, Off, Golf Course Rd, Sector 43, Gurugram, Haryana 122002
     `,
     images: [
-      'https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
-      'https://images.unsplash.com/photo-1582719508461-905c673771fd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
-      'https://images.unsplash.com/photo-1584132967334-10e028bd69f7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
-      'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80'
+     S431,
+     S432,
+     S433,
+     S434
     ],
     amenities: [ 'On-site Restaurant Serving Delectable Meals',
   'Non-smoking Rooms for a Pleasant Stay',
@@ -169,10 +196,10 @@ Selected rooms include a balcony for guests to relax and enjoy the surroundings.
 Bed linens and towels are provided in every room for guest comfort.
     `,
     images: [
-      'https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
-      'https://images.unsplash.com/photo-1582719508461-905c673771fd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
-      'https://images.unsplash.com/photo-1584132967334-10e028bd69f7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
-      'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80'
+     S461,
+     S462,
+     S463,
+     S464
     ],
     amenities: [ 'Breakfast Buffet', // Added new amenity
   'On-site Restaurant Serving Delectable Meals', // Added new amenity
@@ -257,10 +284,10 @@ Location:
 - 1527 Sector Road, 122018 Gurgaon,India
     `,
     images: [
-      'https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
-      'https://images.unsplash.com/photo-1582719508461-905c673771fd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
-      'https://images.unsplash.com/photo-1584132967334-10e028bd69f7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
-      'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80'
+    S451,
+    S452,
+    S453,
+    S454
     ],
     amenities: [ 'On-site Restaurant Serving Delectable Meals',
   'Non-smoking Rooms for a Pleasant Stay',
@@ -286,10 +313,10 @@ Location:
     This boutique hotel is best for small gathering events – Haldi, wedding , Engagement , birthday parties etc. Couples particularly like the location because of our quality rooms, private dining area and in- room dining services. This boutique hotel also have banquet hall that is best for Weddings, Haldi, Ring Ceremony,  Engagement , birthday parties etc. Has a Beautiful Banquet with state of the art enmities. We speak your language!
     `,
     images: [
-      'https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
-      'https://images.unsplash.com/photo-1582719508461-905c673771fd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
-      'https://images.unsplash.com/photo-1584132967334-10e028bd69f7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
-      'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80'
+     S101,
+     S102,
+     S103,
+     S104
     ],
     amenities: [
           "Restaurant: Tikka and Take Serving Delectable Meals All Day Long",
@@ -326,80 +353,50 @@ Our Retreat provides grand offer for tourism activities in an area of about 75 B
   {
     id: 'saavi-rishikesh',
     name: 'Saavi Hotel and Resorts',
-    location: 'Plot no 644, Islampur Colony,Sector 38,Gurugram, Haryana 122003',
+    location: '',
     price: 2300,
     rating: 4.7,
     bookingEngine : "",
     description: `
 Welcome to The Saavi Hotel and Resorts
 
-Experience comfort and convenience at The Saavi Hotel and Resorts, located in Gurgaon just 7.5 km from WorldMark Gurgaon. Our hotel offers a serene ambiance with modern amenities to ensure a memorable stay.
-    
-This boutique hotel is best for small gathering events – Haldi, wedding , Engagement , birthday parties etc. Couples particularly like the location because of our quality rooms, private dining area and in- room dining services. This boutique hotel also have banquet hall that is best for Weddings, Haldi, Ring Ceremony,  Engagement , birthday parties etc. Has a Beautiful Banquet with state of the art enmities. We speak your language!
+Welcome to The Saavi Hotel Rishikesh! Experience a blend of comfort and nature in this beautiful hotel, located just 5 km from Rishikesh city center. Our hotel offers a peaceful environment, modern amenities, and a perfect setting for both relaxation and adventure. Whether you’re planning a small gathering or a getaway, our hotel is the ideal choice for weddings, engagement ceremonies, birthdays, and more.
 
-Guest Access:
+Key Highlights:
 
-Experience the vibrant surroundings of Saavi Hotel Sector – 38, where convenience and leisure converge to offer a memorable stay.
+    Guest Rooms: Each room at Saavi Hotel Rishikesh features a wardrobe, private bathroom with a shower and free toiletries, flat-screen TV, and air conditioning for your comfort. Some rooms include a balcony with stunning views. Bed linen and towels are provided for your convenience.
+    Dining Options: Start your day with a delicious breakfast, available in buffet, à la carte, or continental styles, served daily.
+    Event Facilities: Our hotel is equipped with a versatile banquet hall that is perfect for weddings, engagement parties, Haldi ceremonies, birthdays, and more. With state-of-the-art amenities, it is designed to create memorable experiences.
+    Serene Location: Surrounded by the tranquil beauty of Rishikesh, the hotel is located near top attractions such as the iconic Triveni Ghat and Laxman Jhula. Nearby, you’ll find restaurants, cafes, and spiritual sites to enhance your visit.
 
-Top Attractions Nearby:
+Nearby Attractions:
 
-Qutub Minar (17 km away)
-Lake Johad Village Pond (7 km away)
+    Triveni Ghat (5 km away)
+    Laxman Jhula (6 km away)
+    Rajaji National Park (9 km away)
 
-Facilities Nearby
-Restaurants & Cafes:
+Nearby Restaurants & Cafes:
 
-Indulge in delicious cuisine at nearby dining spots:
-
-HUDA Gymkhana Club(7.9 Km)
-
-Swasti pg (0.4 Km)
-
-Domino’s Pizza (1.4 Km)
-
-Ayush Dhaba (1.5 Km)
-
-Salad Company (1.5 Km)
-
-Pind Balluchi (1.5 Km)
+    Chotiwala Restaurant (3 km)
+    The Sitting Elephant (4 km)
+    Rishikesh Cafe (5 km)
+    Bikanervala (5.5 km)
 
 Parks and ATMs:
 
-Explore nearby parks and recreational areas just a short distance away:
-
-Satvir Park, Park-Sector 47 (both within 200 – 450 m)
-Central Park, Obstacle Park, Arora Park (all within 850 m – 1.2 km)
-Neha Nursery, Community Centre (both within 1.4 – 1.6 km)
-ATM Nearby
+    Swarg Ashram Park (1.2 km)
+    Rishikesh Ashram Park (2 km)
+    ATM Nearby: Several ATMs located within 1-2 km radius.
 
 Public Transportation:
 
-Efficiently navigate the city with access to nearby public transportation hubs:
+    Train Stations: Rishikesh Railway Station (5 km)
+    Metro Stations: Haridwar Metro Station (25 km)
+    Closest Airports: Dehradun Jolly Grant Airport (19 km)
 
-Train Stations: Huda City Centre (4.3 km), Sikanderpur Metro Station (7 km)
-Metro Stations: HUDA City Centre, IFFCO Chowk (both approximately 4.4 – 5 km) 
-IFFCO Chowk Metro Station(6.7 Km)
+Accommodation: Each room at Saavi Hotel Rishikesh is thoughtfully designed to ensure a restful stay. Enjoy the comfort of private bathrooms, modern decor, and convenient in-room amenities.
 
-M.G. Road Metro Station (9.7 Km)
-
-Huda City Center Metro (4.8 Km)
-
-Closest Airports:
-
-Delhi International Airport IGI (20.6Km)
-
-Rooms
-Accommodation:
-
-Each room at Saavi Hotel sector 38  features:
-
-Wardrobe for storage
-Private bathroom with shower and free toiletries
-Flat-screen TV and air conditioning for entertainment and comfort
-Selected rooms include a balcony for added relaxation
-Bed linen and towels provided for guest comfort
-Breakfast Options: Enjoy a delicious breakfast with buffet, à la carte, or continental options available daily.
-
+Breakfast Options: Savor a delicious breakfast with buffet, à la carte, or continental options available daily to start your day off right.
 Location:
 - Plot no 644, Islampur Colony,Sector 38,Gurugram, Haryana 122003
     `,
@@ -485,10 +482,10 @@ Sojha banjar, Himachal Pradesh 1715123
 
     `,
     images: [
-      'https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
-      'https://images.unsplash.com/photo-1582719508461-905c673771fd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
-      'https://images.unsplash.com/photo-1584132967334-10e028bd69f7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
-      'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80'
+      JB1,
+      JB2,
+      JB3,
+      JB4
     ],
     amenities: [ 'On-site Restaurant Serving Delectable Meals',
   'Non-smoking Rooms for a Pleasant Stay',
