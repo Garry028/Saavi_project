@@ -169,42 +169,45 @@ const Guest = () => {
 
             {/* Subscription Section */}
             <div
-                className="relative mt-6 w-full h-20 sm:h-72 md:h-80 lg:h-60 bg-center bg-cover "
-                style={{ backgroundImage: `url(${Background_image})` }}
-            >
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-[#8b2b06] opacity-60"></div>
+            className="relative mt-6 w-full h-40 sm:h-60 md:h-72 lg:h-60 bg-center bg-cover"
+            style={{ backgroundImage: `url(${Background_image})` }}
+        >
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-[#8b2b06] opacity-60"></div>
 
-                {/* Content */}
-                <div className="relative z-10 flex justify-between items-center h-full px-6 sm:px-8 md:px-12">
-                    {/* Left Section */}
-                    <div className="text-white max-w-lg text-center sm:text-left">
-                        <h2 className="text-2xl sm:text-3xl font-bold tracking-wide mb-2">Unlock Exclusive Offers</h2>
-                        <p className="text-base sm:text-lg">Only the best deals reach your inbox.</p>
-                    </div>
+            {/* Content */}
+            <div className="relative z-10 flex flex-col sm:flex-row justify-between items-center h-full px-4 sm:px-8 md:px-12 text-center sm:text-left">
+                {/* Left Section */}
+                <div className="text-white max-w-lg">
+                    <h2 className="text-xl sm:text-2xl md:text-3xl font-bold tracking-wide mb-2">
+                        Unlock Exclusive Offers
+                    </h2>
+                    <p className="text-sm sm:text-base md:text-lg">
+                        Only the best deals reach your inbox.
+                    </p>
+                </div>
 
-                    {/* Right Section */}
-                    <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4 mt-4 sm:mt-0">
-                        {/* Email Input */}
-                        <div className="flex flex-col w-full sm:w-auto">
-                        <input
-                                type="email"
-                                value={email}
-                                onChange={(e) => setEmail(e.target.value)}
-                                placeholder="Enter your email address"
-                                className="px-4 py-2 rounded-lg text-sm border border-gray-300 w-full sm:w-72 bg-white focus:outline-none focus:ring-2 focus:ring-[#8B2B06]"
-                            />
-                        </div>
-                        {/* Button */}
-                        <button
-                            onClick={handleNotify}
-                            className="px-8 py-2 bg-white text-black border-b-4 border-black rounded-lg font-semibold shadow-md hover:bg-[#8B2B06] hover:text-white transition w-full sm:w-auto"
-                        >
-                            Notify Me
-                        </button>
-                    </div>
+                {/* Right Section */}
+                <div className="flex flex-col sm:flex-row items-center space-y-3 sm:space-y-0 sm:space-x-3 w-full sm:w-auto mt-4 sm:mt-0">
+                    {/* Email Input */}
+                    <input
+                        type="email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        placeholder="Enter your email address"
+                        className="px-4 py-2 rounded-lg text-sm border border-gray-300 w-full sm:w-72 bg-white focus:outline-none focus:ring-2 focus:ring-[#8B2B06]"
+                    />
+                    
+                    {/* Button */}
+                    <button
+                        onClick={handleNotify}
+                        className="px-6 py-2 bg-white text-black border-b-4 border-black rounded-lg font-semibold shadow-md hover:bg-[#8B2B06] hover:text-white transition w-full sm:w-auto"
+                    >
+                        Notify Me
+                    </button>
                 </div>
             </div>
+        </div>
 
 
 
