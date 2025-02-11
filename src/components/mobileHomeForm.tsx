@@ -2,17 +2,17 @@ import { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import 'react-datepicker/dist/react-datepicker.css';
 import 'react-toastify/dist/ReactToastify.css';
-import { Search, Users, Building2, Calendar, ChevronDown, Plus, Minus } from 'lucide-react';
+import { Search, ChevronDown, Plus, Minus } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
-interface BookingFormData {
-  destination: string;
-  checkIn: string;
-  checkOut: string;
-  adults: number;
-  children: number;
-  rooms: string;
-}
+// interface BookingFormData {
+//   destination: string;
+//   checkIn: string;
+//   checkOut: string;
+//   adults: number;
+//   children: number;
+//   rooms: string;
+// }
 
 export default function BookingSearchForm() {
   const [destination, setDestination] = useState('');
