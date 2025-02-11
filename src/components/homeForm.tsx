@@ -89,7 +89,7 @@ const BookingForm = () => {
           visible: { opacity: 1, y: 0, transition: { duration: 0.6, staggerChildren: 0.1 } },
         }}
       >
-        <div className="container mx-auto px-4 mt-96 relative z-50">
+        <div className="container mx-auto px-4 lg:mt-96 relative z-50">
           <form 
             onSubmit={handleSubmit}
             className="bg-white rounded-xl shadow-2xl p-6 grid grid-cols-1 md:grid-cols-6 gap-4"
