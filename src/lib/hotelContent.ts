@@ -20,6 +20,11 @@ import S461 from '../../public/assets/s461.jpeg';
 import S462 from '../../public/assets/s462.jpeg';
 import S463 from '../../public/assets/s463.jpeg';
 import S464 from '../../public/assets/s464.jpeg';
+import S1 from '../../public/assets/s1.jpg';
+import S2 from '../../public/assets/s2.jpg';
+import S3 from '../../public/assets/s3.jpg';
+import S4 from '../../public/assets/s4.jpg';
+
 
 
 
@@ -343,10 +348,10 @@ Location:
 This area, away from human hub, provides tranquility and breathtaking view of the forest clad mountain ranges. Here, you can let the world drift away as you enjoy the exotic surroundings – the spectacular mountain backdrop, lush green cedar trees, unspoiled wilderness, gushing streams, surging waterfalls, breath-taking sunsets – a truly mesmerizing landscape. Even the air is unique, perfumed with the enticing scents of Himalayan plants, jungle flowers, flora and fauna.
 Our Retreat provides grand offer for tourism activities in an area of about 75 Bighas i.e. 7 Hectares of vacant land along the road at about 6000′ MSL out of this 30 Bighas is located on the southern ridge of Jungle Patgehar at about 7000’ MSL, which is thickly forested mostly with tall deodar, Ban and Rodo trees. The whole land is available for activities especially for Jungle tourism, outdoor games, cycling, picnic, yoga/meditation, camping including forests trekking, health sanatoria based on herbal and Ayurvedic system and a number of other related activities in a close vicinity of Shimla city. Trekking from Dhalli water tanks to Bhalunidhar is a wonderful experience amidst deep and dense deodar forest to spring water source No.1. This hill range is also connected by a track from Kufri/ Mundaghat through a wild life sanctuary. Another 11 KMs motorable road from Dhalli/ Bhattakuffar connects this Retreat. Road journey from Bhattakuffar via Churat Nallah through a thick forest is an enjoyable and thrilling experience. Bhalunidhar is thickly infested with a variety of herbal plants, fascinating to eyes of beholders. Amongst these, most attractive are golden & blue ferns predominantly Jungli Haldi beneath Deodar, Ban and Rodo trees. Trekking amidst such serene and fascinating environment gives new lease to life. One feels not only thrilled, but healthy as well, despite arduous trekking on this hill range overlooking wide range of Deodar clad panoramic hills. As such this place can safely be called a sanatoria in an abode of nature. Once one adventure this journey and stays for a while in this location, it gives life long experience.`,
     images: [
-      'https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
-      'https://images.unsplash.com/photo-1455587734955-081b22074882?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
-      'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
-      'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80'
+    S1,
+    S2,
+    S3,
+    S4
     ],
     amenities: ['Eco-Cottages', 'Trekking Assistance', 'Organic Meals', 'Mountain View', 'Room Service',  'Heating']
   },

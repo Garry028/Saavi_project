@@ -2,7 +2,7 @@ import Image_1 from './Image_1.jpeg';
 import Image_2 from './Image_2.jpeg';
 import Image_3 from './Image_3.jpeg';
 import Image_4 from './Image_4.jpeg';
-import Image_5 from './Image_5.jpeg';
+import Image_5 from './Image_5.jpg';
 import Image_6 from './Image_6.jpeg';
 import Image_7 from './Image_7.jpeg';
 import Image_8 from './Image_8.jpeg';
