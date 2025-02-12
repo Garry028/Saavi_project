@@ -84,7 +84,9 @@ export default function Navbar() {
              <img src={logo} alt="Saavi logo" className="w-[130px] h-30 object-cover rounded-md" />
             
            </div>
-           <span className="text-s font-semibold text-black ">A Comfortable stay</span>
+           <span className="text-sm font-medium text-gray-700 tracking-wide uppercase font-sans">A Comfortable stay</span>
+
+
          </Link>
        </div>
 

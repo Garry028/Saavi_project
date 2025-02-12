@@ -221,7 +221,7 @@ export const content = {
       imageSrc: DeepakRedhu,
     },
     {
-      name: 'Saurav Singh',
+      name: 'Vikas Kadian',
       role: 'Director Food And Beverages',
       description: "An experienced F&B leader, I specialize in operations, team management, and strategic growth. With expertise in optimizing guest experiences, cost control, and profitability, I drive excellence in service, quality, and hygiene. Skilled in budgeting, vendor relations, and market analysis, I implement innovative strategies to enhance revenue and streamline operations while staying ahead of industry trends.",
       imageSrc: SauravSingh,
