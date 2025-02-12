@@ -125,7 +125,7 @@ export default function BookingSearchForm() {
                       {destinations.map((dest) => (
                         <div
                           key={dest}
-                          className="px-3 py-2 text-sm text-gray-700 hover:bg-red-50 cursor-pointer"
+                          className="px-3 py-2 text-sm text-gray-700 hover:bg-red-50 cursor-pointer text-left"
                           onClick={() => {
                             setDestination(dest);
                             setIsDestinationOpen(false);
