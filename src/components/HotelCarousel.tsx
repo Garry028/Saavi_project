@@ -71,11 +71,12 @@ export default function HotelCarousel() {
                     <p className="text-muted-foreground mb-2">{hotel.location}</p>
                     <p className="text-sm mb-4">{hotel.description}</p>
                     <div className="flex justify-end">
-                      <Link to="/booking">
+                      <Link to={`/hotelDesc/${hotel.id}`}>
                         <motion.div
                           whileHover={{ scale: 1.05 }}
                           whileTap={{ scale: 0.95 }}
                         >
+                          
                           <Button className="text-lg bg-[#8B2B06] hover:bg-[#8B2B06]">
                             Book Now
                           </Button>
