@@ -35,7 +35,7 @@ export const content = {
       city: "Gurugram",
       image: images.Image_1,
       description: "Combines luxury accommodations with a serene, well-maintained golf experience.",
-      amenities: ["Scenic Views", "Bonfire", "Indoor Dining", "Luxury Suites"],
+      amenities: ["Scenic Views", "Indoor Dining", "Luxury Suites","24/7 Room Service"],
       bookingEngine : "http://bookingengine.maximojo.com?hid=IN-7fc00e1a-24e9-4e40-9e88-b3f0f8a6d8ac"
     },
     {
@@ -45,7 +45,7 @@ export const content = {
       city: "Gurugram",
       image: images.F46,
       description: " Offers comfortable accommodations with modern amenities in a convenient and vibrant location.",
-      amenities: ["Canal Views", "Bike Rentals", "Art Gallery", "Bonfire"],
+      amenities: ["Scenic Views", "Indoor Dining", "Luxury Suites","24/7 Room Service"],
       bookingEngine : "http://bookingengine.maximojo.com?hid=IN-d94400e8-db75-4daa-9a98-d84564413313"
     },
     {
@@ -55,7 +55,7 @@ export const content = {
       city: "Gurugram",
       image: images.F45,
       description: "Provides cozy accommodations with modern facilities, ensuring a convenient and pleasant stay.",
-      amenities: ["Golf Course", "Fine Dining", "Luxury Suites", "Infinity Pool"],
+      amenities: ["Scenic Views", "Indoor Dining", "Luxury Suites","24/7 Room Service"],
       bookingEngine :"http://bookingengine.maximojo.com?hid=IN-c2ecb7a0-0dd5-4ce2-a9b7-2c2afeb8754b"
     },
     {
@@ -65,7 +65,7 @@ export const content = {
       city: "Gurugram",
       image: images.F10,
       description: "Offers comfortable and well-equipped accommodations for a relaxing and convenient stay.",
-      amenities: ["Conference Rooms", "Fitness Center", "24/7 Room Service", "Bonfire"],
+      amenities: ["Scenic Views", "Indoor Dining", "Luxury Suites","24/7 Room Service"],
       bookingEngine : "http://bookingengine.maximojo.com?hid=IN-f59a1bd3-916f-4a62-9092-9624599ac2c6"
     },
     {
@@ -93,7 +93,7 @@ export const content = {
       city: "Shimla",
       image: images.Fjb,
       description: "A charming retreat offering cozy accommodations, modern amenities, and stunning views of the lush Himalayan landscape.",
-      amenities: ["Banquet Halls", "Bonfire", "Outdoor Pool", "Kids' Play Area"]
+      amenities: ["Banquet Halls", "Bonfire", "Outdoor Pool"]
     }
   ],
   upcomingProjects: [
