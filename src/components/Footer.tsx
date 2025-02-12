@@ -138,13 +138,13 @@ export default function Footer() {
             <ul className="space-y-2">
               
               <li>
-                <Link to="/explore#business" className="text-gray-400 hover:text-red-700 transition-colors">Business</Link>
+                <Link to="/explore#business" className="text-gray-400 hover:text-[#8B2B06] transition-colors">Business</Link>
               </li>
               <li>
-              <Link to="/explore#family" className="text-gray-400 hover:text-red-700 transition-colors">Family</Link>
+              <Link to="/explore#family" className="text-gray-400 hover:text-[#8B2B06] transition-colors">Family</Link>
               </li>
               <li>
-              <Link to="/explore#leisure" className="text-gray-400 hover:text-red-700 transition-colors">Leisure</Link>
+              <Link to="/explore#leisure" className="text-gray-400 hover:text-[#8B2B06] transition-colors">Leisure</Link>
               </li>
               {/* <li>
               <Link to="/explore#select" className="text-gray-400 hover:text-red-700 transition-colors">Select</Link>
@@ -160,19 +160,19 @@ export default function Footer() {
             <h3 className="text-xl font-semibold">Important Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/links#terms" className="text-gray-400 hover:text-red-700 transition-colors">Terms & Conditions</Link>
+                <Link to="/links#terms" className="text-gray-400 hover:text-[#8B2B06] transition-colors">Terms & Conditions</Link>
               </li>
               <li>
-                <Link to="/links#privacy-policy" className="text-gray-400 hover:text-red-700 transition-colors">Privacy Policy</Link>
+                <Link to="/links#privacy-policy" className="text-gray-400 hover:text-[#8B2B06] transition-colors">Privacy Policy</Link>
               </li>
               <li>
-              <Link to="/careers" className="text-gray-400 hover:text-red-700 transition-colors">Career</Link>
+              <Link to="/careers" className="text-gray-400 hover:text-[#8B2B06] transition-colors">Career</Link>
               </li>
               <li>
-              <Link to="/links#loyalty-program" className="text-gray-400 hover:text-red-700 transition-colors">Loyalty Program</Link>
+              <Link to="/links#loyalty-program" className="text-gray-400 hover:text-[#8B2B06] transition-colors">Loyalty Program</Link>
               </li>
               <li>
-              <Link to="/contact" className="text-gray-400 hover:text-red-700 transition-colors">Contact us</Link>
+              <Link to="/contact" className="text-gray-400 hover:text-[#8B2B06] transition-colors">Contact us</Link>
               </li>
             </ul>
           </div>
@@ -182,22 +182,22 @@ export default function Footer() {
             <h3 className="text-xl font-semibold">Contact Info</h3>
             <ul className="space-y-4">
               <li className="flex items-center space-x-3">
-                <MapPin className="h-5 w-5 text-red-700" />
+                <MapPin className="h-5 w-5 text-[#8B2B06]" />
                 <span className="text-gray-400">Golf Course Road, Gurugram</span>
               </li>
               <hr className="flex-grow border-t border-gray-500 border-dashed" /> 
 
               <li className="flex items-center space-x-3">
-                <Phone className="h-5 w-5 text-red-700" />
-                <a href="tel:+919999575044" className="text-gray-400 hover:text-red-700 transition-colors">
+                <Phone className="h-5 w-5 text-[#8B2B06]" />
+                <a href="tel:+919999575044" className="text-gray-400 hover:text-[#8B2B06] transition-colors">
                   +91 9999575044
                 </a>
               </li>
               <hr className="flex-grow border-t border-gray-500 border-dashed" /> 
 
               <li className="flex items-center space-x-3">
-                <Mail className="h-5 w-5 text-red-700" />
-                <a href="sales@saavigroups.com" className="text-gray-400 hover:text-red-700 transition-colors">
+                <Mail className="h-5 w-5 text-[#8B2B06]" />
+                <a href="sales@saavigroups.com" className="text-gray-400 hover:text-[#8B2B06] transition-colors">
                 sales@saavigroups.com
                 </a>
               </li>

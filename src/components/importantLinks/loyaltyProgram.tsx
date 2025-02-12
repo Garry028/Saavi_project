@@ -4,7 +4,7 @@ const LoyaltyProgramPage: React.FC = () => {
   return (
     <div className="min-h-screen py-8">
       <div className="container mx-auto px-4 sm:px-8">
-        <h1 className="text-3xl font-bold text-red-700 mb-8">Loyalty Program</h1>
+        <h1 className="text-3xl font-bold text-[#8B2B06] mb-8">Loyalty Program</h1>
 
         {/* Loyalty Program Section */}
         <div className="space-y-8">
@@ -26,7 +26,7 @@ const LoyaltyProgramPage: React.FC = () => {
           </div>
 
           <div className="bg-white p-6 rounded-lg shadow-lg">
-            <h3 className="text-xl font-bold text-red-700 mb-4">3. Exclusive Offers</h3>
+            <h3 className="text-xl font-bold text-[#8B2B06] mb-4">3. Exclusive Offers</h3>
             <ul className="text-gray-700 space-y-4">
               <li><strong>Seasonal Promotions:</strong> Get access to limited-time offers and exclusive promotions.</li>
               <li><strong>Birthday Rewards:</strong> Celebrate your birthday with special rewards and discounts.</li>
@@ -34,7 +34,7 @@ const LoyaltyProgramPage: React.FC = () => {
           </div>
 
           <div className="bg-white p-6 rounded-lg shadow-lg">
-            <h3 className="text-xl font-bold text-red-700 mb-4">4. Earning and Redeeming Points</h3>
+            <h3 className="text-xl font-bold text-[#8B2B06] mb-4">4. Earning and Redeeming Points</h3>
             <ul className="text-gray-700 space-y-4">
               <li><strong>Booking Rewards:</strong> Earn points with every booking made through the official website.</li>
               <li><strong>Partner Benefits:</strong> Earn points by using our partner services, including dining and spa services.</li>
@@ -43,7 +43,7 @@ const LoyaltyProgramPage: React.FC = () => {
           </div>
 
           <div className="bg-white p-6 rounded-lg shadow-lg">
-            <h3 className="text-xl font-bold text-red-700 mb-4">5. Terms and Conditions</h3>
+            <h3 className="text-xl font-bold text-[#8B2B06] mb-4">5. Terms and Conditions</h3>
             <ul className="text-gray-700 space-y-4">
               <li><strong>Program Availability:</strong> The loyalty program is available to all registered members of Saavi Hotel.</li>
               <li><strong>Expiry:</strong> Points may expire if not used within a certain time period, as outlined in the program rules.</li>

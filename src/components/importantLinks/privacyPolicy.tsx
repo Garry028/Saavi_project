@@ -4,7 +4,7 @@ const PrivacyPolicyPage: React.FC = () => {
   return (
     <div className="min-h-screen py-8">
       <div className="container mx-auto px-4 sm:px-8">
-        <h1 className="text-3xl font-bold text-red-700 mb-8">Privacy Policy</h1>
+        <h1 className="text-3xl font-bold text-[#8B2B06] mb-8">Privacy Policy</h1>
 
         {/* Privacy Policy Section */}
         <div className="space-y-8">
@@ -25,7 +25,7 @@ const PrivacyPolicyPage: React.FC = () => {
           </div>
 
           <div className="bg-white p-6 rounded-lg shadow-lg">
-            <h3 className="text-xl font-bold text-red-700 mb-4">3. Data Protection</h3>
+            <h3 className="text-xl font-bold text-[#8B2B06] mb-4">3. Data Protection</h3>
             <ul className="text-gray-700 space-y-4">
               <li><strong>Security Measures:</strong> We implement industry-standard security practices to protect your personal information.</li>
               <li><strong>Data Retention:</strong> Your data will be retained as long as necessary for the purposes outlined in this policy.</li>
@@ -33,7 +33,7 @@ const PrivacyPolicyPage: React.FC = () => {
           </div>
 
           <div className="bg-white p-6 rounded-lg shadow-lg">
-            <h3 className="text-xl font-bold text-red-700 mb-4">4. Your Rights</h3>
+            <h3 className="text-xl font-bold text-[#8B2B06] mb-4">4. Your Rights</h3>
             <ul className="text-gray-700 space-y-4">
               <li><strong>Access:</strong> You have the right to access the personal data we hold about you.</li>
               <li><strong>Correction:</strong> You may request to correct any inaccuracies in your data.</li>
@@ -42,7 +42,7 @@ const PrivacyPolicyPage: React.FC = () => {
           </div>
 
           <div className="bg-white p-6 rounded-lg shadow-lg">
-            <h3 className="text-xl font-bold text-red-700 mb-4">5. Third-Party Services</h3>
+            <h3 className="text-xl font-bold text-[#8B2B06] mb-4">5. Third-Party Services</h3>
             <ul className="text-gray-700 space-y-4">
               <li><strong>Third-Party Partners:</strong> We may share your data with third-party service providers to facilitate our services, such as payment processors.</li>
               <li><strong>External Links:</strong> Our website may contain links to third-party websites, but we are not responsible for their privacy practices.</li>
@@ -50,7 +50,7 @@ const PrivacyPolicyPage: React.FC = () => {
           </div>
 
           <div className="bg-white p-6 rounded-lg shadow-lg">
-            <h3 className="text-xl font-bold text-red-700 mb-4">6. Updates to Privacy Policy</h3>
+            <h3 className="text-xl font-bold text-[#8B2B06] mb-4">6. Updates to Privacy Policy</h3>
             <ul className="text-gray-700 space-y-4">
               <li><strong>Policy Changes:</strong> We reserve the right to update our privacy policy, and changes will be posted on this page.</li>
               <li><strong>Effective Date:</strong> The date of the most recent update will be noted at the top of this policy.</li>
