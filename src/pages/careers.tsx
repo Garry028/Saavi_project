@@ -11,10 +11,26 @@ export default function careers() {
         applyFor: '',
         resume: null as File | null,
       });
+      const [errors, setErrors] = useState({
+        phone: '',
+      });
     
       const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
+        if (name === 'phone') {
+          if (!/^\d{10}$/.test(value)) {
+            setErrors((prev) => ({
+              ...prev,
+              phone: 'Phone number must be exactly 10 digits.',
+            }));
+          } else {
+            setErrors((prev) => ({
+              ...prev,
+              phone: '',
+            }));
+          }
+        }
       };
     
       const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -101,28 +117,12 @@ export default function careers() {
               className="w-full border bg-white border-gray-300 rounded-lg p-2"
               required
             />
+            {errors.phone && (
+          <p className="text-red-500 text-sm mt-1">{errors.phone}</p>
+        )}
           </div>
 
-          <div>
-            <label htmlFor="applyFor" className="block bg-white text-gray-700 font-medium mb-2">
-              Apply For
-            </label>
-            <select
-              id="applyFor"
-              name="applyFor"
-              value={formData.applyFor}
-              onChange={handleChange}
-              className="w-full border bg-white border-gray-300 rounded-lg p-2"
-              required
-            >
-              <option value="">Select Position</option>
-              <option value="Web Developer">Web Developer</option>
-              <option value="Web Designer">Web Designer</option>
-              <option value="Sales Manager">Sales Manager</option>
-              <option value="Operations Manager">Operations Manager</option>
-            </select>
-          </div>
-
+         
           <div>
             <label htmlFor="resume" className="block text-gray-700 font-medium mb-2">
               Resume/CV

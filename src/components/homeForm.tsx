@@ -17,7 +17,7 @@ const BookingForm = () => {
   const [errors, setErrors] = useState<Record<string, string>>({}); // Validation errors
   const navigate = useNavigate();
 
-  const destinations = ['Gurugram', 'Shimla', 'Manali', 'Rishikesh'];
+  const destinations = ['Gurugram', 'Shimla', 'Jibhi', 'Rishikesh'];
   const destinationRef = useRef<HTMLDivElement>(null);
   const guestsRef = useRef<HTMLDivElement>(null);
 
@@ -111,7 +111,7 @@ const BookingForm = () => {
                   <ChevronDown className="h-4 w-4 text-gray-400" />
                 </div>
                 {isDestinationOpen && (
-                  <div className="absolute bottom-full left-0 right-0 mt-1 bg-white border border-gray-200 rounded-lg shadow-lg z-50">
+                  <div className="absolute bottom-full left-0 right-0 mt-1 bg-white border border-gray-200 rounded-lg shadow-lg z-50 text-left">
                     {destinations.map((dest) => (
                       <div
                         key={dest}

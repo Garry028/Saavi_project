@@ -99,9 +99,9 @@ Location:
      S433,
      S434
     ],
-    amenities: [ 'On-site Restaurant Serving Delectable Meals',
-  'Non-smoking Rooms for a Pleasant Stay',
-  'Room Service Available for Added Convenience',
+    amenities: [ 'It has a restaurant , On-site restaurant serving delectable meals.',
+  'Non-smoking rooms ensuring a pleasant stay',
+  'Room service available for added convenience',
   '24-Hour Front Desk Assistance',
   'Safe Box, Wardrobe, and Kettle for Added Convenience',
   'Free Private Parking',
@@ -227,7 +227,7 @@ Bed linens and towels are provided in every room for guest comfort.
 
     Welcome to Saavi Hotel Sector 45
 
-Discover comfort and affordability at Saavi Hotel Sector 45, conveniently located in Gurgaon just 7.4 km from MG Road and 20 km from Qutub Minar. Our 2-star accommodation offers a cozy retreat with essential amenities for a pleasant stay.
+Discover comfort and affordability at Saavi Hotel Sector 45, conveniently located in Gurgaon just 7.4 km from MG Road and 20 km from Qutub Minar. Our 3-star accommodation offers a cozy retreat with essential amenities for a pleasant stay.
 
     This boutique hotel is best for small gathering events – Haldi, wedding , Engagement , birthday parties etc. Couples particularly like the location because of our quality rooms, private dining area and in- room dining services. This boutique hotel also have banquet hall that is best for Weddings, Haldi, Ring Ceremony,  Engagement , birthday parties etc. Has a Beautiful Banquet with state of the art enmities. We speak your language!
 
@@ -348,7 +348,7 @@ Our Retreat provides grand offer for tourism activities in an area of about 75 B
       'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
       'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80'
     ],
-    amenities: ['Eco-Cottages', 'Trekking Assistance', 'Bonfire Nights', 'Organic Meals', 'Mountain View', 'Room Service', 'Spa', 'Restaurant', 'Bar', 'Fitness Center', 'Heating']
+    amenities: ['Eco-Cottages', 'Trekking Assistance', 'Organic Meals', 'Mountain View', 'Room Service',  'Heating']
   },
   {
     id: 'saavi-rishikesh',
@@ -406,7 +406,7 @@ Location:
       'https://images.unsplash.com/photo-1584132967334-10e028bd69f7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
       'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80'
     ],
-    amenities: [ 'It also has Breakfast Buffet. Also, it has a restaurant , On-site restaurant serving delectable meals.',
+    amenities: [ 
   'Non-smoking Rooms for a Pleasant Stay',
   'Room Service Available for Added Convenience',
   '24-Hour Front Desk Assistance',
