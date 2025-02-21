@@ -7,6 +7,7 @@ export const hotels: Hotel[] = [
     name: 'Saavi Hotel Golf Course',
     location: 'Gurugram, Haryana, India',
     price: 2200,
+    locationUrl : "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d448988.2271440563!2d77.095287!3d28.45784!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19a1d1c95a9b%3A0x223feb2fe2dcf60b!2sHotel%20Gracia%20Golf%20by%20SAAVI%20Hotel!5e0!3m2!1sen!2sus!4v1740143587547!5m2!1sen!2sus",
     rating: 4.9,
     bookingEngine : "http://bookingengine.maximojo.com?hid=IN-7fc00e1a-24e9-4e40-9e88-b3f0f8a6d8ac",
     description: `
@@ -88,6 +89,7 @@ Location:
     name: 'Saavi Hotel Sector 46',
     location: 'Gurugram, Haryana, India',
     price: 2400,
+    locationUrl : "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d449108.1421838111!2d77.05888!3d28.429594!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1907e786f627%3A0x3a018b67571a0ec7!2sSaavi%20Hotel%20Sector%2046!5e0!3m2!1sen!2sus!4v1740144098469!5m2!1sen!2sus",
     rating: 4.7,
     bookingEngine : "http://bookingengine.maximojo.com?hid=IN-d94400e8-db75-4daa-9a98-d84564413313",
     description: `
@@ -195,6 +197,7 @@ Bed linens and towels are provided in every room for guest comfort.
     location: 'Gurugram, Haryana, India',
     price: 2500,
     rating: 4.8,
+    locationUrl : "",
     bookingEngine :"http://bookingengine.maximojo.com?hid=IN-c2ecb7a0-0dd5-4ce2-a9b7-2c2afeb8754b",
     description: `
 
@@ -279,6 +282,7 @@ Location:
     location: 'Gurugram, Haryana, India',
     price: 2200,
     rating: 4.6,
+    locationUrl : "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d448991.2044769026!2d77.008968!3d28.457139!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1721ffb6aac9%3A0xbc55ada6cc79802c!2sHotel%20De%20Luxe%20Basai%20Road%20By%20Saavi%20Hotels!5e0!3m2!1sen!2sus!4v1740146522999!5m2!1sen!2sus",
     bookingEngine : "http://bookingengine.maximojo.com?hid=IN-f59a1bd3-916f-4a62-9092-9624599ac2c6",
     description: `
     Hotel De Luxe Basai Road, GurgaonA boutique hotel of classic urban feel perfect for conferences ,Wedding Events and long stays is in the Centre of Gurgaon  – just 5 Minutes Drive from Rajiv Chowk and Hero Honda Chowk .
@@ -309,6 +313,7 @@ Location:
     name: 'Hassan Valley By Saavi',
     location: 'Shimla, Himachal Pradesh, India',
     price: 2400,
+    locationUrl : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3416.8019628769252!2d77.2445687!3d31.087435199999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390583d93e9b59ad%3A0x5a63743cfc19b92d!2sHassan%20Valley%20Retreat-Best%20Valley%20View%20Hotel%20in%20Shimla!5e0!3m2!1sen!2sin!4v1740146079796!5m2!1sen!2sin",
     rating: 4.8,
     bookingEngine : "",
     description: ` Hassan Valley Retreat is located near Hassan Valley (near Dhalli), 11 kms away from Shimla. Our Retreat is strategically located on the hill ranges of Kufri and serves as a wonderful way to experience Nature, ideal for a wonderful weekend get way. Hassan Valley is the densest conical forest of Asia, stretched from Dhalli, Kufri, Mundaghat to Chail. The range, which includes reserve forest, sanctuary and Shimla water supply catchment forests, is one of most diverse spots in the world in terms of flora and fauna. The sub-tropical climate and heavy snow during the winter season creates an environment where several unique high altitude plants and animal species flourish.
@@ -323,112 +328,113 @@ Our Retreat provides grand offer for tourism activities in an area of about 75 B
     ],
     amenities: ['Eco-Cottages', 'Trekking Assistance', 'Bonfire Nights', 'Organic Meals', 'Mountain View', 'Room Service', 'Spa', 'Restaurant', 'Bar', 'Fitness Center', 'Heating']
   },
-  {
-    id: 'saavi-rishikesh',
-    name: 'Saavi Hotel and Resorts',
-    location: 'Plot no 644, Islampur Colony,Sector 38,Gurugram, Haryana 122003',
-    price: 2300,
-    rating: 4.7,
-    bookingEngine : "",
-    description: `
-Welcome to The Saavi Hotel and Resorts
+//   {
+//     id: 'saavi-rishikesh',
+//     name: 'Saavi Hotel and Resorts',
+//     location: 'Plot no 644, Islampur Colony,Sector 38,Gurugram, Haryana 122003',
+//     price: 2300,
+//     rating: 4.7,
+//     bookingEngine : "",
+//     description: `
+// Welcome to The Saavi Hotel and Resorts
 
-Experience comfort and convenience at The Saavi Hotel and Resorts, located in Gurgaon just 7.5 km from WorldMark Gurgaon. Our hotel offers a serene ambiance with modern amenities to ensure a memorable stay.
+// Experience comfort and convenience at The Saavi Hotel and Resorts, located in Gurgaon just 7.5 km from WorldMark Gurgaon. Our hotel offers a serene ambiance with modern amenities to ensure a memorable stay.
     
-This boutique hotel is best for small gathering events – Haldi, wedding , Engagement , birthday parties etc. Couples particularly like the location because of our quality rooms, private dining area and in- room dining services. This boutique hotel also have banquet hall that is best for Weddings, Haldi, Ring Ceremony,  Engagement , birthday parties etc. Has a Beautiful Banquet with state of the art enmities. We speak your language!
+// This boutique hotel is best for small gathering events – Haldi, wedding , Engagement , birthday parties etc. Couples particularly like the location because of our quality rooms, private dining area and in- room dining services. This boutique hotel also have banquet hall that is best for Weddings, Haldi, Ring Ceremony,  Engagement , birthday parties etc. Has a Beautiful Banquet with state of the art enmities. We speak your language!
 
-Guest Access:
+// Guest Access:
 
-Experience the vibrant surroundings of Saavi Hotel Sector – 38, where convenience and leisure converge to offer a memorable stay.
+// Experience the vibrant surroundings of Saavi Hotel Sector – 38, where convenience and leisure converge to offer a memorable stay.
 
-Top Attractions Nearby:
+// Top Attractions Nearby:
 
-Qutub Minar (17 km away)
-Lake Johad Village Pond (7 km away)
+// Qutub Minar (17 km away)
+// Lake Johad Village Pond (7 km away)
 
-Facilities Nearby
-Restaurants & Cafes:
+// Facilities Nearby
+// Restaurants & Cafes:
 
-Indulge in delicious cuisine at nearby dining spots:
+// Indulge in delicious cuisine at nearby dining spots:
 
-HUDA Gymkhana Club(7.9 Km)
+// HUDA Gymkhana Club(7.9 Km)
 
-Swasti pg (0.4 Km)
+// Swasti pg (0.4 Km)
 
-Domino’s Pizza (1.4 Km)
+// Domino’s Pizza (1.4 Km)
 
-Ayush Dhaba (1.5 Km)
+// Ayush Dhaba (1.5 Km)
 
-Salad Company (1.5 Km)
+// Salad Company (1.5 Km)
 
-Pind Balluchi (1.5 Km)
+// Pind Balluchi (1.5 Km)
 
-Parks and ATMs:
+// Parks and ATMs:
 
-Explore nearby parks and recreational areas just a short distance away:
+// Explore nearby parks and recreational areas just a short distance away:
 
-Satvir Park, Park-Sector 47 (both within 200 – 450 m)
-Central Park, Obstacle Park, Arora Park (all within 850 m – 1.2 km)
-Neha Nursery, Community Centre (both within 1.4 – 1.6 km)
-ATM Nearby
+// Satvir Park, Park-Sector 47 (both within 200 – 450 m)
+// Central Park, Obstacle Park, Arora Park (all within 850 m – 1.2 km)
+// Neha Nursery, Community Centre (both within 1.4 – 1.6 km)
+// ATM Nearby
 
-Public Transportation:
+// Public Transportation:
 
-Efficiently navigate the city with access to nearby public transportation hubs:
+// Efficiently navigate the city with access to nearby public transportation hubs:
 
-Train Stations: Huda City Centre (4.3 km), Sikanderpur Metro Station (7 km)
-Metro Stations: HUDA City Centre, IFFCO Chowk (both approximately 4.4 – 5 km) 
-IFFCO Chowk Metro Station(6.7 Km)
+// Train Stations: Huda City Centre (4.3 km), Sikanderpur Metro Station (7 km)
+// Metro Stations: HUDA City Centre, IFFCO Chowk (both approximately 4.4 – 5 km) 
+// IFFCO Chowk Metro Station(6.7 Km)
 
-M.G. Road Metro Station (9.7 Km)
+// M.G. Road Metro Station (9.7 Km)
 
-Huda City Center Metro (4.8 Km)
+// Huda City Center Metro (4.8 Km)
 
-Closest Airports:
+// Closest Airports:
 
-Delhi International Airport IGI (20.6Km)
+// Delhi International Airport IGI (20.6Km)
 
-Rooms
-Accommodation:
+// Rooms
+// Accommodation:
 
-Each room at Saavi Hotel sector 38  features:
+// Each room at Saavi Hotel sector 38  features:
 
-Wardrobe for storage
-Private bathroom with shower and free toiletries
-Flat-screen TV and air conditioning for entertainment and comfort
-Selected rooms include a balcony for added relaxation
-Bed linen and towels provided for guest comfort
-Breakfast Options: Enjoy a delicious breakfast with buffet, à la carte, or continental options available daily.
+// Wardrobe for storage
+// Private bathroom with shower and free toiletries
+// Flat-screen TV and air conditioning for entertainment and comfort
+// Selected rooms include a balcony for added relaxation
+// Bed linen and towels provided for guest comfort
+// Breakfast Options: Enjoy a delicious breakfast with buffet, à la carte, or continental options available daily.
 
-Location:
-- Plot no 644, Islampur Colony,Sector 38,Gurugram, Haryana 122003
-    `,
-    images: [
-      'https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
-      'https://images.unsplash.com/photo-1582719508461-905c673771fd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
-      'https://images.unsplash.com/photo-1584132967334-10e028bd69f7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
-      'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80'
-    ],
-    amenities: [ 'It also has Breakfast Buffet. Also, it has a restaurant , On-site restaurant serving delectable meals.',
-  'Non-smoking Rooms for a Pleasant Stay',
-  'Room Service Available for Added Convenience',
-  '24-Hour Front Desk Assistance',
-  'Safe Box, Wardrobe, and Kettle for Added Convenience',
-  'Free Private Parking',
-  'Terrace for outdoor relaxation.',
-  'Facilities for Disabled Guests',
-  'Free High-speed WiFi',
-  'Flat-screen TV for Entertainment',
-  'Air Conditioning for a Comfortable Stay',
-  'Work Table in Room',
-]
-  },
+// Location:
+// - Plot no 644, Islampur Colony,Sector 38,Gurugram, Haryana 122003
+//     `,
+//     images: [
+//       'https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
+//       'https://images.unsplash.com/photo-1582719508461-905c673771fd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
+//       'https://images.unsplash.com/photo-1584132967334-10e028bd69f7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
+//       'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80'
+//     ],
+//     amenities: [ 'It also has Breakfast Buffet. Also, it has a restaurant , On-site restaurant serving delectable meals.',
+//   'Non-smoking Rooms for a Pleasant Stay',
+//   'Room Service Available for Added Convenience',
+//   '24-Hour Front Desk Assistance',
+//   'Safe Box, Wardrobe, and Kettle for Added Convenience',
+//   'Free Private Parking',
+//   'Terrace for outdoor relaxation.',
+//   'Facilities for Disabled Guests',
+//   'Free High-speed WiFi',
+//   'Flat-screen TV for Entertainment',
+//   'Air Conditioning for a Comfortable Stay',
+//   'Work Table in Room',
+// ]
+//   },
   {
     id: 'saavi-jibhi',
     name: 'Saavi Hotel Jibhi',
     location: 'Jibhi, Himachal Pradesh, India',
     price: 2400,
     rating: 4.9,
+    locationUrl : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3399.5483678505225!2d77.36510899999999!3d31.564006999999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3905afacc76435bb%3A0x38cbb67c6e9d48a6!2sHotel%20De%20luxe!5e0!3m2!1sen!2sin!4v1740146113449!5m2!1sen!2sin",
     bookingEngine : "",
     description: `
 

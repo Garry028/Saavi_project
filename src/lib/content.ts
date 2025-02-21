@@ -77,15 +77,15 @@ export const content = {
       description: "A serene getaway nestled amidst picturesque landscapes, offering modern amenities and a tranquil escape in the heart of nature.",
       amenities: ["Eco-Cottages", "Trekking Assistance", "Bonfire Nights", "Organic Meals"]
     },
-    {
-      id: "saavi-rishikesh",
-      name: "Saavi Hotel and Resorts",
-      location: "Rishikesh,Uttrakhand, India",
-      city: "Rishikesh",
-      image: images.Image_6,
-      description: " Offers a serene retreat with modern amenities, surrounded by the tranquil beauty of the Himalayan foothills and the Ganges River.",
-      amenities: ["Wellness Center", "Luxury Rooms", "Multi-Cuisine Dining", "Bonfire"]
-    },
+    // {
+    //   id: "saavi-rishikesh",
+    //   name: "Saavi Hotel and Resorts",
+    //   location: "Rishikesh,Uttrakhand, India",
+    //   city: "Rishikesh",
+    //   image: images.Image_6,
+    //   description: " Offers a serene retreat with modern amenities, surrounded by the tranquil beauty of the Himalayan foothills and the Ganges River.",
+    //   amenities: ["Wellness Center", "Luxury Rooms", "Multi-Cuisine Dining", "Bonfire"]
+    // },
     {
       id: "saavi-jibhi",
       name: "Saavi Hotel Jibhi",
