@@ -229,7 +229,7 @@ Bed linens and towels are provided in every room for guest comfort.
     location: 'Gurugram, Haryana, India',
     price: 2500,
     rating: 4.8,
-    locationUrl : "",
+    locationUrl : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16334.90748194796!2d77.0641783278142!3d28.44017168558248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d18918ccd55b7%3A0x66c9289c4305bd1f!2sSaavi%20Hotel%20Sector-%2045!5e0!3m2!1sen!2sin!4v1740148375216!5m2!1sen!2sin",
     bookingEngine :"http://bookingengine.maximojo.com?hid=IN-c2ecb7a0-0dd5-4ce2-a9b7-2c2afeb8754b",
     description: `
 
