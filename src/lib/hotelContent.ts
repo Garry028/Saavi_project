@@ -39,6 +39,7 @@ export const hotels: Hotel[] = [
     name: 'Saavi Hotel Golf Course',
     location: 'Gurugram, Haryana, India',
     price: 2200,
+    locationUrl : "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d448988.2271440563!2d77.095287!3d28.45784!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19a1d1c95a9b%3A0x223feb2fe2dcf60b!2sHotel%20Gracia%20Golf%20by%20SAAVI%20Hotel!5e0!3m2!1sen!2sus!4v1740143587547!5m2!1sen!2sus",
     rating: 4.9,
     bookingEngine : "http://bookingengine.maximojo.com?hid=IN-7fc00e1a-24e9-4e40-9e88-b3f0f8a6d8ac",
     description: `
@@ -120,6 +121,7 @@ Location : 545, Off, Golf Course Rd, Sector 43, Gurugram, Haryana 122002.
     location: 'Gurugram, Haryana, India',
     price: 2400,
     rating: 4.7,
+    locationUrl : "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d449108.1421838111!2d77.05888!3d28.429594!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1907e786f627%3A0x3a018b67571a0ec7!2sSaavi%20Hotel%20Sector%2046!5e0!3m2!1sen!2sus!4v1740144098469!5m2!1sen!2sus",
     bookingEngine : "http://bookingengine.maximojo.com?hid=IN-d94400e8-db75-4daa-9a98-d84564413313",
     description: `
 
@@ -228,6 +230,7 @@ Location : 1482, Huda Colony, Sector 46, Gurugram, Haryana 122003.
     location: 'Gurugram, Haryana, India',
     price: 2500,
     rating: 4.8,
+    locationUrl : "",
     bookingEngine :"http://bookingengine.maximojo.com?hid=IN-c2ecb7a0-0dd5-4ce2-a9b7-2c2afeb8754b",
     description: `
 
@@ -311,6 +314,7 @@ Location : Sector 45 Main Rd, Sector 45, Gurugram, Haryana 122003.
     location: 'Gurugram, Haryana, India',
     price: 2200,
     rating: 4.6,
+    locationUrl : "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d448991.2044769026!2d77.008968!3d28.457139!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1721ffb6aac9%3A0xbc55ada6cc79802c!2sHotel%20De%20Luxe%20Basai%20Road%20By%20Saavi%20Hotels!5e0!3m2!1sen!2sus!4v1740146522999!5m2!1sen!2sus",
     bookingEngine : "http://bookingengine.maximojo.com?hid=IN-f59a1bd3-916f-4a62-9092-9624599ac2c6",
     description: `
     Hotel De Luxe Basai Road, GurgaonA boutique hotel of classic urban feel perfect for conferences ,Wedding Events and long stays is in the Centre of Gurgaon  – just 5 Minutes Drive from Rajiv Chowk and Hero Honda Chowk .
@@ -345,6 +349,7 @@ Location : Sector 45 Main Rd, Sector 45, Gurugram, Haryana 122003.
     location: 'Shimla, Himachal Pradesh, India',
     price: 2400,
     rating: 4.8,
+    locationUrl : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3416.8019628769252!2d77.2445687!3d31.087435199999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390583d93e9b59ad%3A0x5a63743cfc19b92d!2sHassan%20Valley%20Retreat-Best%20Valley%20View%20Hotel%20in%20Shimla!5e0!3m2!1sen!2sin!4v1740146079796!5m2!1sen!2sin",
     bookingEngine : "",
     description: ` Hassan Valley Retreat is located near Hassan Valley (near Dhalli), 11 kms away from Shimla. Our Retreat is strategically located on the hill ranges of Kufri and serves as a wonderful way to experience Nature, ideal for a wonderful weekend get way. Hassan Valley is the densest conical forest of Asia, stretched from Dhalli, Kufri, Mundaghat to Chail. The range, which includes reserve forest, sanctuary and Shimla water supply catchment forests, is one of most diverse spots in the world in terms of flora and fauna. The sub-tropical climate and heavy snow during the winter season creates an environment where several unique high altitude plants and animal species flourish.
 
@@ -361,54 +366,56 @@ Location : Village Gawahi,P.O. Maloothi,Patgehar Road,Near,Ekant Vatika rd,Shiml
     ],
     amenities: ['Eco-Cottages', 'Trekking Assistance', 'Organic Meals', 'Mountain View', 'Room Service',  'Heating']
   },
-  {
-    id: 'saavi-rishikesh',
-    name: 'Saavi Hotel and Resorts',
-    location: '',
-    price: 2300,
-    rating: 4.7,
-    bookingEngine : "",
-    description: `
-Welcome to The Saavi Hotel and Resorts
+//   {
+//     id: 'saavi-rishikesh',
+//     name: 'Saavi Hotel and Resorts',
+//     location: '',
+//     price: 2300,
+//     rating: 4.7,
+//     locationUrl : "",
+//     bookingEngine : "",
+//     description: `
+// Welcome to The Saavi Hotel and Resorts
 
-Welcome to The Saavi Hotel Rishikesh! Experience a blend of comfort and nature in this beautiful hotel, located just 5 km from Rishikesh city center. Our hotel offers a peaceful environment, modern amenities, and a perfect setting for both relaxation and adventure. Whether you’re planning a small gathering or a getaway, our hotel is the ideal choice for weddings, engagement ceremonies, birthdays, and more.
+// Welcome to The Saavi Hotel Rishikesh! Experience a blend of comfort and nature in this beautiful hotel, located just 5 km from Rishikesh city center. Our hotel offers a peaceful environment, modern amenities, and a perfect setting for both relaxation and adventure. Whether you’re planning a small gathering or a getaway, our hotel is the ideal choice for weddings, engagement ceremonies, birthdays, and more.
 
-Key Highlights:
+// Key Highlights:
 
-    Guest Rooms: Each room at Saavi Hotel Rishikesh features a wardrobe, private bathroom with a shower and free toiletries, flat-screen TV, and air conditioning for your comfort. Some rooms include a balcony with stunning views. Bed linen and towels are provided for your convenience.
-    Dining Options: Start your day with a delicious breakfast, available in buffet, à la carte, or continental styles, served daily.
-    Event Facilities: Our hotel is equipped with a versatile banquet hall that is perfect for weddings, engagement parties, Haldi ceremonies, birthdays, and more. With state-of-the-art amenities, it is designed to create memorable experiences.
-    Serene Location: Surrounded by the tranquil beauty of Rishikesh, the hotel is located near top attractions such as the iconic Triveni Ghat and Laxman Jhula. Nearby, you’ll find restaurants, cafes, and spiritual sites to enhance your visit.
+//     Guest Rooms: Each room at Saavi Hotel Rishikesh features a wardrobe, private bathroom with a shower and free toiletries, flat-screen TV, and air conditioning for your comfort. Some rooms include a balcony with stunning views. Bed linen and towels are provided for your convenience.
+//     Dining Options: Start your day with a delicious breakfast, available in buffet, à la carte, or continental styles, served daily.
+//     Event Facilities: Our hotel is equipped with a versatile banquet hall that is perfect for weddings, engagement parties, Haldi ceremonies, birthdays, and more. With state-of-the-art amenities, it is designed to create memorable experiences.
+//     Serene Location: Surrounded by the tranquil beauty of Rishikesh, the hotel is located near top attractions such as the iconic Triveni Ghat and Laxman Jhula. Nearby, you’ll find restaurants, cafes, and spiritual sites to enhance your visit.
 
-Nearby Attractions:
+// Nearby Attractions:
 
-    Triveni Ghat (5 km away)
-    Laxman Jhula (6 km away)
-    Rajaji National Park (9 km away)
+//     Triveni Ghat (5 km away)
+//     Laxman Jhula (6 km away)
+//     Rajaji National Park (9 km away)
 
-Nearby Restaurants & Cafes:
+// Nearby Restaurants & Cafes:
 
-    Chotiwala Restaurant (3 km)
-    The Sitting Elephant (4 km)
-    Rishikesh Cafe (5 km)
-    Bikanervala (5.5 km)
+//     Chotiwala Restaurant (3 km)
+//     The Sitting Elephant (4 km)
+//     Rishikesh Cafe (5 km)
+//     Bikanervala (5.5 km)
 
-Parks and ATMs:
+// Parks and ATMs:
 
-    Swarg Ashram Park (1.2 km)
-    Rishikesh Ashram Park (2 km)
-    ATM Nearby: Several ATMs located within 1-2 km radius.
+//     Swarg Ashram Park (1.2 km)
+//     Rishikesh Ashram Park (2 km)
+//     ATM Nearby: Several ATMs located within 1-2 km radius.
 
-Public Transportation:
+// Public Transportation:
 
-    Train Stations: Rishikesh Railway Station (5 km)
-    Metro Stations: Haridwar Metro Station (25 km)
-    Closest Airports: Dehradun Jolly Grant Airport (19 km)
+//     Train Stations: Rishikesh Railway Station (5 km)
+//     Metro Stations: Haridwar Metro Station (25 km)
+//     Closest Airports: Dehradun Jolly Grant Airport (19 km)
 
-Accommodation: Each room at Saavi Hotel Rishikesh is thoughtfully designed to ensure a restful stay. Enjoy the comfort of private bathrooms, modern decor, and convenient in-room amenities.
+// Accommodation: Each room at Saavi Hotel Rishikesh is thoughtfully designed to ensure a restful stay. Enjoy the comfort of private bathrooms, modern decor, and convenient in-room amenities.
 
 Breakfast Options: Savor a delicious breakfast with buffet, à la carte, or continental options available daily to start your day off right.
-
+Location:
+- Plot no 644, Islampur Colony,Sector 38,Gurugram, Haryana 122003
     `,
     images: [
       'https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
@@ -436,6 +443,7 @@ Breakfast Options: Savor a delicious breakfast with buffet, à la carte, or cont
     location: 'Jibhi, Himachal Pradesh, India',
     price: 2400,
     rating: 4.9,
+    locationUrl : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3399.5483678505225!2d77.36510899999999!3d31.564006999999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3905afacc76435bb%3A0x38cbb67c6e9d48a6!2sHotel%20De%20luxe!5e0!3m2!1sen!2sin!4v1740146113449!5m2!1sen!2sin",
     bookingEngine : "",
     description: `
 

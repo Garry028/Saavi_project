@@ -66,10 +66,10 @@ export default function HotelDetail() {
   };
 
   // Google Maps Embed URL
-  const getMapUrl = () => {
-    const location = encodeURIComponent(hotel.location);
-    return `https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_API_KEY&q=${location}`;
-  };
+  // const getMapUrl = () => {
+  //   const location = encodeURIComponent(hotel.location);
+  //   return `https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_API_KEY&q=${location}`;
+  // };
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -207,9 +207,9 @@ export default function HotelDetail() {
             {/* Location */}
             <div className="bg-white rounded-xl p-6 shadow-sm">
               <h2 className="text-2xl font-bold mb-4">Location</h2>
-              <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
+              <div className="aspect-w-16 aspect-h-9 h-[300px] rounded-lg overflow-hidden">
                 <iframe
-                  src={getMapUrl()}
+                  src={hotel.locationUrl}
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
