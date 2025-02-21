@@ -38,7 +38,7 @@ export const hotels: Hotel[] = [
     id: 'golf-course-luxury',
     name: 'Saavi Hotel Golf Course',
     location: 'Gurugram, Haryana, India',
-    price: 2200,
+    price: 3000,
     locationUrl : "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d448988.2271440563!2d77.095287!3d28.45784!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19a1d1c95a9b%3A0x223feb2fe2dcf60b!2sHotel%20Gracia%20Golf%20by%20SAAVI%20Hotel!5e0!3m2!1sen!2sus!4v1740143587547!5m2!1sen!2sus",
     rating: 4.9,
     bookingEngine : "http://bookingengine.maximojo.com?hid=IN-7fc00e1a-24e9-4e40-9e88-b3f0f8a6d8ac",
@@ -119,7 +119,7 @@ Location : 545, Off, Golf Course Rd, Sector 43, Gurugram, Haryana 122002.
     id: 'sector-46',
     name: 'Saavi Hotel Sector 46',
     location: 'Gurugram, Haryana, India',
-    price: 2400,
+    price: 3000,
     rating: 4.7,
     locationUrl : "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d449108.1421838111!2d77.05888!3d28.429594!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1907e786f627%3A0x3a018b67571a0ec7!2sSaavi%20Hotel%20Sector%2046!5e0!3m2!1sen!2sus!4v1740144098469!5m2!1sen!2sus",
     bookingEngine : "http://bookingengine.maximojo.com?hid=IN-d94400e8-db75-4daa-9a98-d84564413313",
@@ -289,7 +289,7 @@ Selected rooms include a balcony for guests to relax and enjoy the surroundings.
 Bed linens and towels are provided in every room for guest comfort.
 
 
-Location : Sector 45 Main Rd, Sector 45, Gurugram, Haryana 122003.
+Location : Plot no 2034, block A, Sector 45, near HSBC bank..
     `,
     images: [
     S451,
@@ -312,7 +312,7 @@ Location : Sector 45 Main Rd, Sector 45, Gurugram, Haryana 122003.
     id: 'sector-10',
     name: 'Saavi Hotel Sector 10',
     location: 'Gurugram, Haryana, India',
-    price: 2200,
+    price: 2600,
     rating: 4.6,
     locationUrl : "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d448991.2044769026!2d77.008968!3d28.457139!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1721ffb6aac9%3A0xbc55ada6cc79802c!2sHotel%20De%20Luxe%20Basai%20Road%20By%20Saavi%20Hotels!5e0!3m2!1sen!2sus!4v1740146522999!5m2!1sen!2sus",
     bookingEngine : "http://bookingengine.maximojo.com?hid=IN-f59a1bd3-916f-4a62-9092-9624599ac2c6",
