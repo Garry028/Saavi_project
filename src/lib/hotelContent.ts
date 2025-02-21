@@ -366,52 +366,52 @@ Location : Village Gawahi,P.O. Maloothi,Patgehar Road,Near,Ekant Vatika rd,Shiml
     ],
     amenities: ['Eco-Cottages', 'Trekking Assistance', 'Organic Meals', 'Mountain View', 'Room Service',  'Heating']
   },
-//   {
-//     id: 'saavi-rishikesh',
-//     name: 'Saavi Hotel and Resorts',
-//     location: '',
-//     price: 2300,
-//     rating: 4.7,
-//     locationUrl : "",
-//     bookingEngine : "",
-//     description: `
-// Welcome to The Saavi Hotel and Resorts
+  {
+    id: 'saavi-rishikesh',
+    name: 'Saavi Hotel and Resorts',
+    location: '',
+    price: 2300,
+    rating: 4.7,
+    locationUrl : "",
+    bookingEngine : "",
+    description: `
+Welcome to The Saavi Hotel and Resorts
 
-// Welcome to The Saavi Hotel Rishikesh! Experience a blend of comfort and nature in this beautiful hotel, located just 5 km from Rishikesh city center. Our hotel offers a peaceful environment, modern amenities, and a perfect setting for both relaxation and adventure. Whether you’re planning a small gathering or a getaway, our hotel is the ideal choice for weddings, engagement ceremonies, birthdays, and more.
+Welcome to The Saavi Hotel Rishikesh! Experience a blend of comfort and nature in this beautiful hotel, located just 5 km from Rishikesh city center. Our hotel offers a peaceful environment, modern amenities, and a perfect setting for both relaxation and adventure. Whether you’re planning a small gathering or a getaway, our hotel is the ideal choice for weddings, engagement ceremonies, birthdays, and more.
 
-// Key Highlights:
+Key Highlights:
 
-//     Guest Rooms: Each room at Saavi Hotel Rishikesh features a wardrobe, private bathroom with a shower and free toiletries, flat-screen TV, and air conditioning for your comfort. Some rooms include a balcony with stunning views. Bed linen and towels are provided for your convenience.
-//     Dining Options: Start your day with a delicious breakfast, available in buffet, à la carte, or continental styles, served daily.
-//     Event Facilities: Our hotel is equipped with a versatile banquet hall that is perfect for weddings, engagement parties, Haldi ceremonies, birthdays, and more. With state-of-the-art amenities, it is designed to create memorable experiences.
-//     Serene Location: Surrounded by the tranquil beauty of Rishikesh, the hotel is located near top attractions such as the iconic Triveni Ghat and Laxman Jhula. Nearby, you’ll find restaurants, cafes, and spiritual sites to enhance your visit.
+    Guest Rooms: Each room at Saavi Hotel Rishikesh features a wardrobe, private bathroom with a shower and free toiletries, flat-screen TV, and air conditioning for your comfort. Some rooms include a balcony with stunning views. Bed linen and towels are provided for your convenience.
+    Dining Options: Start your day with a delicious breakfast, available in buffet, à la carte, or continental styles, served daily.
+    Event Facilities: Our hotel is equipped with a versatile banquet hall that is perfect for weddings, engagement parties, Haldi ceremonies, birthdays, and more. With state-of-the-art amenities, it is designed to create memorable experiences.
+    Serene Location: Surrounded by the tranquil beauty of Rishikesh, the hotel is located near top attractions such as the iconic Triveni Ghat and Laxman Jhula. Nearby, you’ll find restaurants, cafes, and spiritual sites to enhance your visit.
 
-// Nearby Attractions:
+Nearby Attractions:
 
-//     Triveni Ghat (5 km away)
-//     Laxman Jhula (6 km away)
-//     Rajaji National Park (9 km away)
+    Triveni Ghat (5 km away)
+    Laxman Jhula (6 km away)
+    Rajaji National Park (9 km away)
 
-// Nearby Restaurants & Cafes:
+Nearby Restaurants & Cafes:
 
-//     Chotiwala Restaurant (3 km)
-//     The Sitting Elephant (4 km)
-//     Rishikesh Cafe (5 km)
-//     Bikanervala (5.5 km)
+    Chotiwala Restaurant (3 km)
+    The Sitting Elephant (4 km)
+    Rishikesh Cafe (5 km)
+    Bikanervala (5.5 km)
 
-// Parks and ATMs:
+Parks and ATMs:
 
-//     Swarg Ashram Park (1.2 km)
-//     Rishikesh Ashram Park (2 km)
-//     ATM Nearby: Several ATMs located within 1-2 km radius.
+    Swarg Ashram Park (1.2 km)
+    Rishikesh Ashram Park (2 km)
+    ATM Nearby: Several ATMs located within 1-2 km radius.
 
-// Public Transportation:
+Public Transportation:
 
-//     Train Stations: Rishikesh Railway Station (5 km)
-//     Metro Stations: Haridwar Metro Station (25 km)
-//     Closest Airports: Dehradun Jolly Grant Airport (19 km)
+    Train Stations: Rishikesh Railway Station (5 km)
+    Metro Stations: Haridwar Metro Station (25 km)
+    Closest Airports: Dehradun Jolly Grant Airport (19 km)
 
-// Accommodation: Each room at Saavi Hotel Rishikesh is thoughtfully designed to ensure a restful stay. Enjoy the comfort of private bathrooms, modern decor, and convenient in-room amenities.
+Accommodation: Each room at Saavi Hotel Rishikesh is thoughtfully designed to ensure a restful stay. Enjoy the comfort of private bathrooms, modern decor, and convenient in-room amenities.
 
 Breakfast Options: Savor a delicious breakfast with buffet, à la carte, or continental options available daily to start your day off right.
 Location:
