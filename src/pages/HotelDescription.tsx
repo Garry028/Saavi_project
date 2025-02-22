@@ -57,7 +57,7 @@ export default function HotelDetail() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (hotel?.bookingEngine) {
-      window.location.href = hotel.bookingEngine; // Redirect to external URL in the same tab
+      window.open(hotel.bookingEngine, '_blank');  // Redirect to external URL in the same tab
     } else {
       console.warn("Booking engine not available for this hotel.");
     }

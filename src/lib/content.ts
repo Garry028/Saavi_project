@@ -90,7 +90,7 @@ export const content = {
       id: "saavi-jibhi",
       name: "Saavi Hotel Jibhi",
       location: "Jibhi,Himachal Pradesh, India",
-      city: "Shimla",
+      city: "Jibhi",
       image: images.Fjb,
       description: "A charming retreat offering cozy accommodations, modern amenities, and stunning views of the lush Himalayan landscape.",
       amenities: ["Banquet Halls", "Bonfire", "Outdoor Pool"]

@@ -28,17 +28,12 @@ import S4 from '../../public/assets/s4.jpg';
 
 
 
-
-
-
-
-
 export const hotels: Hotel[] = [
   {
     id: 'golf-course-luxury',
     name: 'Saavi Hotel Golf Course',
     location: 'Gurugram, Haryana, India',
-    price: 2200,
+    price: 3000,
     locationUrl : "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d448988.2271440563!2d77.095287!3d28.45784!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19a1d1c95a9b%3A0x223feb2fe2dcf60b!2sHotel%20Gracia%20Golf%20by%20SAAVI%20Hotel!5e0!3m2!1sen!2sus!4v1740143587547!5m2!1sen!2sus",
     rating: 4.9,
     bookingEngine : "http://bookingengine.maximojo.com?hid=IN-7fc00e1a-24e9-4e40-9e88-b3f0f8a6d8ac",
@@ -96,8 +91,7 @@ Our rooms are designed to provide utmost comfort and convenience to our guests. 
 - Some rooms also include a patio for outdoor relaxation
 - Wardrobe and kettle for added convenience
 
-Location:
-- 545, Off, Golf Course Rd, Sector 43, Gurugram, Haryana 122002
+Location : 545, Off, Golf Course Rd, Sector 43, Gurugram, Haryana 122002.
     `,
     images: [
      S431,
@@ -105,22 +99,23 @@ Location:
      S433,
      S434
     ],
-    amenities: [ 'It has a restaurant , On-site restaurant serving delectable meals.',
-  'Non-smoking rooms ensuring a pleasant stay',
-  'Room service available for added convenience',
-  '24-Hour Front Desk Assistance',
-  'Safe Box, Wardrobe, and Kettle for Added Convenience',
-  'Free Private Parking',
-  'Facilities for Disabled Guests',
-  'Free High-speed WiFi',
-  'Flat-screen TV for Entertainment',
-  'Air Conditioning for a Comfortable Stay',]
+    amenities: [ 'Dry cleaning',
+  'Laundry service',
+  'Housekeeping',
+  'Room service',
+  'Air conditioning',
+  'Power backup',
+  'Elevator/lift',
+  'Ironing service',
+  ' Library',
+  'personalised services',
+'Multi cuisine restaurant']
   },
   {
     id: 'sector-46',
     name: 'Saavi Hotel Sector 46',
     location: 'Gurugram, Haryana, India',
-    price: 2400,
+    price: 3000,
     rating: 4.7,
     locationUrl : "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d449108.1421838111!2d77.05888!3d28.429594!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1907e786f627%3A0x3a018b67571a0ec7!2sSaavi%20Hotel%20Sector%2046!5e0!3m2!1sen!2sus!4v1740144098469!5m2!1sen!2sus",
     bookingEngine : "http://bookingengine.maximojo.com?hid=IN-d94400e8-db75-4daa-9a98-d84564413313",
@@ -129,7 +124,7 @@ Location:
 
     Welcome to Saavi Hotel Sector 46
 
-Discover comfort and convenience at Saavi Hotel Sector 46, nestled in Gurgaon just 6.2 km from WorldMark Gurgaon. Our 3-star hotel offers a tranquil retreat with modern amenities and attentive service for a memorable stay.
+Discover comfort and convenience at Saavi Hotel Sector 46, nestled in Gurgaon just 6.2 km from WorldMark Gurgaon. Our Premium Accommodation hotel offers a tranquil retreat with modern amenities and attentive service for a memorable stay.
 
 This boutique hotel is best for small gathering events – Haldi, wedding , Engagement , birthday parties etc. Couples particularly like the location because of our quality rooms, private dining area and in- room dining services. This boutique hotel also have banquet hall that is best for Weddings, Haldi, Ring Ceremony,  Engagement , birthday parties etc. Has a Beautiful Banquet with state of the art enmities. We speak your language!
 
@@ -201,6 +196,8 @@ Private bathrooms in all units are equipped with a shower and complimentary toil
 All rooms feature a flat-screen TV and air conditioning for entertainment and comfort.
 Selected rooms include a balcony for guests to relax and enjoy the surroundings.
 Bed linens and towels are provided in every room for guest comfort.
+
+Location : 1482, Huda Colony, Sector 46, Gurugram, Haryana 122003.
     `,
     images: [
      S461,
@@ -208,20 +205,17 @@ Bed linens and towels are provided in every room for guest comfort.
      S463,
      S464
     ],
-    amenities: [ 'Breakfast Buffet', // Added new amenity
-  'On-site Restaurant Serving Delectable Meals', // Added new amenity
-  'Non-smoking Rooms for a Pleasant Stay', // Added new amenity
-  'Room Service Available for Added Convenience', // Added new amenity
-  '24-Hour Front Desk Assistance', // Added new amenity
-  'Safe Box, Wardrobe, and Kettle Tea Maker for Added Convenience', // Added new amenity
-  'Terrace for Outdoor Relaxation', // Added new amenity
-  'Free Private Parking for Guests', // Added new amenity
-  'Facilities for Disabled Guests', // Added new amenity
-  'Free WiFi Throughout the Property', // Added new amenity
-  'Flat-screen TV for Entertainment', // Added new amenity
-  'Air Conditioning for a Comfortable Stay', // Added new amenity
-  'Work Table in Room' // Added new amenity
-  ]
+    amenities: [ 'Dry cleaning',
+      'Laundry service',
+      'Housekeeping',
+      'Room service',
+      'Air conditioning',
+      'Power backup',
+      'Elevator/lift',
+      'Ironing service',
+      ' Library',
+      'personalised services',
+    'Multi cuisine restaurant']
   },
   {
     id: 'sector-45',
@@ -235,7 +229,7 @@ Bed linens and towels are provided in every room for guest comfort.
 
     Welcome to Saavi Hotel Sector 45
 
-Discover comfort and affordability at Saavi Hotel Sector 45, conveniently located in Gurgaon just 7.4 km from MG Road and 20 km from Qutub Minar. Our 3-star accommodation offers a cozy retreat with essential amenities for a pleasant stay.
+Discover comfort and affordability at Saavi Hotel Sector 45, conveniently located in Gurgaon just 7.4 km from MG Road and 20 km from Qutub Minar. Our Premium Accommodation Hotel offers a cozy retreat with essential amenities for a pleasant stay.
 
     This boutique hotel is best for small gathering events – Haldi, wedding , Engagement , birthday parties etc. Couples particularly like the location because of our quality rooms, private dining area and in- room dining services. This boutique hotel also have banquet hall that is best for Weddings, Haldi, Ring Ceremony,  Engagement , birthday parties etc. Has a Beautiful Banquet with state of the art enmities. We speak your language!
 
@@ -288,8 +282,7 @@ Selected rooms include a balcony for guests to relax and enjoy the surroundings.
 Bed linens and towels are provided in every room for guest comfort.
 
 
-Location:
-- 1527 Sector Road, 122018 Gurgaon,India
+Location : Plot no 2034, block A, Sector 45, near HSBC bank..
     `,
     images: [
     S451,
@@ -297,22 +290,23 @@ Location:
     S453,
     S454
     ],
-    amenities: [ 'On-site Restaurant Serving Delectable Meals',
-  'Non-smoking Rooms for a Pleasant Stay',
-  'Room Service Available for Added Convenience',
-  '24-Hour Front Desk Assistance',
-  'Safe Box, Wardrobe, and Kettle for Added Convenience',
-  'Free Private Parking',
-  'Facilities for Disabled Guests',
-  'Free High-speed WiFi',
-  'Flat-screen TV for Entertainment',
-  'Air Conditioning for a Comfortable Stay',]
+    amenities: [ 'Dry cleaning',
+      'Laundry service',
+      'Housekeeping',
+      'Room service',
+      'Air conditioning',
+      'Power backup',
+      'Elevator/lift',
+      'Ironing service',
+      ' Library',
+      'personalised services',
+    'Multi cuisine restaurant']
   },
   {
     id: 'sector-10',
     name: 'Saavi Hotel Sector 10',
     location: 'Gurugram, Haryana, India',
-    price: 2200,
+    price: 2600,
     rating: 4.6,
     locationUrl : "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d448991.2044769026!2d77.008968!3d28.457139!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1721ffb6aac9%3A0xbc55ada6cc79802c!2sHotel%20De%20Luxe%20Basai%20Road%20By%20Saavi%20Hotels!5e0!3m2!1sen!2sus!4v1740146522999!5m2!1sen!2sus",
     bookingEngine : "http://bookingengine.maximojo.com?hid=IN-f59a1bd3-916f-4a62-9092-9624599ac2c6",
@@ -320,6 +314,9 @@ Location:
     Hotel De Luxe Basai Road, GurgaonA boutique hotel of classic urban feel perfect for conferences ,Wedding Events and long stays is in the Centre of Gurgaon  – just 5 Minutes Drive from Rajiv Chowk and Hero Honda Chowk .
     
     This boutique hotel is best for small gathering events – Haldi, wedding , Engagement , birthday parties etc. Couples particularly like the location because of our quality rooms, private dining area and in- room dining services. This boutique hotel also have banquet hall that is best for Weddings, Haldi, Ring Ceremony,  Engagement , birthday parties etc. Has a Beautiful Banquet with state of the art enmities. We speak your language!
+    
+    Location : KHASHRA NO 3853/999, Haryana 122001.
+    
     `,
     images: [
      S101,
@@ -327,17 +324,17 @@ Location:
      S103,
      S104
     ],
-    amenities: [
-          "Restaurant: Tikka and Take Serving Delectable Meals All Day Long",
-          "Rooftop Sitting Area for Light Music and Drinks",
-          "Spacious Banquet Area for Events",
-          "Conference Room for Business Meetings",
-          "Spacious Rooms with Vibrant Balconies",
-          "Suite for 6 People with In-suite Private Dining Area, Library, and Extra Room for Small Gatherings",
-          "Free Private Parking",
-          "Free High-speed WiFi",
-          "Facilities for Disabled Guests"
-        ]
+    amenities: [ 'Dry cleaning',
+      'Laundry service',
+      'Housekeeping',
+      'Room service',
+      'Air conditioning',
+      'Power backup',
+      'Elevator/lift',
+      'Ironing service',
+      ' Library',
+      'personalised services',
+    'Multi cuisine restaurant']
       ,
     },
   {
@@ -351,86 +348,97 @@ Location:
     description: ` Hassan Valley Retreat is located near Hassan Valley (near Dhalli), 11 kms away from Shimla. Our Retreat is strategically located on the hill ranges of Kufri and serves as a wonderful way to experience Nature, ideal for a wonderful weekend get way. Hassan Valley is the densest conical forest of Asia, stretched from Dhalli, Kufri, Mundaghat to Chail. The range, which includes reserve forest, sanctuary and Shimla water supply catchment forests, is one of most diverse spots in the world in terms of flora and fauna. The sub-tropical climate and heavy snow during the winter season creates an environment where several unique high altitude plants and animal species flourish.
 
 This area, away from human hub, provides tranquility and breathtaking view of the forest clad mountain ranges. Here, you can let the world drift away as you enjoy the exotic surroundings – the spectacular mountain backdrop, lush green cedar trees, unspoiled wilderness, gushing streams, surging waterfalls, breath-taking sunsets – a truly mesmerizing landscape. Even the air is unique, perfumed with the enticing scents of Himalayan plants, jungle flowers, flora and fauna.
-Our Retreat provides grand offer for tourism activities in an area of about 75 Bighas i.e. 7 Hectares of vacant land along the road at about 6000′ MSL out of this 30 Bighas is located on the southern ridge of Jungle Patgehar at about 7000’ MSL, which is thickly forested mostly with tall deodar, Ban and Rodo trees. The whole land is available for activities especially for Jungle tourism, outdoor games, cycling, picnic, yoga/meditation, camping including forests trekking, health sanatoria based on herbal and Ayurvedic system and a number of other related activities in a close vicinity of Shimla city. Trekking from Dhalli water tanks to Bhalunidhar is a wonderful experience amidst deep and dense deodar forest to spring water source No.1. This hill range is also connected by a track from Kufri/ Mundaghat through a wild life sanctuary. Another 11 KMs motorable road from Dhalli/ Bhattakuffar connects this Retreat. Road journey from Bhattakuffar via Churat Nallah through a thick forest is an enjoyable and thrilling experience. Bhalunidhar is thickly infested with a variety of herbal plants, fascinating to eyes of beholders. Amongst these, most attractive are golden & blue ferns predominantly Jungli Haldi beneath Deodar, Ban and Rodo trees. Trekking amidst such serene and fascinating environment gives new lease to life. One feels not only thrilled, but healthy as well, despite arduous trekking on this hill range overlooking wide range of Deodar clad panoramic hills. As such this place can safely be called a sanatoria in an abode of nature. Once one adventure this journey and stays for a while in this location, it gives life long experience.`,
+Our Retreat provides grand offer for tourism activities in an area of about 75 Bighas i.e. 7 Hectares of vacant land along the road at about 6000′ MSL out of this 30 Bighas is located on the southern ridge of Jungle Patgehar at about 7000’ MSL, which is thickly forested mostly with tall deodar, Ban and Rodo trees. The whole land is available for activities especially for Jungle tourism, outdoor games, cycling, picnic, yoga/meditation, camping including forests trekking, health sanatoria based on herbal and Ayurvedic system and a number of other related activities in a close vicinity of Shimla city. Trekking from Dhalli water tanks to Bhalunidhar is a wonderful experience amidst deep and dense deodar forest to spring water source No.1. This hill range is also connected by a track from Kufri/ Mundaghat through a wild life sanctuary. Another 11 KMs motorable road from Dhalli/ Bhattakuffar connects this Retreat. Road journey from Bhattakuffar via Churat Nallah through a thick forest is an enjoyable and thrilling experience. Bhalunidhar is thickly infested with a variety of herbal plants, fascinating to eyes of beholders. Amongst these, most attractive are golden & blue ferns predominantly Jungli Haldi beneath Deodar, Ban and Rodo trees. Trekking amidst such serene and fascinating environment gives new lease to life. One feels not only thrilled, but healthy as well, despite arduous trekking on this hill range overlooking wide range of Deodar clad panoramic hills. As such this place can safely be called a sanatoria in an abode of nature. Once one adventure this journey and stays for a while in this location, it gives life long experience.
+
+Location : Village Gawahi,P.O. Maloothi,Patgehar Road,Near,Ekant Vatika rd,Shimla ,Himachal Pradesh 171012 .
+`,
     images: [
     S1,
     S2,
     S3,
     S4
     ],
-    amenities: ['Eco-Cottages', 'Trekking Assistance', 'Organic Meals', 'Mountain View', 'Room Service',  'Heating']
+    amenities: [ 'Dry cleaning',
+      'Laundry service',
+      'Housekeeping',
+      'Room service',
+      'Air conditioning',
+      'Power backup',
+      'Elevator/lift',
+      'Ironing service',
+      ' Library',
+      'personalised services',
+    'Multi cuisine restaurant']
   },
-//   {
-//     id: 'saavi-rishikesh',
-//     name: 'Saavi Hotel and Resorts',
-//     location: '',
-//     price: 2300,
-//     rating: 4.7,
-//     locationUrl : "",
-//     bookingEngine : "",
-//     description: `
-// Welcome to The Saavi Hotel and Resorts
+  {
+    id: 'saavi-rishikesh',
+    name: 'Saavi Hotel and Resorts',
+    location: '',
+    price: 2300,
+    rating: 4.7,
+    locationUrl : "",
+    bookingEngine : "",
+    description: `
+Welcome to The Saavi Hotel and Resorts
 
-// Welcome to The Saavi Hotel Rishikesh! Experience a blend of comfort and nature in this beautiful hotel, located just 5 km from Rishikesh city center. Our hotel offers a peaceful environment, modern amenities, and a perfect setting for both relaxation and adventure. Whether you’re planning a small gathering or a getaway, our hotel is the ideal choice for weddings, engagement ceremonies, birthdays, and more.
+Welcome to The Saavi Hotel Rishikesh! Experience a blend of comfort and nature in this beautiful hotel, located just 5 km from Rishikesh city center. Our hotel offers a peaceful environment, modern amenities, and a perfect setting for both relaxation and adventure. Whether you’re planning a small gathering or a getaway, our hotel is the ideal choice for weddings, engagement ceremonies, birthdays, and more.
 
-// Key Highlights:
+Key Highlights:
 
-//     Guest Rooms: Each room at Saavi Hotel Rishikesh features a wardrobe, private bathroom with a shower and free toiletries, flat-screen TV, and air conditioning for your comfort. Some rooms include a balcony with stunning views. Bed linen and towels are provided for your convenience.
-//     Dining Options: Start your day with a delicious breakfast, available in buffet, à la carte, or continental styles, served daily.
-//     Event Facilities: Our hotel is equipped with a versatile banquet hall that is perfect for weddings, engagement parties, Haldi ceremonies, birthdays, and more. With state-of-the-art amenities, it is designed to create memorable experiences.
-//     Serene Location: Surrounded by the tranquil beauty of Rishikesh, the hotel is located near top attractions such as the iconic Triveni Ghat and Laxman Jhula. Nearby, you’ll find restaurants, cafes, and spiritual sites to enhance your visit.
+    Guest Rooms: Each room at Saavi Hotel Rishikesh features a wardrobe, private bathroom with a shower and free toiletries, flat-screen TV, and air conditioning for your comfort. Some rooms include a balcony with stunning views. Bed linen and towels are provided for your convenience.
+    Dining Options: Start your day with a delicious breakfast, available in buffet, à la carte, or continental styles, served daily.
+    Event Facilities: Our hotel is equipped with a versatile banquet hall that is perfect for weddings, engagement parties, Haldi ceremonies, birthdays, and more. With state-of-the-art amenities, it is designed to create memorable experiences.
+    Serene Location: Surrounded by the tranquil beauty of Rishikesh, the hotel is located near top attractions such as the iconic Triveni Ghat and Laxman Jhula. Nearby, you’ll find restaurants, cafes, and spiritual sites to enhance your visit.
 
-// Nearby Attractions:
+Nearby Attractions:
 
-//     Triveni Ghat (5 km away)
-//     Laxman Jhula (6 km away)
-//     Rajaji National Park (9 km away)
+    Triveni Ghat (5 km away)
+    Laxman Jhula (6 km away)
+    Rajaji National Park (9 km away)
 
-// Nearby Restaurants & Cafes:
+Nearby Restaurants & Cafes:
 
-//     Chotiwala Restaurant (3 km)
-//     The Sitting Elephant (4 km)
-//     Rishikesh Cafe (5 km)
-//     Bikanervala (5.5 km)
+    Chotiwala Restaurant (3 km)
+    The Sitting Elephant (4 km)
+    Rishikesh Cafe (5 km)
+    Bikanervala (5.5 km)
 
-// Parks and ATMs:
+Parks and ATMs:
 
-//     Swarg Ashram Park (1.2 km)
-//     Rishikesh Ashram Park (2 km)
-//     ATM Nearby: Several ATMs located within 1-2 km radius.
+    Swarg Ashram Park (1.2 km)
+    Rishikesh Ashram Park (2 km)
+    ATM Nearby: Several ATMs located within 1-2 km radius.
 
-// Public Transportation:
+Public Transportation:
 
-//     Train Stations: Rishikesh Railway Station (5 km)
-//     Metro Stations: Haridwar Metro Station (25 km)
-//     Closest Airports: Dehradun Jolly Grant Airport (19 km)
+    Train Stations: Rishikesh Railway Station (5 km)
+    Metro Stations: Haridwar Metro Station (25 km)
+    Closest Airports: Dehradun Jolly Grant Airport (19 km)
 
-// Accommodation: Each room at Saavi Hotel Rishikesh is thoughtfully designed to ensure a restful stay. Enjoy the comfort of private bathrooms, modern decor, and convenient in-room amenities.
+Accommodation: Each room at Saavi Hotel Rishikesh is thoughtfully designed to ensure a restful stay. Enjoy the comfort of private bathrooms, modern decor, and convenient in-room amenities.
 
-// Breakfast Options: Savor a delicious breakfast with buffet, à la carte, or continental options available daily to start your day off right.
-// Location:
-// - Plot no 644, Islampur Colony,Sector 38,Gurugram, Haryana 122003
-//     `,
-//     images: [
-//       'https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
-//       'https://images.unsplash.com/photo-1582719508461-905c673771fd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
-//       'https://images.unsplash.com/photo-1584132967334-10e028bd69f7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
-//       'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80'
-//     ],
-//     amenities: [ 
-//   'Non-smoking Rooms for a Pleasant Stay',
-//   'Room Service Available for Added Convenience',
-//   '24-Hour Front Desk Assistance',
-//   'Safe Box, Wardrobe, and Kettle for Added Convenience',
-//   'Free Private Parking',
-//   'Terrace for outdoor relaxation.',
-//   'Facilities for Disabled Guests',
-//   'Free High-speed WiFi',
-//   'Flat-screen TV for Entertainment',
-//   'Air Conditioning for a Comfortable Stay',
-//   'Work Table in Room',
-// ]
-//   },
+Breakfast Options: Savor a delicious breakfast with buffet, à la carte, or continental options available daily to start your day off right.
+Location:
+- Plot no 644, Islampur Colony,Sector 38,Gurugram, Haryana 122003
+    `,
+    images: [
+      'https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
+      'https://images.unsplash.com/photo-1582719508461-905c673771fd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
+      'https://images.unsplash.com/photo-1584132967334-10e028bd69f7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
+      'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80'
+    ],
+    amenities: [ 'Dry cleaning',
+      'Laundry service',
+      'Housekeeping',
+      'Room service',
+      'Air conditioning',
+      'Power backup',
+      'Elevator/lift',
+      'Ironing service',
+      ' Library',
+      'personalised services',
+    'Multi cuisine restaurant']
+  },
   {
     id: 'saavi-jibhi',
     name: 'Saavi Hotel Jibhi',
@@ -487,10 +495,7 @@ With scenic nature trails and a mix of trekking, mountain biking, and picnics,
 The valley is a sight to behold in the spring as well.and De Luxe is a perfect getaway to visit and explore your inner self.
 
 
-
-
-Location:
-Sojha banjar, Himachal Pradesh 1715123
+Location : Sojha banjar, Himachal Pradesh 1715123.
 
     `,
     images: [
@@ -499,15 +504,16 @@ Sojha banjar, Himachal Pradesh 1715123
       JB3,
       JB4
     ],
-    amenities: [ 'On-site Restaurant Serving Delectable Meals',
-  'Non-smoking Rooms for a Pleasant Stay',
-  'Room Service Available for Added Convenience',
-  '24-Hour Front Desk Assistance',
-  'Safe Box, Wardrobe, and Kettle for Added Convenience',
-  'Free Private Parking',
-  'Facilities for Disabled Guests',
-  'Free High-speed WiFi',
-  'Flat-screen TV for Entertainment',
-  'Air Conditioning for a Comfortable Stay',]
+    amenities: [ 'Dry cleaning',
+      'Laundry service',
+      'Housekeeping',
+      'Room service',
+      'Air conditioning',
+      'Power backup',
+      'Elevator/lift',
+      'Ironing service',
+      ' Library',
+      'personalised services',
+    'Multi cuisine restaurant']
   }
 ];

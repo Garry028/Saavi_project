@@ -4,6 +4,7 @@ import 'react-datepicker/dist/react-datepicker.css';
 import 'react-toastify/dist/ReactToastify.css';
 import { Search, ChevronDown, Plus, Minus } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import BG from '../../public/assets/HomeImage3.png';
 
 // interface BookingFormData {
 //   destination: string;
@@ -95,6 +96,13 @@ export default function BookingSearchForm() {
       variants={{
         hidden: { opacity: 0, y: 20 },
         visible: { opacity: 1, y: 0, transition: { duration: 0.6, staggerChildren: 0.1 } },
+      }}
+
+      style={{
+        backgroundImage:BG , // Path to your image
+        backgroundSize: 'cover', // Ensures the image covers the area
+        backgroundPosition: 'center', // Centers the image
+        backgroundRepeat: 'no-repeat', // Prevents repeating the image
       }}
     >
       <div className="w-[350px] relative z-50" >

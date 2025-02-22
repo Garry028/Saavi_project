@@ -58,16 +58,19 @@ export default function Navbar() {
         </div>
       </div>
 
-      <nav className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-6" aria-label="Global">
-        {/* Logo section */}
-        <div className="flex lg:flex-1">
-          <Link to="/" className="-m-1.5 p-1.5 flex items-center gap-2">
-            <div className="flex flex-col items-center">
-              <img src={logo} alt="Saavi logo" className="w-[130px] h-30 object-cover rounded-md" />
-            </div>
-            <span className="text-sm font-medium text-gray-700 tracking-wide uppercase font-sans">A Comfortable stay</span>
-          </Link>
-        </div>
+     <nav className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-6" aria-label="Global">
+       <div className="flex lg:flex-1">
+         <Link to="/" className="-m-1.5 p-1.5 flex items-center gap-2">
+           <div className="flex flex-col items-center">
+             <img src={logo} alt="Saavi logo" className="w-[130px] h-30 object-cover rounded-md" />
+            
+           </div>
+           <span className="text-sm font-bold text-gray-700 tracking-wide uppercase font-sans">A  Comfortable  stay</span>
+
+
+         </Link>
+       </div>
+
 
         {/* Desktop Navigation */}
         <div className="hidden lg:flex items-center justify-between gap-4">
