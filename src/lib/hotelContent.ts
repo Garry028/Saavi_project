@@ -28,11 +28,6 @@ import S4 from '../../public/assets/s4.jpg';
 
 
 
-
-
-
-
-
 export const hotels: Hotel[] = [
   {
     id: 'golf-course-luxury',
@@ -104,16 +99,17 @@ Location : 545, Off, Golf Course Rd, Sector 43, Gurugram, Haryana 122002.
      S433,
      S434
     ],
-    amenities: [ 'It has a restaurant , On-site restaurant serving delectable meals.',
-  'Non-smoking rooms ensuring a pleasant stay',
-  'Room service available for added convenience',
-  '24-Hour Front Desk Assistance',
-  'Safe Box, Wardrobe, and Kettle for Added Convenience',
-  'Free Private Parking',
-  'Facilities for Disabled Guests',
-  'Free High-speed WiFi',
-  'Flat-screen TV for Entertainment',
-  'Air Conditioning for a Comfortable Stay',]
+    amenities: [ 'Dry cleaning',
+  'Laundry service',
+  'Housekeeping',
+  'Room service',
+  'Air conditioning',
+  'Power backup',
+  'Elevator/lift',
+  'Ironing service',
+  ' Library',
+  'personalised services',
+'Multi cuisine restaurant']
   },
   {
     id: 'sector-46',
@@ -209,20 +205,17 @@ Location : 1482, Huda Colony, Sector 46, Gurugram, Haryana 122003.
      S463,
      S464
     ],
-    amenities: [ 'Breakfast Buffet', // Added new amenity
-  'On-site Restaurant Serving Delectable Meals', // Added new amenity
-  'Non-smoking Rooms for a Pleasant Stay', // Added new amenity
-  'Room Service Available for Added Convenience', // Added new amenity
-  '24-Hour Front Desk Assistance', // Added new amenity
-  'Safe Box, Wardrobe, and Kettle Tea Maker for Added Convenience', // Added new amenity
-  'Terrace for Outdoor Relaxation', // Added new amenity
-  'Free Private Parking for Guests', // Added new amenity
-  'Facilities for Disabled Guests', // Added new amenity
-  'Free WiFi Throughout the Property', // Added new amenity
-  'Flat-screen TV for Entertainment', // Added new amenity
-  'Air Conditioning for a Comfortable Stay', // Added new amenity
-  'Work Table in Room' // Added new amenity
-  ]
+    amenities: [ 'Dry cleaning',
+      'Laundry service',
+      'Housekeeping',
+      'Room service',
+      'Air conditioning',
+      'Power backup',
+      'Elevator/lift',
+      'Ironing service',
+      ' Library',
+      'personalised services',
+    'Multi cuisine restaurant']
   },
   {
     id: 'sector-45',
@@ -297,16 +290,17 @@ Location : Plot no 2034, block A, Sector 45, near HSBC bank..
     S453,
     S454
     ],
-    amenities: [ 'On-site Restaurant Serving Delectable Meals',
-  'Non-smoking Rooms for a Pleasant Stay',
-  'Room Service Available for Added Convenience',
-  '24-Hour Front Desk Assistance',
-  'Safe Box, Wardrobe, and Kettle for Added Convenience',
-  'Free Private Parking',
-  'Facilities for Disabled Guests',
-  'Free High-speed WiFi',
-  'Flat-screen TV for Entertainment',
-  'Air Conditioning for a Comfortable Stay',]
+    amenities: [ 'Dry cleaning',
+      'Laundry service',
+      'Housekeeping',
+      'Room service',
+      'Air conditioning',
+      'Power backup',
+      'Elevator/lift',
+      'Ironing service',
+      ' Library',
+      'personalised services',
+    'Multi cuisine restaurant']
   },
   {
     id: 'sector-10',
@@ -330,17 +324,17 @@ Location : Plot no 2034, block A, Sector 45, near HSBC bank..
      S103,
      S104
     ],
-    amenities: [
-          "Restaurant: Tikka and Take Serving Delectable Meals All Day Long",
-          "Rooftop Sitting Area for Light Music and Drinks",
-          "Spacious Banquet Area for Events",
-          "Conference Room for Business Meetings",
-          "Spacious Rooms with Vibrant Balconies",
-          "Suite for 6 People with In-suite Private Dining Area, Library, and Extra Room for Small Gatherings",
-          "Free Private Parking",
-          "Free High-speed WiFi",
-          "Facilities for Disabled Guests"
-        ]
+    amenities: [ 'Dry cleaning',
+      'Laundry service',
+      'Housekeeping',
+      'Room service',
+      'Air conditioning',
+      'Power backup',
+      'Elevator/lift',
+      'Ironing service',
+      ' Library',
+      'personalised services',
+    'Multi cuisine restaurant']
       ,
     },
   {
@@ -364,7 +358,17 @@ Location : Village Gawahi,P.O. Maloothi,Patgehar Road,Near,Ekant Vatika rd,Shiml
     S3,
     S4
     ],
-    amenities: ['Eco-Cottages', 'Trekking Assistance', 'Organic Meals', 'Mountain View', 'Room Service',  'Heating']
+    amenities: [ 'Dry cleaning',
+      'Laundry service',
+      'Housekeeping',
+      'Room service',
+      'Air conditioning',
+      'Power backup',
+      'Elevator/lift',
+      'Ironing service',
+      ' Library',
+      'personalised services',
+    'Multi cuisine restaurant']
   },
   {
     id: 'saavi-rishikesh',
@@ -423,19 +427,17 @@ Location:
       'https://images.unsplash.com/photo-1584132967334-10e028bd69f7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
       'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80'
     ],
-    amenities: [ 
-  'Non-smoking Rooms for a Pleasant Stay',
-  'Room Service Available for Added Convenience',
-  '24-Hour Front Desk Assistance',
-  'Safe Box, Wardrobe, and Kettle for Added Convenience',
-  'Free Private Parking',
-  'Terrace for outdoor relaxation.',
-  'Facilities for Disabled Guests',
-  'Free High-speed WiFi',
-  'Flat-screen TV for Entertainment',
-  'Air Conditioning for a Comfortable Stay',
-  'Work Table in Room',
-]
+    amenities: [ 'Dry cleaning',
+      'Laundry service',
+      'Housekeeping',
+      'Room service',
+      'Air conditioning',
+      'Power backup',
+      'Elevator/lift',
+      'Ironing service',
+      ' Library',
+      'personalised services',
+    'Multi cuisine restaurant']
   },
   {
     id: 'saavi-jibhi',
@@ -502,15 +504,16 @@ Location : Sojha banjar, Himachal Pradesh 1715123.
       JB3,
       JB4
     ],
-    amenities: [ 'On-site Restaurant Serving Delectable Meals',
-  'Non-smoking Rooms for a Pleasant Stay',
-  'Room Service Available for Added Convenience',
-  '24-Hour Front Desk Assistance',
-  'Safe Box, Wardrobe, and Kettle for Added Convenience',
-  'Free Private Parking',
-  'Facilities for Disabled Guests',
-  'Free High-speed WiFi',
-  'Flat-screen TV for Entertainment',
-  'Air Conditioning for a Comfortable Stay',]
+    amenities: [ 'Dry cleaning',
+      'Laundry service',
+      'Housekeeping',
+      'Room service',
+      'Air conditioning',
+      'Power backup',
+      'Elevator/lift',
+      'Ironing service',
+      ' Library',
+      'personalised services',
+    'Multi cuisine restaurant']
   }
 ];
