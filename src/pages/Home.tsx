@@ -16,6 +16,7 @@ import homeImage1 from "../../public/assets/homeImage1.png";
 import homeImage2 from "../../public/assets/homeImage2.png";
 import homeImage3 from "../../public/assets/HomeImage3.png";
 import BookingSearchForm from "@/components/mobileHomeForm";
+import S4 from '../../public/assets/s4.jpg';
 
 
 import { useNavigate } from "react-router-dom";
@@ -555,9 +556,8 @@ export default function Home() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
-          className="relative h-[85vh] flex items-center justify-center overflow-hidden"
+          className="relative h-[65vh] flex items-center justify-center overflow-hidden md:h-[84vh]"
         >
-
           <div className="bg-red"></div>
           {/* Background Image */}
           <motion.div
@@ -575,8 +575,13 @@ export default function Home() {
 
             <img
               src={currentImage}
-              alt="Luxury Hotel"
+              alt="background-image"
               className="w-full h-full object-cover hidden md:block"
+            />
+            <img
+              src={S4}
+              alt="background-image"
+              className="w-full h-full object-cover "
             />
 
 
@@ -620,7 +625,7 @@ export default function Home() {
             {/* Text Content */}
 
 
-            <div className="lg:mt-15">
+            <div className="lg:mt-15  ">
               <div className="relative z-50 w-full max-w-7xl mx-auto px-4 lg:px-8 flex flex-col items-center">
                 {/* Desktop Form */}
                 <motion.div
@@ -637,7 +642,8 @@ export default function Home() {
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.3, duration: 0.8, ease: "easeOut" }}
-                  className="lg:hidden w-full -mt-40"
+                  className="lg:hidden w-full py-2"
+                  
                 >
                   <BookingSearchForm />
                 </motion.div>

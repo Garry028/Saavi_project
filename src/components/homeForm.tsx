@@ -96,7 +96,7 @@ const BookingForm = () => {
           >
             {/* Destination Dropdown */}
             <div className="relative" ref={destinationRef}>
-              <label className="block text-sm font-medium text-gray-700 text-left mb-1">
+              <label className="block text-sm font-bold text-gray-700 text-left mb-1">
                 Destination
               </label>
               <div className="relative">
@@ -132,7 +132,7 @@ const BookingForm = () => {
 
             {/* Rooms Dropdown */}
             <div className="relative">
-              <label className="block text-sm font-medium text-gray-700 text-left mb-1">
+              <label className="block text-sm font-bold text-gray-700 text-left mb-1">
                 Rooms
               </label>
               <div className="relative">
@@ -151,7 +151,7 @@ const BookingForm = () => {
 
             {/* Guests Dropdown */}
             <div className="relative z-100" ref={guestsRef}>
-              <label className="block text-sm font-medium text-gray-700 text-left mb-1">Guests</label>
+              <label className="block text-sm font-bold text-gray-700 text-left mb-1">Guests</label>
               <div className="relative">
                 <Users className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 h-5 w-5" />
                 <div
@@ -216,7 +216,7 @@ const BookingForm = () => {
 
             {/* Check-in Date */}
             <div className="relative">
-              <label className="block text-sm font-medium text-gray-700 text-left mb-1">
+              <label className="block text-sm font-bold text-gray-700 text-left mb-1">
                 Check-in
               </label>
               <div className="relative">
@@ -234,7 +234,7 @@ const BookingForm = () => {
 
             {/* Check-out Date */}
             <div className="relative">
-              <label className="block text-sm font-medium text-gray-700 text-left mb-1">
+              <label className="block text-sm font-bold text-gray-700 text-left mb-1">
                 Check-out
               </label>
               <div className="relative ">

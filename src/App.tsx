@@ -16,12 +16,12 @@ import HotelDetail from '@/pages/HotelDescription';
 import ImportantLinks from '@/pages/ImportantLinks';
 import ExplorePage from '@/pages/Explore';
 import { Analytics } from '@vercel/analytics/react';
-
+import ScrollToTop from './lib/scroolToTop';
 
 function App() {
   return (
     <ThemeProvider defaultTheme="light" storageKey="hotel-theme">
-    
+    <ScrollToTop /> 
       <div className="min-h-screen flex flex-col w-full">
         <Navbar />
         <main className="flex-grow">

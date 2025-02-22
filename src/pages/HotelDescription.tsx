@@ -124,7 +124,7 @@ export default function HotelDetail() {
 
       {/* Thumbnail Gallery */}
       <div className="container mx-auto px-4 -mt-8 relative z-10">
-        <div className="grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {hotel.images.map((image, index) => (
             <a
               key={index}

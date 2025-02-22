@@ -97,7 +97,7 @@ export default function BookingSearchForm() {
         visible: { opacity: 1, y: 0, transition: { duration: 0.6, staggerChildren: 0.1 } },
       }}
     >
-      <div className="w-full relative z-50">
+      <div className="w-[350px] relative z-50" >
         <form 
           onSubmit={handleSubmit}
           className="bg-white rounded-xl shadow-2xl p-4 sm:space-y-4 border border-2 border-red-900"
@@ -155,7 +155,7 @@ export default function BookingSearchForm() {
                       value={checkIn}
                       onChange={(e) => setCheckIn(e.target.value)}
                       min={new Date().toISOString().split('T')[0]}
-                      className="w-full pl-2  py-3 border border-gray-300 rounded-lg bg-white text-gray-900 focus:ring-2 focus:ring-red-500 focus:border-red-500"
+                      className="w-full pl-2  py-3 border border-gray-300 rounded-lg bg-white text-gray-500 focus:ring-2 focus:ring-red-500 focus:border-red-500"
                     />
                   </div>
                   {errors.checkIn && <p className="text-red-500 text-sm mt-1">{errors.checkIn}</p>}
@@ -172,7 +172,7 @@ export default function BookingSearchForm() {
                       value={checkOut}
                       onChange={(e) => setCheckOut(e.target.value)}
                       min={checkIn || new Date().toISOString().split('T')[0]}
-                      className="w-full pl-2 py-3 border border-gray-300 rounded-lg bg-white text-gray-900 focus:ring-2 focus:ring-red-500 focus:border-red-500"
+                      className="w-full pl-2 py-3 border border-gray-300 rounded-lg bg-white text-gray-500 focus:ring-2 focus:ring-red-500 focus:border-red-500"
                     />
                   </div>
                   {errors.checkOut && <p className="text-red-500 text-sm mt-1">{errors.checkOut}</p>}
