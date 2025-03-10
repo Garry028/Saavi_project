@@ -8,12 +8,12 @@ import {
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { content } from "@/lib/content";
-import {  useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
 export default function HotelCarousel() {
   const carouselRef = useRef<HTMLDivElement>(null);
+  const [hotels, setHotels] = useState<any[]>([]);
 
   // useEffect(() => {
   //   const interval = setInterval(() => {
@@ -29,6 +29,22 @@ export default function HotelCarousel() {
   //   return () => clearInterval(interval); // Clear interval on unmount
   // }, []);
 
+  const fetchHotels = async () => {
+    const response = await fetch(`${import.meta.env.VITE_API_URL}/hotels`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        "ngrok-skip-browser-warning": "true",
+      },
+    });
+    const data = await response.json();
+    setHotels(data);
+  };
+
+  useEffect(() => {
+    fetchHotels();
+  }, []);
+
   return (
     <Carousel
       ref={carouselRef}
@@ -39,12 +55,12 @@ export default function HotelCarousel() {
       className="max-w-8xl h-full mx-auto"
     >
       <CarouselContent>
-        {content.hotels.map((hotel) => (
+        {hotels.map((hotel) => (
           <CarouselItem
             key={hotel.id}
             className="sm:basis-1/2 h-full md:basis-1/3 lg:basis-1/4"
           >
-            <motion.div 
+            <motion.div
               className="p-1"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -54,29 +70,36 @@ export default function HotelCarousel() {
                 <CardContent className="p-0">
                   <div className="relative overflow-hidden">
                     <motion.img
-                      src={hotel.image}
+                      src={hotel.homeImageUrl[0]}
                       alt={hotel.name}
                       className="w-full h-[300px] object-cover"
                       whileHover={{ scale: 1.1 }}
                       transition={{ duration: 0.3 }}
                     />
                   </div>
-                  <motion.div 
+                  <motion.div
                     className="p-6"
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ delay: 0.2 }}
                   >
                     <h3 className="text-xl font-semibold mb-2">{hotel.name}</h3>
-                    <p className="text-muted-foreground mb-2">{hotel.location}</p>
-                    <p className="text-sm mb-4">{hotel.description}</p>
+                    <p className="text-muted-foreground mb-2">
+                      {hotel.address}
+                    </p>
+                    <p className="text-sm mb-4"
+
+
+                      dangerouslySetInnerHTML={{
+                        __html: hotel.homeDescription,
+                      }}
+                    />
                     <div className="flex justify-end">
                       <Link to={`/hotelDesc/${hotel.id}`}>
                         <motion.div
                           whileHover={{ scale: 1.05 }}
                           whileTap={{ scale: 0.95 }}
                         >
-                          
                           <Button className="text-lg bg-[#8B2B06] hover:bg-[#8B2B06]">
                             Book Now
                           </Button>
@@ -90,7 +113,7 @@ export default function HotelCarousel() {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <motion.div 
+      <motion.div
         className="flex justify-center gap-4 mt-10"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
