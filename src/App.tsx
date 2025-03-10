@@ -17,11 +17,11 @@ import ImportantLinks from '@/pages/ImportantLinks';
 import ExplorePage from '@/pages/Explore';
 import { Analytics } from '@vercel/analytics/react';
 import ScrollToTop from './lib/scroolToTop';
-
+import CustomBookingEnginePage from '@/pages/CustomBookingEnginePage';
 function App() {
   return (
     <ThemeProvider defaultTheme="light" storageKey="hotel-theme">
-    <ScrollToTop /> 
+    <ScrollToTop />
       <div className="min-h-screen flex flex-col w-full">
         <Navbar />
         <main className="flex-grow">
@@ -39,9 +39,10 @@ function App() {
             <Route path="/hotelDesc/:hotelId" element={<HotelDetail />} />
             <Route path="/links" element={<ImportantLinks />} />
             <Route path="/explore" element={<ExplorePage />} />
+            <Route path="/custom-booking-engine" element={<CustomBookingEnginePage />} />
           </Routes>
         </main>
-        <Footer /> 
+        <Footer />
       </div>
       <Analytics />
     </ThemeProvider>
