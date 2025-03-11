@@ -20,6 +20,7 @@ interface RoomCardProps {
   onToggleDetails: () => void;
   onSelectRoom: (roomId: string, planId: string, count: number) => void;
   onReserve: (roomId: string) => void;
+  onSelectType: (type: string) => void;
 }
 
 const RoomCard: React.FC<RoomCardProps> = ({
@@ -32,6 +33,7 @@ const RoomCard: React.FC<RoomCardProps> = ({
   onToggleDetails,
   onSelectRoom,
   onReserve,
+  onSelectType,
 }) => {
   return (
     <div className="room-card bg-white mb-4 border-b border-gray-200">
@@ -106,7 +108,10 @@ const RoomCard: React.FC<RoomCardProps> = ({
           <div className="mt-4 flex justify-end">
             <button
               className="bg-white border border-red-900 text-red-900 px-4 py-2 rounded-md flex items-center hover:bg-red-50"
-              onClick={onToggleDetails}
+              onClick={() => {
+                onToggleDetails();
+                onSelectType(room.title);
+              }}
             >
               {expanded ? "Close" : "Details & Book"}
               <FontAwesomeIcon

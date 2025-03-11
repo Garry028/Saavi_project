@@ -28,7 +28,7 @@ export default function Navbar() {
 
   const fetchHotels = async () => {
     const response = await fetch(
-      `${import.meta.env.VITE_API_URL}/hotels?limit=4`,
+      `${import.meta.env.VITE_API_URL}/hotels?limit=6`,
       {
         method: "GET",
         headers: {

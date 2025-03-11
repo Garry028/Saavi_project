@@ -54,10 +54,11 @@ export default function HotelCarousel() {
       }}
       className="max-w-8xl h-full mx-auto"
     >
+      {hotels?.length > 0 ? (
       <CarouselContent>
-        {hotels.map((hotel) => (
+        {hotels?.map((hotel) => (
           <CarouselItem
-            key={hotel.id}
+            key={hotel?.id}
             className="sm:basis-1/2 h-full md:basis-1/3 lg:basis-1/4"
           >
             <motion.div
@@ -112,7 +113,12 @@ export default function HotelCarousel() {
             </motion.div>
           </CarouselItem>
         ))}
-      </CarouselContent>
+        </CarouselContent>
+      ) : (
+        <div className="flex justify-center items-center h-full">
+          No hotels found
+        </div>
+      )}
       <motion.div
         className="flex justify-center gap-4 mt-10"
         initial={{ opacity: 0 }}
